@@ -1,0 +1,24 @@
+remove:
+  completely:
+    - Default.NewTag
+    - Default.PrintOnly
+    - Default.ScreenOnly
+    - Default.AppNum
+    - Default.AppNoNum
+    - Default.Not Needed
+    - Default.Not Ready for Publish
+    - Default.Tooltips
+    - Default.Handout Only
+    - Default.UserGuide Only
+    - Default.Developer Mode Only
+    - Default.Deprecated
+    - Default.2-2-4
+    - Default.2-2-5
+    - Default.2-3
+    - Default.Config Ref Only
+    - Default.Not in B2B PDF
+    - Default.Not in EE
+    - Default.EE Screenshot,Default.Not in B2B
+  condition_only:
+    - Default.Verify
+    - Default.Not in B2B
