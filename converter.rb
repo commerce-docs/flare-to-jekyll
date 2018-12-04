@@ -1,7 +1,6 @@
 require_relative 'convertible.rb'
 require_relative 'reader.rb'
 require_relative 'writable.rb'
-require 'fileutils'
 
 include Convertible
 include Writable
