@@ -22,3 +22,13 @@ remove:
   condition_only:
     - Default.Verify
     - Default.Not in B2B
+  element_itself:
+    - MadCap:dropDown
+    - MadCap:dropDownHead
+    - MadCap:div[@class='Image']
+    - div[@class='Image']
+# replace_to:
+#   h2:
+#     - MadCap:dropDownHotspot
+#     # - p class="ToDo
+#     # - p class="itemhead"
