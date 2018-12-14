@@ -66,7 +66,11 @@ class Cleaner
     end
   end
 
-  def remove_file_if_no_root_in(page)
-    File.delete page.path if page.doc.root.nil?
+  # def remove_xml_declaration_in(page)
+  #   page.doc.to_s.sub("<?xml version=\"1.0\" encoding=\"utf-8\"?>\n", '')
+  # end
+
+  def remove_empty(page)
+    File.delete page.path
   end
 end
