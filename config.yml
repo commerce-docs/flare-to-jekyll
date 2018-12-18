@@ -45,8 +45,8 @@ remove:
     - dropDownHead
     - div.Image
 #
-# XPath or CSS selectors of elements to be swaped.
-# New element are at the left, old elements are at the right.
+# XPath or CSS selectors of elements to swap.
+# A new element is at the left and old elements are at the right.
 # An example of how to rename elements <dropDownHotspot/> and <p class="ToDo"/> to <h2/>, while keeping content the same.
 # h2:
 #   - dropDownHotspot
