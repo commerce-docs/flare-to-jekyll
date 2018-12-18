@@ -1,34 +1,34 @@
 remove:
   completely:
-    - Default.NewTag
-    - Default.PrintOnly
-    - Default.ScreenOnly
-    - Default.AppNum
-    - Default.AppNoNum
-    - Default.Not Needed
-    - Default.Not Ready for Publish
-    - Default.Tooltips
-    - Default.Handout Only
-    - Default.UserGuide Only
-    - Default.Developer Mode Only
-    - Default.Deprecated
-    - Default.2-2-4
-    - Default.2-2-5
-    - Default.2-3
-    - Default.Config Ref Only
-    - Default.Not in B2B PDF
-    - Default.Not in EE
-    - Default.EE Screenshot,Default.Not in B2B
+    - '[conditions="Default.NewTag"]'
+    - '[conditions="Default.PrintOnly"]'
+    - '[conditions="Default.ScreenOnly"]'
+    - '[conditions="Default.AppNum"]'
+    - '[conditions="Default.AppNoNum"]'
+    - '[conditions="Default.Not Needed"]'
+    - '[conditions="Default.Not Ready for Publish"]'
+    - '[conditions="Default.Tooltips"]'
+    - '[conditions="Default.Handout Only"]'
+    - '[conditions="Default.UserGuide Only"]'
+    - '[conditions="Default.Developer Mode Only"]'
+    - '[conditions="Default.Deprecated"]'
+    - '[conditions="Default.2-2-4"]'
+    - '[conditions="Default.2-2-5"]'
+    - '[conditions="Default.2-3"]'
+    - '[conditions="Default.Config Ref Only"]'
+    - '[conditions="Default.Not in B2B PDF"]'
+    - '[conditions="Default.Not in EE"]'
+    - '[conditions="Default.EE Screenshot,Default.Not in B2B"]'
+    - div.Next
   condition_only:
-    - Default.Verify
-    - Default.Not in B2B
+    - '[conditions="Default.Verify"]'
+    - '[conditions="Default.Not in B2B"]'
   element_itself:
-    - MadCap:dropDown
-    - MadCap:dropDownHead
-    - MadCap:div[@class='Image']
-    - div[@class='Image']
+    - dropDown
+    - dropDownHead
+    - div.Image
 swap:
   h2:
-    - MadCap:dropDownHotspot
+    - dropDownHotspot
     - p.ToDo
     - p.ItemHead
