@@ -1,4 +1,12 @@
 remove:
+  #
+  # XPath or CSS selectors of elements and all nested nodes to remove.
+  # Learn more about XPath: https://www.w3schools.com/xml/xpath_syntax.asp
+  # Try your XPath: https://www.freeformatter.com/xpath-tester.html
+  #
+  # Learn more about CSS selectors: https://www.w3schools.com/CSSref/css_selectors.asp
+  # Try your CSS selector: https://try.jsoup.org/
+  #
   completely:
     - '[conditions="Default.NewTag"]'
     - '[conditions="Default.PrintOnly"]'
@@ -20,13 +28,28 @@ remove:
     - '[conditions="Default.Not in EE"]'
     - '[conditions="Default.EE Screenshot,Default.Not in B2B"]'
     - div.Next
+  #
+  # XPath or CSS selectors of condition attributes to remove.
+  #
   condition_only:
     - '[conditions="Default.Verify"]'
     - '[conditions="Default.Not in B2B"]'
+  #
+  # XPath or CSS selectors of elements to remove.
+  # All nested elements will be kept the same.
+  #
   element_itself:
     - dropDown
     - dropDownHead
     - div.Image
+#
+# XPath or CSS selectors of elements to be swaped.
+# New element are at the left, old elements are at the right.
+# An example of how to rename elements <dropDownHotspot/> and <p class="ToDo"/> to <h2/>, while keeping content the same.
+# h2:
+#   - dropDownHotspot
+#   - p.ToDo
+#
 swap:
   h2:
     - dropDownHotspot
