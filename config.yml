@@ -1,11 +1,13 @@
-remove:
   #
-  # XPath or CSS selectors of elements and all nested nodes to remove.
   # Learn more about XPath: https://www.w3schools.com/xml/xpath_syntax.asp
   # Try your XPath: https://www.freeformatter.com/xpath-tester.html
   #
   # Learn more about CSS selectors: https://www.w3schools.com/CSSref/css_selectors.asp
   # Try your CSS selector: https://try.jsoup.org/
+  #
+remove:
+  #
+  # XPath or CSS selectors of elements and all nested nodes to remove.
   #
   completely:
     - '[conditions="Default.NewTag"]'
