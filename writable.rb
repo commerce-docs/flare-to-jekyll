@@ -1,10 +1,9 @@
 require 'fileutils'
 
 module Writable
-
   def write_to_path content:, path:
     create_directories_for current_directory path
-    File.write path, content
+    File.open(path, 'w') { |file| file << content }
   end
 
   def current_directory path

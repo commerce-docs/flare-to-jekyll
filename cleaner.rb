@@ -5,11 +5,7 @@ class Cleaner
   attr_reader :config
 
   def initialize(config:)
-    @config = config
-  end
-
-  def config_file
-    'remove.yml'
+    @config = YAML.load_file 'remove.yml'
   end
 
   #
@@ -17,18 +13,19 @@ class Cleaner
   # The elements that include the listed attributes has to be removed compeletly
   #
   def tags_to_remove_compeletely
-    all_options = YAML.load_file config
-    all_options.dig 'remove', 'completely'
+    config.dig 'remove', 'completely'
   end
 
   def tags_to_remove_condition_only
-    all_options = YAML.load_file config
-    all_options.dig 'remove', 'condition_only'
+    config.dig 'remove', 'condition_only'
   end
 
   def tags_to_replace_elements_with_children
-    all_options = YAML.load_file config
-    all_options.dig 'remove', 'element_itself'
+    config.dig 'remove', 'element_itself'
+  end
+
+  def tags_to_swap
+    config.dig 'swap'
   end
 
   # Remove tags and the text wrapped by the tags listed in the
@@ -37,7 +34,7 @@ class Cleaner
   def remove_tags_compeletely_in(page)
     tags_to_remove_compeletely.each do |condition|
       page.doc
-          .xpath("//*[@MadCap:conditions=\"#{condition}\"]")
+          .search("//*[@MadCap:conditions=\"#{condition}\"]")
           .each(&:remove)
     end
   end
@@ -48,7 +45,7 @@ class Cleaner
   def remove_conditions_only_in(page)
     tags_to_remove_condition_only.each do |condition|
       page.doc
-          .xpath("//*[@MadCap:conditions=\"#{condition}\"]")
+          .search("//*[@MadCap:conditions=\"#{condition}\"]")
           .remove_attr 'conditions'
     end
   end
@@ -57,12 +54,10 @@ class Cleaner
   # Element names are listed in the remove > element_itself in the remove.yml file.
   #
   def remove_element_without_children_in(page)
-    doc = page.doc
     tags_to_replace_elements_with_children.each do |tag|
-      doc.xpath("//#{tag}").each do |element|
+      page.doc.search("//#{tag}").each do |element|
         element.replace element.children
       end
-      # binding.pry
     end
   end
 
@@ -72,5 +67,19 @@ class Cleaner
 
   def remove_empty(page)
     File.delete page.path
+  end
+
+  def replace_tags_in page
+    tags_to_swap.each do |new_name, old_names|
+      swap_tag_names(page, new_name, old_names)
+    end
+  end
+
+  def swap_tag_names(page, new_name, old_names)
+    old_names.each do |old_name|
+      page.doc.search(old_name).each do |element|
+        element.node_name = new_name
+      end
+    end
   end
 end

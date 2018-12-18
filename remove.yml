@@ -27,8 +27,8 @@ remove:
     - MadCap:dropDownHead
     - MadCap:div[@class='Image']
     - div[@class='Image']
-# replace_to:
-#   h2:
-#     - MadCap:dropDownHotspot
-#     # - p class="ToDo
-#     # - p class="itemhead"
+swap:
+  h2:
+    - MadCap:dropDownHotspot
+    - p.ToDo
+    - p.ItemHead
