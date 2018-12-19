@@ -12,4 +12,8 @@ class FlareDoc
   def empty?
     doc.root.nil?
   end
+
+  def search_by selector
+    doc.search selector
+  end
 end

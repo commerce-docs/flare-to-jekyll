@@ -2,7 +2,7 @@ require_relative 'cleaner.rb'
 
 module Convertible
   def cleaner
-    Cleaner.new config: 'remove.yml'
+    Cleaner.new
   end
 
   def remove_namespaces_in collection
@@ -17,11 +17,23 @@ module Convertible
     puts 'Done!'
   end
 
-  def remove_attributes_in(collection)
-    puts 'Removing conditions in attributes...'
-    collection.each { |doc| cleaner.remove_conditions_only_on_a doc }
+  def remove_attributes_by_name_in collection
+    puts 'Removing attributes by name...'
+    collection.each { |doc| cleaner.remove_attributes_by_name_on_a doc }
     puts 'Done!'
   end
+
+  def remove_attribute_with_value_in collection
+    puts 'Removing attributes with specified values...'
+    collection.each { |doc| cleaner.remove_attribute_with_value_on_a doc }
+    puts 'Done!'
+  end
+
+  # def remove_attributes_in(collection)
+  #   puts 'Removing conditions in attributes...'
+  #   collection.each { |doc| cleaner.remove_conditions_only_on_a doc }
+  #   puts 'Done!'
+  # end
 
   def remove_elements_in(collection)
     puts 'Removing elements, but keeping child elements...'

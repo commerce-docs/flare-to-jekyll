@@ -30,12 +30,22 @@ remove:
     - '[conditions="Default.Not in EE"]'
     - '[conditions="Default.EE Screenshot,Default.Not in B2B"]'
     - div.Next
+    - script
+  
+  attribute:
+    - lastBlockDepth
+    - lastWidth
+    - lastHeight
+      # - '//@*[starts-with(name(.), "last")]'
+  
   #
-  # XPath or CSS selectors of condition attributes to remove.
+  # XPath or CSS selectors of "conditions" attributes to remove.
   #
-  condition_only:
-    - '[conditions="Default.Verify"]'
-    - '[conditions="Default.Not in B2B"]'
+  attribute_with_value:
+    conditions:
+      - Default.Verify
+      - Default.Not in B2B
+
   #
   # XPath or CSS selectors of elements to remove.
   # All nested elements will be kept the same.
