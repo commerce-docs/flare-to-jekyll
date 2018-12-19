@@ -5,6 +5,9 @@
   # Learn more about CSS selectors: https://www.w3schools.com/CSSref/css_selectors.asp
   # Try your CSS selector: https://try.jsoup.org/
   #
+  # Note: Use node and attribute names without namespaces.
+  # To specify "MadCap:Default.NewTag", use "Default.NewTag".
+  #
 remove:
   #
   # XPath or CSS selectors of elements and all nested nodes to remove.
@@ -32,6 +35,9 @@ remove:
     - div.Next
     - script
   
+  #
+  # Attributes to remove.
+  #
   attribute:
     - lastBlockDepth
     - lastWidth
@@ -39,7 +45,13 @@ remove:
       # - '//@*[starts-with(name(.), "last")]'
   
   #
-  # XPath or CSS selectors of "conditions" attributes to remove.
+  # Attributes to remove by name and value.
+  # Name is at the left, value is at the right.
+  # For example, to remove attributes conditions="Default.Verify" and conditions="Default.Not in B2B"
+  #
+  # conditions:
+  #   - Default.Verify
+  #   - Default.Not in B2B
   #
   attribute_with_value:
     conditions:
@@ -57,7 +69,7 @@ remove:
 #
 # XPath or CSS selectors of elements to swap.
 # A new element is at the left and old elements are at the right.
-# An example of how to rename elements <dropDownHotspot/> and <p class="ToDo"/> to <h2/>, while keeping content the same.
+# An example of how to rename both elements <dropDownHotspot/> and <p class="ToDo"/> to <h2/>, while keeping content the same.
 # h2:
 #   - dropDownHotspot
 #   - p.ToDo
