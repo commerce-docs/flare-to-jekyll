@@ -8,11 +8,19 @@ class Reader
   end
 
   def read_all_to_class
-    read_all_paths_with_extension('htm').each do |local_path|
+    all_paths_with_extensions('htm', 'flsnp').each do |local_path|
       full_path = create_filepath dir, local_path
       # Generate objects to work with using file paths to Flare files
       @parsed_content << FlareDoc.new(path: full_path)
     end
+  end
+
+  def all_paths_with_extensions(*extensions)
+    paths = []
+    extensions.each do |extension|
+      paths << read_all_paths_with_extension(extension)
+    end
+    paths.flatten
   end
 
   def read_all_paths

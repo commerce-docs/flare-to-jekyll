@@ -6,7 +6,7 @@
   # Try your CSS selector: https://try.jsoup.org/
   #
   # Note: Use node and attribute names without namespaces.
-  # To specify "MadCap:Default.NewTag", use "Default.NewTag".
+  # For example, to specify "MadCap:Default.NewTag", use "Default.NewTag".
   #
 remove:
   #
@@ -15,7 +15,6 @@ remove:
   completely:
     - '[conditions="Default.NewTag"]'
     - '[conditions="Default.PrintOnly"]'
-    - '[conditions="Default.ScreenOnly"]'
     - '[conditions="Default.AppNum"]'
     - '[conditions="Default.AppNoNum"]'
     - '[conditions="Default.Not Needed"]'
@@ -34,6 +33,10 @@ remove:
     - '[conditions="Default.EE Screenshot,Default.Not in B2B"]'
     - div.Next
     - script
+    - col
+    - keyword
+    - concept
+    - p.clear
   
   #
   # Attributes to remove.
@@ -42,7 +45,7 @@ remove:
     - lastBlockDepth
     - lastWidth
     - lastHeight
-      # - '//@*[starts-with(name(.), "last")]'
+    - autonum
   
   #
   # Attributes to remove by name and value.
@@ -57,6 +60,9 @@ remove:
     conditions:
       - Default.Verify
       - Default.Not in B2B
+      - Default.ScreenOnly
+    class:
+      - tableBody
 
   #
   # XPath or CSS selectors of elements to remove.
@@ -66,6 +72,15 @@ remove:
     - dropDown
     - dropDownHead
     - div.Image
+    - div.pageTitleContainer
+    - dropDownBody
+    - div.FloatLeft_th
+    - div.FloatRight_desc
+    # - TableStyle-Guidelines
+    # - [TableStyle-Definitions] # attributes that contain TableStyle-Definitions in class name
+    # - '[^TableStyle-Code]' # attributes that contain TableStyle-Code in class name
+
+
 #
 # XPath or CSS selectors of elements to swap.
 # A new element is at the left and old elements are at the right.
@@ -79,3 +94,17 @@ swap:
     - dropDownHotspot
     - p.ToDo
     - p.ItemHead
+  h3:
+    - caption
+    - p.TableHeadingOrange
+    - p.TableHeading
+  ol:
+    - p.Number1
+    - p.Alpha1
+  li:
+    - p.NumberContinue
+    - p.AlphaContinue
+  div:
+    - p.note
+
+  

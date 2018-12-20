@@ -81,6 +81,9 @@ class Cleaner
         element.replace element.children
       end
     end
+  rescue ArgumentError => e
+    puts e.message
+    puts "The issue is in #{page.path}"
   end
 
   # def remove_xml_declaration_in(page)
