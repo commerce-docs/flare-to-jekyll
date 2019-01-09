@@ -36,6 +36,10 @@ class Cleaner
     config.dig 'swap'
   end
 
+  def tags_to_add_parent
+    config.dig 'add', 'parent'
+  end
+
   def remove_namespaces_on_a(page)
     page.doc.remove_namespaces!
   end
@@ -50,7 +54,7 @@ class Cleaner
     end
   end
 
-  def remove_attributes_by_name_on_a page
+  def remove_attributes_by_name_on_a(page)
     tags_to_remove_attribute_by_name.each do |attr_name|
       selector = "[#{attr_name}]"
       page.search_by(selector)
@@ -91,7 +95,7 @@ class Cleaner
   # end
 
   def remove_empty(page)
-    File.delete page.path
+    File.delete page.absolute_path
   end
 
   def replace_tags_on_a(page)
@@ -104,6 +108,15 @@ class Cleaner
     old_names.each do |old_name|
       page.search_by(old_name).each do |element|
         element.node_name = new_name
+      end
+    end
+  end
+
+  def add_parent_on_a(page)
+    tags_to_add_parent.each do |parent_tag, elements|
+      elements.each do |element|
+        page.search_by(element)
+            .wrap("<#{parent_tag}/>")
       end
     end
   end

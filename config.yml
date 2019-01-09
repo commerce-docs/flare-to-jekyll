@@ -37,6 +37,7 @@ remove:
     - keyword
     - concept
     - p.clear
+    - head
   
   #
   # Attributes to remove.
@@ -76,6 +77,9 @@ remove:
     - dropDownBody
     - div.FloatLeft_th
     - div.FloatRight_desc
+    # - '[class^=TableStyle-]'
+    - div
+
     # - TableStyle-Guidelines
     # - [TableStyle-Definitions] # attributes that contain TableStyle-Definitions in class name
     # - '[^TableStyle-Code]' # attributes that contain TableStyle-Code in class name
@@ -90,21 +94,32 @@ remove:
 #   - p.ToDo
 #
 swap:
+  h1:
+    - body > h3:first-child
+    - body > h4:first-child
+    - body > h5:first-child
+    - body > h6:first-child
+
   h2:
     - dropDownHotspot
     - p.ToDo
     - p.ItemHead
+
   h3:
     - caption
     - p.TableHeadingOrange
     - p.TableHeading
-  ol:
-    - p.Number1
-    - p.Alpha1
+
   li:
-    - p.NumberContinue
-    - p.AlphaContinue
+    - '[class^=Number]'
+    - '[class^=Number]'
+    
   div:
     - p.note
-
+  
+add:
+  parent:
+   ol:
+    - '[class^=Number]'
+    - '[class^=Alpha]'
   

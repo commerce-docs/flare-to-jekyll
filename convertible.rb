@@ -5,7 +5,7 @@ module Convertible
     Cleaner.new
   end
 
-  def remove_namespaces_in collection
+  def remove_namespaces_in(collection)
     puts 'Removing namespaces...'
     collection.each { |doc| cleaner.remove_namespaces_on_a doc }
     puts 'Done!'
@@ -17,13 +17,13 @@ module Convertible
     puts 'Done!'
   end
 
-  def remove_attributes_by_name_in collection
+  def remove_attributes_by_name_in(collection)
     puts 'Removing attributes by name...'
     collection.each { |doc| cleaner.remove_attributes_by_name_on_a doc }
     puts 'Done!'
   end
 
-  def remove_attribute_with_value_in collection
+  def remove_attribute_with_value_in(collection)
     puts 'Removing attributes with specified values...'
     collection.each { |doc| cleaner.remove_attribute_with_value_on_a doc }
     puts 'Done!'
@@ -55,9 +55,15 @@ module Convertible
     puts 'Done!'
   end
 
-  def replace_tags_in collection
+  def replace_tags_in(collection)
     puts 'Swapping tags...'
     collection.each { |doc| cleaner.replace_tags_on_a doc }
+    puts 'Done!'
+  end
+
+  def add_parent_in(collection)
+    puts 'Adding parent tags...'
+    collection.each { |doc| cleaner.add_parent_on_a doc }
     puts 'Done!'
   end
 
