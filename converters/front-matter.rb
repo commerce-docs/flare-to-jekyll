@@ -6,7 +6,7 @@ class FrontMatter
   def initialize(args)
     @conditions = args[:conditions]
     @title = args[:title]
-    @template = ERB.new(File.read('templates/front-matter.erb'))
+    @template = ERB.new(File.read('templates/front-matter.erb'), trim_mode: '-')
   end
 
   def to_s
