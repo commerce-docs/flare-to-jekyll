@@ -37,8 +37,7 @@ remove:
     - keyword
     - concept
     - p.clear
-    - head
-  
+    - title
   #
   # Attributes to remove.
   #
@@ -107,8 +106,6 @@ swap:
 
   h3:
     - caption
-    - p.TableHeadingOrange
-    - p.TableHeading
 
   li:
     - '[class^=Number]'

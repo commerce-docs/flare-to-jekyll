@@ -37,7 +37,7 @@ puts 'Finished conversion to HTML!'
 
 flare_docs.each do |document|
   write_to_path content: document.to_kramdown,
-                path: document.relative_md_path_at('jekyll')
+                path: document.relative_md_path_at('jekyll-output')
 end
 
 puts 'Finished conversion to Kramdown!'

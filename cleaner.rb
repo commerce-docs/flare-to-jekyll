@@ -87,7 +87,7 @@ class Cleaner
     end
   rescue ArgumentError => e
     puts e.message
-    puts "The issue is in #{page.path}"
+    puts "The issue is in #{page.relative_path}"
   end
 
   # def remove_xml_declaration_in(page)
