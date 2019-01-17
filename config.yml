@@ -31,6 +31,7 @@ remove:
     - '[conditions="Default.Not in B2B PDF"]'
     - '[conditions="Default.Not in EE"]'
     - '[conditions="Default.EE Screenshot,Default.Not in B2B"]'
+    - '[conditions*=Redirected]'
     - div.Next
     - script
     - col
@@ -38,6 +39,8 @@ remove:
     - concept
     - p.clear
     - title
+    - style
+    - head
   #
   # Attributes to remove.
   #
@@ -46,6 +49,7 @@ remove:
     - lastWidth
     - lastHeight
     - autonum
+    - style
   
   #
   # Attributes to remove by name and value.
@@ -63,6 +67,7 @@ remove:
       - Default.ScreenOnly
     class:
       - tableBody
+      - Contrast
 
   #
   # XPath or CSS selectors of elements to remove.
@@ -73,7 +78,7 @@ remove:
     - dropDownHead
     - div.Image
     - div.pageTitleContainer
-    - dropDownBody
+    # - dropDownBody
     - div.FloatLeft_th
     - div.FloatRight_desc
     # - '[class^=TableStyle-]'
@@ -94,6 +99,7 @@ remove:
 #
 swap:
   h1:
+    - body > h2:first-child
     - body > h3:first-child
     - body > h4:first-child
     - body > h5:first-child
@@ -114,9 +120,16 @@ swap:
   div:
     - p.note
   
-add:
-  parent:
-   ol:
-    - '[class^=Number]'
-    - '[class^=Alpha]'
+  ol:
+    - '//*[@class="Number1"]/parent::dropDownBody'
+    - '//*[@class="Number1SubSeries"]/parent::dropDownBody'
+  
+  a:
+    - xref
+  
+# add:
+#   parent:
+#    ol:
+#     - '[class^=Number]'
+#     - '[class^=Alpha]'
   
