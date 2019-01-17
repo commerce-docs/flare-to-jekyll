@@ -1,4 +1,3 @@
-require 'kramdown'
 # Converts input HTML to kramdown
 module Converter
 

@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+$LOAD_PATH.unshift __dir__ # For use/testing when no gem is installed
+
+# Require all of the Ruby files in the given directory.
+#
+#
+# Returns nothing.
+
+require 'kramdown'
+require 'yaml'
+require 'fileutils'
+require 'pry'
+# require 'require_all'
+# require_rel 'lib'
+
+require_relative 'lib/scenario.rb'
+
+input_dir = ARGF.path
+jekyll_output_dir = File.join __dir__, 'jekyll-output'
+
+scenario = Scenario.new(input_dir, jekyll_output_dir)
+scenario.execute

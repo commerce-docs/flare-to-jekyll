@@ -1,4 +1,3 @@
-require 'yaml'
 # The module contains methods aimed to remove tags form the provided @pages
 #
 class Cleaner

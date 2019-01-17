@@ -1,6 +1,6 @@
 # Generate front-matter from provided argumemts
 class FrontMatter
-  def initialize(args)
+  def initialize(args = {})
     @args = args
   end
 

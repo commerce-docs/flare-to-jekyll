@@ -17,18 +17,26 @@ To test the script:
 - `condition_only` that is a list of names of attributes to be removed. All attributes with names listed here will be removed. All other components of the element that contains the attribute will be kept the same.
 - `element_itself` that is a list of XPath expressions for elements to remove (no matter where they are), but keep their children elements.
 
-## Install Nokogiri
+## Install packages
 
 ```bash
-gem install nokogiri
+bundle install
 ```
 
 ## Run the script
 
 ```bash
-ruby converter.rb <absolute/path/to/merch-docs-dir>
+bundle exec flare-to-jekyll <absolute path to docs in flare>
 ```
 
 ## Check output
 
 Check the Jekyll formatted output in the `jekyll-output` directory.
+
+## Testing
+
+To run tests:
+
+```bash
+bin/rspec --format doc
+```
