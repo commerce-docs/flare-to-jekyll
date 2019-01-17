@@ -1,15 +1,13 @@
-require 'erb'
-
+# Generate front-matter from provided argumemts
 class FrontMatter
-  attr_reader :conditions, :title
-
   def initialize(args)
-    @conditions = args[:conditions]
-    @title = args[:title]
-    @template = ERB.new(File.read('templates/front-matter.erb'), trim_mode: '-')
+    @args = args
   end
 
-  def to_s
-    @template.result binding
+  def generate
+    @args.compact!
+    return '' if @args.empty?
+    @args.transform_keys!(&:to_s)
+    @args.to_yaml + "---\n\n"
   end
 end
