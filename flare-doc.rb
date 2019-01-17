@@ -12,7 +12,6 @@ class FlareDoc
     @relative_path = args[:rel_path]
     # Parse a file by file path using Nokogiri
     @doc = File.open(absolute_path) { |f| Nokogiri::XML(f) }
-    @front_matter = FrontMatter.new(conditions: conditions, title: title)
   end
 
   def empty?
@@ -38,7 +37,8 @@ class FlareDoc
   end
 
   def front_matter
-    @front_matter.to_s
+    @front_matter = FrontMatter.new(conditions: conditions, title: title)
+    @front_matter.generate
   end
 
   def conditions
