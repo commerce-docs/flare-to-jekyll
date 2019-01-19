@@ -1,36 +1,32 @@
-  #
-  # Learn more about XPath: https://www.w3schools.com/xml/xpath_syntax.asp
-  # Try your XPath: https://www.freeformatter.com/xpath-tester.html
-  #
-  # Learn more about CSS selectors: https://www.w3schools.com/CSSref/css_selectors.asp
-  # Try your CSS selector: https://try.jsoup.org/
-  #
-  # Note: Use node and attribute names without namespaces.
-  # For example, to specify "MadCap:Default.NewTag", use "Default.NewTag".
-  #
+#
+# Learn more about XPath: https://www.w3schools.com/xml/xpath_syntax.asp
+# Try your XPath: https://www.freeformatter.com/xpath-tester.html
+#
+# Learn more about CSS selectors: https://www.w3schools.com/CSSref/css_selectors.asp
+# Try your CSS selector: https://try.jsoup.org/
+#
+# Note: Use node and attribute names without namespaces.
+# For example, to specify "MadCap:Default.NewTag", use "Default.NewTag".
+#
 remove:
   #
   # XPath or CSS selectors of elements and all nested nodes to remove.
   #
   completely:
     - '[conditions="Default.NewTag"]'
-    - '[conditions="Default.PrintOnly"]'
+    - '[conditions*=PrintOnly]'
     - '[conditions="Default.AppNum"]'
     - '[conditions="Default.AppNoNum"]'
-    - '[conditions="Default.Not Needed"]'
-    - '[conditions="Default.Not Ready for Publish"]'
+    - '[conditions*=Not]'
     - '[conditions="Default.Tooltips"]'
     - '[conditions="Default.Handout Only"]'
     - '[conditions="Default.UserGuide Only"]'
     - '[conditions="Default.Developer Mode Only"]'
-    - '[conditions="Default.Deprecated"]'
+    - '[conditions*=Deprecated]'
     - '[conditions="Default.2-2-4"]'
     - '[conditions="Default.2-2-5"]'
     - '[conditions="Default.2-3"]'
     - '[conditions="Default.Config Ref Only"]'
-    - '[conditions="Default.Not in B2B PDF"]'
-    - '[conditions="Default.Not in EE"]'
-    - '[conditions="Default.EE Screenshot,Default.Not in B2B"]'
     - '[conditions*=Redirected]'
     - div.Next
     - script
