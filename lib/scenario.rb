@@ -15,6 +15,9 @@ class Scenario
     reader = Reader.new dir: @input_dir
     reader.read_all_to_class
     flare_docs = reader.parsed_content
+    assets = reader.nonparsable_content
+
+    all_docs = flare_docs + assets
 
     remove_namespaces_in flare_docs
     remove_attributes_by_name_in flare_docs
@@ -28,8 +31,7 @@ class Scenario
     # add_parent_in flare_docs
 
     # Get class names
-    # @doc.search('//*[@class]').each {|node| puts node.attribute 'class'}
-
+    # @doc.search('//*[@class]').each {|node| puts node.attribute 'class'
     # Not implemented
     # remove_declarations_in flare_docs
 
@@ -40,9 +42,9 @@ class Scenario
 
     puts 'Finished conversion to HTML!'
 
-    flare_docs.each do |document|
-      write_to_path content: document.to_kramdown,
-                    path: document.relative_md_path_at(@jekyll_output_dir)
+    all_docs.each do |document|
+      write_to_path content: document.generate,
+                    path: document.output_path_at(@jekyll_output_dir)
     end
 
     puts 'Finished conversion to Kramdown!'
