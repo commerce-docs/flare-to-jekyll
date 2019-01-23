@@ -1,3 +1,6 @@
+flare_dir: ~/Projects/repos/magento-merchdocs/master-m2.3/Content
+jekyll_dir: ~/Projects/repos/magento-devdocs/doc-starter
+
 #
 # Learn more about XPath: https://www.w3schools.com/xml/xpath_syntax.asp
 # Try your XPath: https://www.freeformatter.com/xpath-tester.html

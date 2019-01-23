@@ -1,30 +1,28 @@
 require_relative 'flare-docs/topic.rb'
 require_relative 'flare-docs/image.rb'
 require_relative 'flare-docs/include.rb'
+
 class Reader
   attr_reader :dir, :parsed_content, :nonparsable_content
 
-  def initialize(dir:)
-    @dir = dir
+  def initialize(source_dir:)
+    @dir = source_dir
     @parsed_content = []
     @nonparsable_content = []
   end
 
   def read_all_to_class
     all_paths_with_extensions('htm').each do |rel_path|
-      abs_path = create_filepath dir, rel_path
       # Generate objects to work with using file paths to Flare files
-      @parsed_content << Topic.new(abs_path: abs_path, rel_path: rel_path)
+      @parsed_content << Topic.new(base_dir: dir, rel_path: rel_path)
     end
     all_paths_with_extensions('flsnp').each do |rel_path|
-      abs_path = create_filepath dir, rel_path
       # Generate objects to work with using file paths to Flare files
-      @parsed_content << Include.new(abs_path: abs_path, rel_path: rel_path)
+      @parsed_content << Include.new(base_dir: dir, rel_path: rel_path)
     end
     all_paths_with_extensions('jpg', 'png', 'gif').each do |rel_path|
-      abs_path = create_filepath dir, rel_path
       # Generate objects to work with using file paths to Flare files
-      @nonparsable_content << Image.new(abs_path: abs_path, rel_path: rel_path)
+      @nonparsable_content << Image.new(base_dir: dir, rel_path: rel_path)
     end
   end
 

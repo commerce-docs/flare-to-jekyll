@@ -1,18 +1,20 @@
 require_relative 'writable.rb'
 require_relative 'convertible.rb'
 require_relative 'reader.rb'
+require_relative 'configuration.rb'
 
 class Scenario
   include ::Convertible
   include ::Writable
 
-  def initialize(input_dir, jekyll_output_dir)
-    @input_dir = input_dir
-    @jekyll_output_dir = jekyll_output_dir
+  def initialize
+    @config = Configuration.instance.data
+    @base_dir = File.expand_path @config["flare_dir"]
+    @jekyll_dir = File.expand_path @config["jekyll_dir"]
   end
 
   def execute
-    reader = Reader.new dir: @input_dir
+    reader = Reader.new source_dir: @base_dir
     reader.read_all_to_class
     flare_docs = reader.parsed_content
     assets = reader.nonparsable_content
@@ -44,7 +46,7 @@ class Scenario
 
     all_docs.each do |document|
       write_to_path content: document.generate,
-                    path: document.output_path_at(@jekyll_output_dir)
+                    path: document.output_path_at(@jekyll_dir)
     end
 
     puts 'Finished conversion to Kramdown!'

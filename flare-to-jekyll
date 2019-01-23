@@ -17,8 +17,5 @@ require 'pry'
 
 require_relative 'lib/scenario.rb'
 
-input_dir = ARGF.path
-jekyll_output_dir = File.join __dir__, 'jekyll-output'
-
-scenario = Scenario.new(input_dir, jekyll_output_dir)
+scenario = Scenario.new
 scenario.execute
