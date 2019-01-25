@@ -1,5 +1,5 @@
 class FlareDoc
-  attr_accessor :absolute_path, :relative_path
+  attr_accessor :absolute_path, :relative_path, :base_dir
 
   def initialize(args)
     @base_dir = args[:base_dir]

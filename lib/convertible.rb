@@ -67,6 +67,12 @@ module Convertible
     puts 'Done!'
   end
 
+  def convert_internal_links_in(collection)
+    puts 'Converting internal links...'
+    collection.each(&:convert_internal_links)
+    puts 'Done!'
+  end
+
   # def remove_declarations_in collection
   #   collection.each { |doc| cleaner.remove_xml_declaration_in doc }
   # end

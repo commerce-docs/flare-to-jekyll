@@ -1,5 +1,5 @@
-require_relative '../converters/front-matter.rb'
 require_relative '../flare-doc.rb'
+require_relative '../converters/front-matter.rb'
 require_relative '../converters/kramdownifier.rb'
 
 class Topic < FlareDoc
@@ -21,7 +21,7 @@ class Topic < FlareDoc
   end
 
   def title
-    title = @doc.at_css('h1')
+    title = search_by('h1')
     title.inner_text.strip if title
   end
 

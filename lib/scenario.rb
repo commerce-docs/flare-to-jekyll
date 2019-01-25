@@ -28,6 +28,7 @@ class Scenario
     remove_empty_docs_in flare_docs
     remove_elements_in flare_docs
     replace_tags_in flare_docs
+    convert_internal_links_in flare_docs
 
     # Not implemented
     # add_parent_in flare_docs
