@@ -20,7 +20,7 @@ class Reader
       # Generate objects to work with using file paths to Flare files
       @parsed_content << Include.new(base_dir: dir, rel_path: rel_path)
     end
-    all_paths_with_extensions('jpg', 'png', 'gif').each do |rel_path|
+    all_paths_with_extensions('jpg', 'jpeg', 'png', 'gif').each do |rel_path|
       # Generate objects to work with using file paths to Flare files
       @nonparsable_content << Image.new(base_dir: dir, rel_path: rel_path)
     end
