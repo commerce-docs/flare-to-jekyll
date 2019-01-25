@@ -4,7 +4,7 @@ class Cleaner
   attr_reader :config
 
   def initialize
-    @config = YAML.load_file 'config.yml'
+    @config = Configuration.instance.data
   end
 
   #
