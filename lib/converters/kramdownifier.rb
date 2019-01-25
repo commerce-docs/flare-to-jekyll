@@ -12,7 +12,8 @@ module Kramdownifier
     @doc = File.open(absolute_path) { |f| Nokogiri::XML(f) }
   end
 
-  DEFAULT_OPTIONS = { html_to_native: true, line_width: 1000, input: 'html' }.freeze
+  DEFAULT_OPTIONS =
+    { html_to_native: true, line_width: 1000, input: 'html' }.freeze
 
   def kramdownify(string, options = {})
     document = Kramdown::Document.new(string, DEFAULT_OPTIONS.merge(options))
