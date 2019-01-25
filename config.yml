@@ -125,6 +125,7 @@ swap:
   
   a:
     - xref
+    - b[href]
   
 # add:
 #   parent:
