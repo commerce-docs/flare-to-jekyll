@@ -2,7 +2,6 @@ require 'pathname'
 
 module LinkConverter
   def convert_a_href(link:, abs_path:, base_dir:)
-    return link if link.include? ':'
     return link if link.include? '{'
     return link unless link.include? '.htm'
 

@@ -33,13 +33,15 @@ module Kramdownifier
   end
 
   def internal_links
-    search_by '//a/@href'
+    search_by '//a[not(starts-with(@href, "http"))]'
   end
 
   def convert_internal_links
     internal_links.each do |link|
-      link.value =
-        convert_a_href link: link.value,
+      href = link['href']
+      next unless href
+      link['href'] =
+        convert_a_href link: href,
                        abs_path: absolute_path,
                        base_dir: base_dir
     end
