@@ -73,6 +73,12 @@ module Convertible
     puts 'Done!'
   end
 
+  def convert_links_to_images_in(collection)
+    puts 'Converting links to images'
+    collection.each(&:convert_links_to_images)
+    puts 'Done!'
+  end
+
   # def remove_declarations_in collection
   #   collection.each { |doc| cleaner.remove_xml_declaration_in doc }
   # end

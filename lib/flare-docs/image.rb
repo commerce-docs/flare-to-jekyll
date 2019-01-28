@@ -4,11 +4,11 @@ class Image < FlareDoc
     super
   end
 
-  def generate
-    @relative_path.sub! 'Resources', 'images'
+  def destination
+    @relative_path.sub('Resources', 'images').downcase
   end
 
   def output_path_at(base_directory)
-    File.join base_directory, relative_path
+    File.join base_directory, destination
   end
 end

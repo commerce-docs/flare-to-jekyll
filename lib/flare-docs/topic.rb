@@ -7,7 +7,7 @@ class Topic < FlareDoc
 
   def output_path_at(base_directory)
     md_path = relative_path.sub(/\.htm$/, '.md')
-    File.join base_directory, md_path
+    File.join base_directory, md_path.downcase
   end
 
   def front_matter

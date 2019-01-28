@@ -2,8 +2,8 @@ require 'converters/link.rb'
 
 RSpec.describe LinkConverter do
   include LinkConverter
-  context 'with internal links' do
-    it 'converts links to jekyll format' do
+  context 'with an internal link' do
+    it 'converts the link to jekyll format' do
       expect(convert_a_href(link: '../magento/release-notes.htm', abs_path: '/Users/dmytroshevtsov/Projects/repos/magento-merchdocs/master-m2.3/Content/backmatter/appendix.htm', base_dir: '/Users/dmytroshevtsov/Projects/repos/magento-merchdocs/master-m2.3/Content')).to eq '{{ site.baseurl }}{% link magento/release-notes.md %}'
     end
     it 'removes references to sections' do
@@ -12,8 +12,10 @@ RSpec.describe LinkConverter do
     it 'removes references to sections that contain a path' do
       expect(convert_a_href(link: '../magento/release-notes.htm#SectionName/ajaljn.html', abs_path: '/Users/dmytroshevtsov/Projects/repos/magento-merchdocs/master-m2.3/Content/backmatter/appendix.htm', base_dir: '/Users/dmytroshevtsov/Projects/repos/magento-merchdocs/master-m2.3/Content')).to eq '{{ site.baseurl }}{% link magento/release-notes.md %}'
     end
-    it 'ignores external links' do
-      expect(convert_a_href(link: 'https://docs.magento.com/m2/ee/user_guide/catalog/categories-content-settings.html', abs_path: '/Users/dmytroshevtsov/Projects/repos/magento-merchdocs/master-m2.3/Content/backmatter/appendix.htm', base_dir: '/Users/dmytroshevtsov/Projects/repos/magento-merchdocs/master-m2.3/Content')).to eq 'https://docs.magento.com/m2/ee/user_guide/catalog/categories-content-settings.html'
+  end
+  context 'with an image link' do
+    it 'converts the link to Jekyll format' do
+      expect(convert_img_src link: '../Resources/Images/storefront-about-us.png').to eq '{{ site.baseurl }}{% link _images/Images/storefront-about-us.png %}'
     end
   end
 end

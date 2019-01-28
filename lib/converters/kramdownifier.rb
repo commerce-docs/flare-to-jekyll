@@ -36,6 +36,10 @@ module Kramdownifier
     search_by '//a[not(starts-with(@href, "http"))]'
   end
 
+  def images
+    search_by 'img'
+  end
+
   def convert_internal_links
     internal_links.each do |link|
       href = link['href']
@@ -44,6 +48,15 @@ module Kramdownifier
         convert_a_href link: href,
                        abs_path: absolute_path,
                        base_dir: base_dir
+    end
+  end
+
+  def convert_links_to_images
+    images.each do |img|
+      src = img['src']
+      next unless src
+      img['src'] =
+        convert_img_src link: src
     end
   end
 

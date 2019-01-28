@@ -29,6 +29,7 @@ class Scenario
     remove_elements_in flare_docs
     replace_tags_in flare_docs
     convert_internal_links_in flare_docs
+    convert_links_to_images_in flare_docs
 
     # Not implemented
     # add_parent_in flare_docs
@@ -39,15 +40,23 @@ class Scenario
     # remove_declarations_in flare_docs
 
     flare_docs.each do |document|
-      write_to_path content: document.to_xml,
-                    path: document.absolute_path
+      write_content_to_path content: document.to_xml,
+                            path: document.absolute_path
     end
 
     puts 'Finished conversion to HTML!'
 
-    all_docs.each do |document|
-      write_to_path content: document.generate,
-                    path: document.output_path_at(@jekyll_dir)
+    puts 'Converting text to Kramdown ...'
+    flare_docs.each do |document|
+      write_content_to_path content: document.generate,
+                            path: document.output_path_at(@jekyll_dir)
+    end
+
+    puts 'Copying binaries to follow Jekyll structure ...'
+
+    assets.each do |document|
+      write_file_to_path source: document.absolute_path,
+                         destination: document.output_path_at(@jekyll_dir)
     end
 
     puts 'Finished conversion to Kramdown!'
