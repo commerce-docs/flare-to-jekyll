@@ -67,7 +67,6 @@ class Cleaner
         selector = "[#{name}=\"#{value}\"]"
         page.search_by(selector).each do |node|
           node.attributes.each do |attribute_name, attr|
-            # binding.pry
             node.remove_attribute(attribute_name) if attr.value == value
           end
         end

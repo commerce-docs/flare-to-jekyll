@@ -2,15 +2,8 @@ require 'nokogiri'
 require_relative 'link.rb'
 # Converts input HTML to kramdown
 module Kramdownifier
-  attr_reader :doc
 
   include LinkConverter
-
-  def initialize(args)
-    super
-    # Parse a file by filepath using Nokogiri
-    @doc = File.open(absolute_path) { |f| Nokogiri::XML(f) }
-  end
 
   DEFAULT_OPTIONS =
     { html_to_native: true, line_width: 1000, input: 'html' }.freeze
@@ -20,8 +13,8 @@ module Kramdownifier
     document.to_kramdown
   end
 
-  def empty?
-    doc.root.nil?
+  def parse_file(absolute_path)
+    File.open(absolute_path) { |f| Nokogiri::XML(f) }
   end
 
   def search_by(selector)
@@ -45,7 +38,7 @@ module Kramdownifier
       href = link['href']
       next unless href
       link['href'] =
-        convert_a_href link: href,
+        convert_relative_url link: href,
                        abs_path: absolute_path,
                        base_dir: base_dir
     end
@@ -61,6 +54,10 @@ module Kramdownifier
   end
 
   def kramdown_content
-    kramdownify doc.search('/html/body').to_xml
+    kramdownify search_by('/html/body').to_xml
+  end
+
+  def empty?
+    doc.root.nil?
   end
 end

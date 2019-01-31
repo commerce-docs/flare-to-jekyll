@@ -1,29 +1,42 @@
-require_relative 'flare-docs/topic.rb'
+require_relative 'flare-docs/htm/topic.rb'
+require_relative 'flare-docs/htm/redirect.rb'
 require_relative 'flare-docs/image.rb'
 require_relative 'flare-docs/include.rb'
 
 class Reader
-  attr_reader :dir, :parsed_content, :nonparsable_content
+  attr_reader :dir, :parsable_content, :nonparsable_content
 
   def initialize(source_dir:)
     @dir = source_dir
-    @parsed_content = []
+    @parsable_content = []
     @nonparsable_content = []
+    @redirects = []
   end
 
   def read_all_to_class
     all_paths_with_extensions('htm').each do |rel_path|
       # Generate objects to work with using file paths to Flare files
-      @parsed_content << Topic.new(base_dir: dir, rel_path: rel_path)
+
+      htm_file = HTM.new(base_dir: dir, rel_path: rel_path)
+
+      if htm_file.redirect?
+        @redirects << Redirect.new(base_dir: dir, rel_path: rel_path)
+      else
+        @parsable_content << Topic.new(base_dir: dir, rel_path: rel_path)
+      end
     end
     all_paths_with_extensions('flsnp').each do |rel_path|
       # Generate objects to work with using file paths to Flare files
-      @parsed_content << Include.new(base_dir: dir, rel_path: rel_path)
+      @parsable_content << Include.new(base_dir: dir, rel_path: rel_path)
     end
     all_paths_with_extensions('jpg', 'jpeg', 'png', 'gif').each do |rel_path|
       # Generate objects to work with using file paths to Flare files
       @nonparsable_content << Image.new(base_dir: dir, rel_path: rel_path)
     end
+  end
+
+  def save_redirects
+    Redirect.generate_yaml
   end
 
   def all_paths_with_extensions(*extensions)

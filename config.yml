@@ -67,6 +67,7 @@ remove:
     class:
       - tableBody
       - Contrast
+      - Command
 
   #
   # XPath or CSS selectors of elements to remove.
