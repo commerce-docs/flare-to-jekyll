@@ -21,4 +21,11 @@ class Topic < HTM
   def generate
     front_matter + kramdown_content
   end
+
+  def self.save_empties_to_yaml
+    empties = all.select(&:empty?)
+                 .map(&:relative_path_in_md)
+
+    File.open('removed.yml', 'w+') { |file| file.puts empties.to_yaml }
+  end
 end

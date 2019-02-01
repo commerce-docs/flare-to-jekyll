@@ -20,4 +20,12 @@ class HTM < FlareDoc
   def redirect?
     search_by('//@MadCap:conditions="Default.Redirected"')
   end
+
+  def empty?
+    doc.root.nil?
+  end
+
+  def relative_path_in_md
+    @relative_path.sub '.htm', '.md'
+  end
 end

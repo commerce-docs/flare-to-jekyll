@@ -56,8 +56,4 @@ module Kramdownifier
   def kramdown_content
     kramdownify search_by('/html/body').to_xml
   end
-
-  def empty?
-    doc.root.nil?
-  end
 end

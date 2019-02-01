@@ -43,6 +43,7 @@ module Convertible
 
   def remove_empty_docs_in(collection)
     puts 'Removining empty files...'
+    removed_paths = []
     collection.map! do |doc|
       if doc.empty?
         cleaner.remove_empty doc

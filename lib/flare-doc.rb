@@ -14,4 +14,8 @@ class FlareDoc
   def self.all
     ObjectSpace.each_object(self).to_a
   end
+
+  def empty?
+    false
+  end
 end

@@ -35,8 +35,12 @@ class Reader
     end
   end
 
-  def save_redirects
+  def save_redirects_to_yaml
     Redirect.generate_yaml
+  end
+
+  def save_removed_paths_to_yaml
+    Topic.save_empties_to_yaml
   end
 
   def all_paths_with_extensions(*extensions)
