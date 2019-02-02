@@ -80,12 +80,16 @@ class Cleaner
   def remove_element_without_children_on_a(page)
     tags_to_replace_elements_with_children.each do |selector|
       page.search_by(selector).each do |element|
-        element.replace element.children
+        remove_element_only(element)
       end
     end
   rescue ArgumentError => e
     puts e.message
     puts "The issue is in #{page.relative_path}"
+  end
+
+  def remove_element_only(element)
+    element.replace element.children
   end
 
   # def remove_xml_declaration_in(page)

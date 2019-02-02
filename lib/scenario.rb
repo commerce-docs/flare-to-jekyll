@@ -9,8 +9,8 @@ class Scenario
 
   def initialize
     @config = Configuration.instance.data
-    @base_dir = File.expand_path @config["flare_dir"]
-    @jekyll_dir = File.expand_path @config["jekyll_dir"]
+    @base_dir = File.expand_path @config['flare_dir']
+    @jekyll_dir = File.expand_path @config['jekyll_dir']
   end
 
   def execute
@@ -33,35 +33,34 @@ class Scenario
     convert_internal_links_in flare_docs
     convert_links_to_images_in flare_docs
 
-    # flare_docs.each do |document|
-    #     write_content_to_path content: document.to_xml,
-    #                           path: document.absolute_path
-    # end
+    flare_docs.each do |document|
+      write_content_to_path content: document.to_xml,
+                            path: document.absolute_path
+    end
 
-    # puts 'Finished conversion to HTML!'
+    puts 'Finished conversion to HTML!'
 
-    # puts 'Converting text to Kramdown ...'
-    # flare_docs.each do |document|
-    #   write_content_to_path content: document.generate,
-    #                         path: document.output_path_at(@jekyll_dir)
-    # end
+    puts 'Converting text to Kramdown ...'
+    flare_docs.each do |document|
+      write_content_to_path content: document.generate,
+                            path: document.output_path_at(@jekyll_dir)
+    end
 
-    # puts 'Copying binaries to follow Jekyll structure ...'
+    puts 'Copying binaries to follow Jekyll structure ...'
 
-    # assets.each do |document|
-    #   write_file_to_path source: document.absolute_path,
-    #                      destination: document.output_path_at(@jekyll_dir)
-    # end
+    assets.each do |document|
+      write_file_to_path source: document.absolute_path,
+                         destination: document.output_path_at(@jekyll_dir)
+    end
 
     puts 'Finished conversion to Kramdown!'
   end
 end
 
+# Not implemented
+# add_parent_in flare_docs
 
-    # Not implemented
-    # add_parent_in flare_docs
-
-    # Get class names
-    # @doc.search('//*[@class]').each {|node| puts node.attribute 'class'
-    # Not implemented
-    # remove_declarations_in flare_docs
+# Get class names
+# @doc.search('//*[@class]').each {|node| puts node.attribute 'class'
+# Not implemented
+# remove_declarations_in flare_docs

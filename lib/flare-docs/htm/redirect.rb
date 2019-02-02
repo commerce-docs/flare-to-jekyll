@@ -2,6 +2,7 @@ require_relative '../htm.rb'
 
 class Redirect < HTM
   def real_path_in_md
+    return real_url if real_url.start_with? 'http'
     normalized_url = real_url.sub %r{\A/}, ''
     resolve_relative_url(link: normalized_url, abs_path: @absolute_path, base_dir: @base_dir, from_ext: 'html', to_ext: 'md')
   end

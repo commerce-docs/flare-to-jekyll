@@ -39,9 +39,14 @@ module Kramdownifier
       next unless href
       link['href'] =
         convert_relative_url link: href,
-                       abs_path: absolute_path,
-                       base_dir: base_dir
+                             abs_path: absolute_path,
+                             base_dir: base_dir
+      link.replace link.children if removed?(link['href'])
     end
+  end
+
+  def remove_empty_links
+    internal_links
   end
 
   def convert_links_to_images
