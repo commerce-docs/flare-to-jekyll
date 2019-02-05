@@ -2,7 +2,6 @@ require 'nokogiri'
 require_relative 'link.rb'
 # Converts input HTML to kramdown
 module Kramdownifier
-
   include LinkConverter
 
   DEFAULT_OPTIONS =
@@ -13,8 +12,10 @@ module Kramdownifier
     document.to_kramdown
   end
 
+  # For parse options, trefer tohttps://nokogiri.org/tutorials/parsing_an_html_xml_document.html
   def parse_file(absolute_path)
-    File.open(absolute_path) { |f| Nokogiri::XML(f) }
+    content = File.open(absolute_path)
+    Nokogiri::XML(content, &:nocdata)
   end
 
   def search_by(selector)
