@@ -21,8 +21,9 @@ class HTM < FlareDoc
     search_by('//@MadCap:conditions="Default.Redirected"')
   end
 
+  # The doc is empty if there is no <body> that contains any nodes
   def empty?
-    doc.root.nil?
+    search_by('//body/*').empty?
   end
 
   def relative_path_in_md

@@ -11,6 +11,9 @@ RSpec.describe Topic do
     it 'is not a redirect' do
       expect(topic).not_to be_redirect
     end
+    it 'is not empty' do
+      expect(topic).not_to be_empty
+    end
   end
 
   context 'with redirect' do
@@ -18,6 +21,16 @@ RSpec.describe Topic do
 
     it 'is a redirect' do
       expect(topic).to be_redirect
+    end
+    it 'is empty' do
+      expect(topic).to be_empty
+    end
+  end
+  context 'with empty body' do
+    let(:topic) { Topic.new base_dir: @basedir, rel_path: 'empty-topic.htm' }
+
+    it 'is empty' do
+      expect(topic).to be_empty
     end
   end
 end
