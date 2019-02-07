@@ -60,6 +60,7 @@ module Kramdownifier
   end
 
   def kramdown_content
+    safe_double_braced_content
     kramdownify search_by('/html/body').to_xml
   end
 
@@ -74,6 +75,18 @@ module Kramdownifier
       converted_link = convert_include_src link: link
       element.content = "{% include #{converted_link} %}"
       element.remove_attribute 'src'
+    end
+  end
+
+  def text_nodes_with_double_braced_content
+    search_by '//text()[contains(.,"{{")]'
+  end
+  
+  def safe_double_braced_content
+    text_nodes_with_double_braced_content.each do |node|
+      old_content = node.content
+      safe_content = '{% raw %}' + old_content + '{% endraw %}'
+      node.content = safe_content
     end
   end
 end
