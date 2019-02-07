@@ -114,12 +114,12 @@ class Cleaner
     end
   end
 
-  def add_parent_on_a(page)
-    tags_to_add_parent.each do |parent_tag, elements|
-      elements.each do |element|
-        page.search_by(element)
-            .wrap("<#{parent_tag}/>")
-      end
-    end
-  end
+  # def add_parent_on_a(page)
+  #   tags_to_add_parent.each do |parent_tag, elements|
+  #     elements.each do |element|
+  #       page.search_by(element)
+  #           .wrap("<#{parent_tag}/>")
+  #     end
+  #   end
+  # end
 end

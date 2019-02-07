@@ -29,14 +29,14 @@ module LinkConverter
 
   def convert_img_src(link:)
     return link if link.include? '{'
-    link.sub! %r{\A[.\/]*Resources}, 'images'
-    jekyllify link
+    new_path = link.sub %r{\A[.\/]*Resources|\.\.(?=\/Images)}, 'images'
+    jekyllify new_path
   end
 
   def jekyllify(link)
     checked_link = check_for_redirect(link)
     return checked_link if checked_link.start_with? 'http'
-    "{{ site.baseurl }}{% link #{checked_link.downcase} %}"
+    "{{ site.baseurl }}{% link #{normalize checked_link} %}"
   end
 
   def check_for_redirect(link)
@@ -47,14 +47,22 @@ module LinkConverter
     link
   end
 
+  def normalize(link)
+    link.downcase.gsub ' ', '-'
+  end
+
   def load_file(file)
     YAML.load_file file
   end
 
   def removed?(link)
     deleted_files = load_file 'removed.yml'
-    deleted_files.any? { |path| link.include? path.downcase }
+    deleted_files.any? { |path| link.include?(normalize path) }
   end
 
-  def convert_include_src; end
+  def convert_include_src(link:)
+    new_path = link.sub %r{\A[.\/]*Resources/Snippets/}, ''
+    normalized_path = normalize new_path
+    normalized_path.sub /\.flsnp$/, '.md'
+  end
 end

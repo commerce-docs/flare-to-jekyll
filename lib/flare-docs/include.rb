@@ -18,7 +18,10 @@ class Include < FlareDoc
   end
 
   def generate
-    @relative_path.sub! 'Resources/Snippets', '_includes'
+    new_path = @relative_path.sub 'Resources/Snippets', '_includes'
+    normalized_path = normalize new_path
+    @relative_path = normalized_path
     kramdown_content
   end
 end
+

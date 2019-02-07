@@ -49,6 +49,7 @@ remove:
     - lastHeight
     - autonum
     - style
+
   
   #
   # Attributes to remove by name and value.
@@ -68,6 +69,10 @@ remove:
       - tableBody
       - Contrast
       - Command
+      - ToDo
+      - largeDiagramNoPopup
+      - _30pct
+      - _30pctNoBorder
 
   #
   # XPath or CSS selectors of elements to remove.
@@ -78,11 +83,11 @@ remove:
     - dropDownHead
     - div.Image
     - div.pageTitleContainer
-    # - dropDownBody
     - div.FloatLeft_th
     - div.FloatRight_desc
     # - '[class^=TableStyle-]'
     - div
+    - glossaryTerm
 
     # - TableStyle-Guidelines
     # - [TableStyle-Definitions] # attributes that contain TableStyle-Definitions in class name
@@ -127,6 +132,10 @@ swap:
   a:
     - xref
     - b[href]
+  
+  include:
+    - snippetBlock
+    - snippetText
   
 # add:
 #   parent:

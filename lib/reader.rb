@@ -43,6 +43,10 @@ class Reader
     Topic.save_empties_to_yaml
   end
 
+  def topics
+    Topic.all
+  end
+
   def all_paths_with_extensions(*extensions)
     paths = []
     extensions.each do |extension|

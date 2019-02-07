@@ -15,7 +15,7 @@ module Kramdownifier
   # For parse options, trefer tohttps://nokogiri.org/tutorials/parsing_an_html_xml_document.html
   def parse_file(absolute_path)
     content = File.open(absolute_path)
-    Nokogiri::XML(content, &:nocdata)
+    Nokogiri::XML(content) { |config| config.nocdata }
   end
 
   def search_by(selector)
@@ -61,5 +61,19 @@ module Kramdownifier
 
   def kramdown_content
     kramdownify search_by('/html/body').to_xml
+  end
+
+  def includes
+    search_by 'include'
+  end
+
+  def convert_includes
+    includes.each do |element|
+      element.node_name = 'p'
+      link = element['src']
+      converted_link = convert_include_src link: link
+      element.content = "{% include #{converted_link} %}"
+      element.remove_attribute 'src'
+    end
   end
 end
