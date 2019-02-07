@@ -1,57 +1,53 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="812" MadCap:lastWidth="576" class="task">
-    <head>
-        <link href="../Resources/TableStyles/Flush-25-75.css" rel="stylesheet" MadCap:stylesheetType="table" />
-        <link href="../Resources/TableStyles/Code.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Dynamic Media URLs</title>
-    </head>
+<?xml version="1.0" encoding="utf-8"?>
+<html class="task">
+    
     <body>
-        <div MadCap:conditions="Default.ScreenOnly" class="Next"><a href="../marketing/variables-reference.htm" class="Next"><img src="../Resources/Images/assets/next0.png" alt="Next" /></a>
-        </div>
-        <div class="pageTitleContainer">
-            <h5>Dynamic Media URLs </h5>
-        </div>
-        <p>A dynamic media URL is a relative reference to an image or other media asset. When enabled, dynamic media URLs can be used to link directly to assets on your server, or to files stored on a <a href="../system/media-storage-content-delivery-network.htm">content delivery network</a>. The use of dynamic media URLs can impact catalog performance, and the <a href="../cms/editor-configure.htm">editor</a> can be configured to use either static or dynamic media URLs.</p>
-        <p>As with all <a href="../marketing/markup-tags.htm">markup tags</a>, the directive is enclosed in double curly braces. The format of a dynamic media URL looks like this:<MadCap:concept term="link;markup tags;URL" /><MadCap:keyword term="Dynamic:media URL;Media: URL" /></p>
+        
+        
+            <h1>Dynamic Media URLs </h1>
+        
+        <p>A dynamic media URL is a relative reference to an image or other media asset. When enabled, dynamic media URLs can be used to link directly to assets on your server, or to files stored on a <a href="{{ site.baseurl }}{% link system/media-storage-content-delivery-network.md %}">content delivery network</a>. The use of dynamic media URLs can impact catalog performance, and the <a href="{{ site.baseurl }}{% link cms/editor-configure.md %}">editor</a> can be configured to use either static or dynamic media URLs.</p>
+        <p>As with all <a href="{{ site.baseurl }}{% link marketing/markup-tags.md %}">markup tags</a>, the directive is enclosed in double curly braces. The format of a dynamic media URL looks like this:</p>
         <ul class="TableInBody">
             <li class="NoBullet">
-                <table style="width: 100%;margin-left: auto;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Code.css');" class="TableStyle-Code" cellspacing="0">
-                    <col class="TableStyle-Code-Column-Column2" />
+                <table class="TableStyle-Code" cellspacing="0">
+                    
                     <tbody>
                         <tr class="TableStyle-Code-Body-Body1">
-                            <td class="TableStyle-Code-BodyA-Column2-Body1"><pre xml:space="preserve" class="TableCell">{{media url="path/to/image.jpg"}}</pre>
+                            <td class="TableStyle-Code-BodyA-Column2-Body1"><pre space="preserve" class="TableCell">{{media url="path/to/image.jpg"}}</pre>
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </li>
         </ul>
-        <p>The <a href="../configuration/catalog/catalog.htm#Storefront">Allow Dynamic Media URLs</a> configuration setting enables dynamic URL directives to be processed from saved HTML content when the page is rendered on the storefront. Each time the page is rendered, the content is scanned for <code class="Pct100">{{media url="..."}}</code>, and replaces the directive  with the corresponding media URL. </p>
-        <MadCap:dropDown>
-            <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot class="ToDo">To configure media URLs:</MadCap:dropDownHotspot>
-            </MadCap:dropDownHead>
-            <MadCap:dropDownBody>
+        <p>The <a href="{{ site.baseurl }}{% link configuration/catalog/catalog.md %}">Allow Dynamic Media URLs</a> configuration setting enables dynamic URL directives to be processed from saved HTML content when the page is rendered on the storefront. Each time the page is rendered, the content is scanned for <code class="Pct100">{{media url="..."}}</code>, and replaces the directive  with the corresponding media URL. </p>
+        
+            
+                <h2>To configure media URLs:</h2>
+            
+            <ol>
                 <p class="dropdown_flushLeft">By default, images inserted into the catalog from the WYSIWYG editor have relative, dynamic URLs. If you prefer to use a static URL, you can change the configuration setting.</p>
-                <p class="Number1" MadCap:autonum="&lt;span style=&quot;font-family: 'Arial, Helvetica';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #a84b27;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;1.&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;">On the Admin sidebar, tap <b class="Command">Stores</b>. Then under <b class="Command">Settings</b>, choose  <b class="Command">Configuration</b>. </p>
-                <p class="NumberContinue" MadCap:autonum="&lt;span style=&quot;font-family: 'Arial, Helvetica';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #a84b27;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;2.&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;">In the panel on the left under <b class="Command">General</b>, choose <b class="Command">Content Management</b>.</p>
-                <p class="NumberContinue" MadCap:autonum="&lt;span style=&quot;font-family: 'Arial, Helvetica';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #a84b27;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;3.&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;">Expand <img src="../Resources/Images/btn-expand.png" class="Inline" /> the <b class="Command">WYSIWYG Options</b> section.</p>
-                <div class="Image">
-                    <img src="../Resources/Images/config-general-content-management-wysiwyg-options.png" class="large" />
-                    <br /><a href="../configuration/general/content-management.htm#WYSIWYGOptions">WYSIWYG Options</a>
-                </div>
-                <p class="NumberContinue" MadCap:autonum="&lt;span style=&quot;font-family: 'Arial, Helvetica';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #a84b27;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;4.&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;">Set <b class="Command">Use Static URLs for Media Content in WYSIWYG</b> to one of the following:</p>
+                <li class="Number1">On the Admin sidebar, tap <b>Stores</b>. Then under <b>Settings</b>, choose  <b>Configuration</b>. </li>
+                <li class="NumberContinue">In the panel on the left under <b>General</b>, choose <b>Content Management</b>.</li>
+                <li class="NumberContinue">Expand <img src="{{ site.baseurl }}{% link images/images/btn-expand.png %}" class="Inline"/> the <b>WYSIWYG Options</b> section.</li>
+                
+                    <img src="{{ site.baseurl }}{% link images/images/config-general-content-management-wysiwyg-options.png %}" class="large"/>
+                    <br/><a href="{{ site.baseurl }}{% link configuration/general/content-management.md %}">WYSIWYG Options</a>
+                
+                <li class="NumberContinue">Set <b>Use Static URLs for Media Content in WYSIWYG</b> to one of the following:</li>
                 <ul class="TableAfterNumber">
                     <li class="NoBullet">
-                        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/Flush-25-75.css');margin-left: 0;margin-right: auto;mc-caption-repeat: true;mc-caption-continuation: ' (cont.)';" class="TableStyle-Flush-25-75" cellspacing="0">
-                            <col class="TableStyle-Flush-25-75-Column-Column1" style="width: 85px;" />
-                            <col class="TableStyle-Flush-25-75-Column-Column2" />
+                        <table class="TableStyle-Flush-25-75" cellspacing="0">
+                            
+                            
                             <tbody>
                                 <tr class="TableStyle-Flush-25-75-Body-Body1">
                                     <td class="TableStyle-Flush-25-75-BodyE-Column1-Body1">
                                         <p class="OptionsTableAfterNumber">Yes</p>
                                     </td>
                                     <td class="TableStyle-Flush-25-75-BodyD-Column2-Body1">
-                                        <p class="OptionsTableAfterNumber">Uses static URLs for media content that is inserted with the WYSIWYG editor. Static URLs are absolute, and break if the <a href="../stores/store-urls.htm">base URL</a>&#160;of the store changes.</p>
+                                        <p class="OptionsTableAfterNumber">Uses static URLs for media content that is inserted with the WYSIWYG editor. Static URLs are absolute, and break if the <a href="{{ site.baseurl }}{% link stores/store-urls.md %}">base URL</a> of the store changes.</p>
                                     </td>
                                 </tr>
                                 <tr class="TableStyle-Flush-25-75-Body-Body2">
@@ -59,15 +55,15 @@
                                         <p class="OptionsTableAfterNumber">No</p>
                                     </td>
                                     <td class="TableStyle-Flush-25-75-BodyA-Column2-Body2">
-                                        <p class="OptionsTableAfterNumber">(Default) Uses dynamic URLs for media content that is inserted with the WYSIWYG editor, based on the  <code class="Pct100">{{media url="..."}}</code> directive. Dynamic URLs are relative, and do not break if the <a href="../stores/store-urls.htm">base URL</a>&#160;of the store changes.</p>
+                                        <p class="OptionsTableAfterNumber">(Default) Uses dynamic URLs for media content that is inserted with the WYSIWYG editor, based on the  <code class="Pct100">{{media url="..."}}</code> directive. Dynamic URLs are relative, and do not break if the <a href="{{ site.baseurl }}{% link stores/store-urls.md %}">base URL</a> of the store changes.</p>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
                     </li>
                 </ul>
-                <p class="NumberContinue" MadCap:autonum="&lt;span style=&quot;font-family: 'Arial, Helvetica';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #a84b27;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;5.&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;">When complete, tap <span class="btn">Save Config</span>.</p>
-            </MadCap:dropDownBody>
-        </MadCap:dropDown>
+                <li class="NumberContinue">When complete, tap <span class="btn">Save Config</span>.</li>
+            </ol>
+        
     </body>
 </html>

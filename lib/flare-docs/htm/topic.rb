@@ -5,6 +5,7 @@ class Topic < HTM
 
   def front_matter
     @front_matter = FrontMatter.new(conditions: conditions, title: title)
+    search_by('h1').each(&:remove)
     @front_matter.generate
   end
 
