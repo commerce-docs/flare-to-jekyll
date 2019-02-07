@@ -29,6 +29,8 @@ module Convertible
     puts 'Done!'
   end
 
+  
+
   # def remove_attributes_in(collection)
   #   puts 'Removing conditions in attributes...'
   #   collection.each { |doc| cleaner.remove_conditions_only_on_a doc }
@@ -59,6 +61,12 @@ module Convertible
   def replace_tags_in(collection)
     puts 'Swapping tags...'
     collection.each { |doc| cleaner.replace_tags_on_a doc }
+    puts 'Done!'
+  end
+
+  def replace_attr_values_in(collection)
+    puts 'Swapping attribue values ...'
+    collection.each { |doc| cleaner.replace_attr_values_on_a doc }
     puts 'Done!'
   end
 

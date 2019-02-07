@@ -16,7 +16,7 @@ class Scenario
   def execute
     reader = Reader.new source_dir: @base_dir
     reader.read_all_to_class
-    reader.save_redirects_to_yaml unless File.exist? 'redirects.yml'
+    reader.save_redirects_to_yaml #unless File.exist? 'redirects.yml'
 
     flare_docs = reader.parsable_content
     assets = reader.nonparsable_content
@@ -31,6 +31,7 @@ class Scenario
     remove_empty_docs_in flare_docs
     remove_elements_in flare_docs
     replace_tags_in flare_docs
+    replace_attr_values_in flare_docs
     convert_internal_links_in flare_docs
     convert_links_to_images_in flare_docs
     convert_includes_in topics

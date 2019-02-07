@@ -1,3 +1,4 @@
+require_relative 'configuration.rb'
 # The module contains methods aimed to remove tags form the provided @pages
 #
 class Cleaner
@@ -32,7 +33,11 @@ class Cleaner
   end
 
   def tags_to_swap
-    config.dig 'swap'
+    config.dig 'swap', 'element_names'
+  end
+
+  def attr_values_to_swap
+    config.dig 'swap', 'attribute_values'
   end
 
   def tags_to_add_parent
@@ -106,12 +111,24 @@ class Cleaner
     end
   end
 
+  def replace_attr_values_on_a(page)
+    attr_values_to_swap.each do |new_value, xpath|
+      swap_attr_values(page, new_value, xpath)
+    end
+  end
+
   def swap_tag_names(page, new_name, old_names)
     old_names.each do |old_name|
       page.search_by(old_name).each do |element|
         element.node_name = new_name
       end
     end
+  end
+
+  def swap_attr_values(page, new_name, xpath)
+      page.search_by(xpath).each do |attribute|
+        attribute.value = new_name
+      end
   end
 
   # def add_parent_on_a(page)

@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="5294" MadCap:lastWidth="1556" class="chapter">
+    <head>
+        <link href="../Resources/TableStyles/OverviewBox.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <title>Using a Flat Catalog</title>
+    </head>
+    <body>
+        <div MadCap:conditions="Default.B2B Only" class="Next">
+            <a href="catalog-shared.htm" class="Next">
+                <img src="../Resources/Images/assets/next0.png" alt="Next" />
+            </a>
+        </div>
+        <div MadCap:conditions="Default.EE Only" class="Next">
+            <a href="../marketing.htm" class="Next">
+                <img src="../Resources/Images/assets/next0.png" alt="Next" />
+            </a>
+        </div>
+        <div MadCap:conditions="Default.CE Only" class="Next">
+            <a href="../marketing.htm" class="Next">
+                <img src="../Resources/Images/assets/next0.png" alt="Next" />
+            </a>
+        </div>
+        <h3>
+            <br MadCap:conditions="Default.PrintOnly" />Using a Flat Catalog</h3>
+        <p>Magento typically stores catalog data in multiple tables, based on the Entity-Attribute-Value (<MadCap:glossaryTerm>EAV</MadCap:glossaryTerm>) model. Because product attributes are stored in many tables, SQL queries are sometimes long and complex. </p>
+        <p>In contrast, a flat catalog creates new tables on the fly, where each row contains all the necessary data about a product or category. A flat catalog is updated automatically—either every minute, or according to your cron job. Flat catalog   indexing can also speed up the processing of catalog and cart price rules. A catalog with as many as 500,000 SKUs can be indexed quickly as a flat catalog. <MadCap:keyword term="Catalog: indexing;Indexing speed;Cron job" /><MadCap:keyword term="Catalog:flat;Flat: catalog;EAV" /><MadCap:concept term="Flat Catalog;Product Catalog" /></p>
+        <p MadCap:conditions="Default.PrintOnly" class="pageBreakAfter">&#160;</p>
+        <h4 MadCap:conditions="Default.PrintOnly">Flat Catalog Setup</h4>
+        <p class="note">Before you enable a flat catalog for a live store, make sure to test the configuration in a development environment.<MadCap:keyword term="Flat: catalog:setup;Development environment" /></p>
+        <ul MadCap:conditions="Default.PrintOnly" class="TableInBody">
+            <li class="NoBullet">
+                <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/OverviewBox.css');" class="TableStyle-OverviewBox" cellspacing="0">
+                    <col style="width: 100%;" class="TableStyle-OverviewBox-Column-Column2">
+                    </col>
+                    <tbody>
+                        <tr class="TableStyle-OverviewBox-Body-Body1">
+                            <td class="TableStyle-OverviewBox-BodyA-Column2-Body1">
+                                <p class="tableProcessBoxHeading">Process Overview:</p>
+                                <p class="tableBody">Step 1: <a href="#step1">Enable the Flat Catalog</a></p>
+                                <p class="tableBody">Step 2: <a href="#step2">Verify the Results</a></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ul>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="ToDo">
+                <MadCap:dropDownHotspot class="ToDo">
+                    <b class="Contrast">Step 1: </b>Enable the Flat Catalog<a name="step1"></a></MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p class="Number1" MadCap:autonum="&lt;span style=&quot;font-family: 'Arial';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #a84b27;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;1.&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;">On the Admin sidebar, tap <b class="Command">Stores</b>. Then under <b class="Command">Settings</b>, choose <b class="Command">Configuration</b>.</p>
+                <p class="NumberContinue" MadCap:autonum="&lt;span style=&quot;font-family: 'Arial';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #a84b27;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;2.&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;">In the panel on the left under <b class="Command">Catalog</b>, choose <b class="Command">Catalog</b>. </p>
+                <p class="NumberContinue" MadCap:autonum="&lt;span style=&quot;font-family: 'Arial';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #a84b27;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;3.&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;">Expand <img src="../Resources/Images/btn-expand.png" class="Inline" />the <b class="Command">Storefront</b> section. Then, do the following:</p>
+                <p class="Alpha1" MadCap:autonum="&lt;span style=&quot;font-family: 'Arial';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #a84b27;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;a.&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;">Set <b class="Command">Use Flat Catalog Category</b> to “Yes.” If necessary, clear the <b class="Command">Use system value</b> checkbox.</p>
+                <p class="AlphaContinue" MadCap:autonum="&lt;span style=&quot;font-family: 'Arial';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #a84b27;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;b.&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;">Set <b class="Command">Use Flat Catalog Product</b> to “Yes.”</p>
+                <div class="Image">
+                    <img src="../Resources/Images/config-catalog-catalog-storefront-use-flat-catalog.png" class="large" />
+                    <br />Flat Catalog Configuration</div>
+                <p class="NumberContinue" MadCap:autonum="&lt;span style=&quot;font-family: 'Arial';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #a84b27;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;4.&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;">When complete, tap <span class="btn">&#160;Save Config&#160;</span>.</p>
+                <p class="NumberContinue" MadCap:autonum="&lt;span style=&quot;font-family: 'Arial';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #a84b27;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;5.&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;">When prompted to update the cache, click the <b class="Command">Cache Management</b> link in the system message, and follow the instructions to refresh the cache.<MadCap:keyword term="Reindex Required" /></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="ToDo">
+                <MadCap:dropDownHotspot class="ToDo">
+                    <b class="Contrast">Step 2: </b>Verify the Results<a name="step2"></a></MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:dropDown class="nested">
+                    <MadCap:dropDownHead class="ToDo">
+                        <MadCap:dropDownHotspot class="ToDo">
+                            <b class="Contrast">Method 1: </b>Verify the Results for a Single Product</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p class="Number1" MadCap:autonum="&lt;span style=&quot;font-family: 'Arial';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #a84b27;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;1.&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;">On the Admin sidebar, tap <b class="Command">Products</b>. Then, choose <b class="Command">Categories</b>.</p>
+                        <p class="Alpha1" MadCap:autonum="&lt;span style=&quot;font-family: 'Arial';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #a84b27;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;a.&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;"> Open a product in edit mode. </p>
+                        <p class="AlphaContinue" MadCap:autonum="&lt;span style=&quot;font-family: 'Arial';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #a84b27;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;b.&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;">In the <b class="Command">Name</b> field, add the text “_TEST” to the end of the product name. </p>
+                        <p class="NumberContinue" MadCap:autonum="&lt;span style=&quot;font-family: 'Arial';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #a84b27;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;2.&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;">Tap <span class="btn">&#160;Save&#160;</span>.</p>
+                        <p class="NumberContinue" MadCap:autonum="&lt;span style=&quot;font-family: 'Arial';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #a84b27;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;3.&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;">On a new browser tab, navigate to the home page of your store. Then, do the following:</p>
+                        <p class="Alpha1" MadCap:autonum="&lt;span style=&quot;font-family: 'Arial';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #a84b27;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;a.&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;">Search for the product you edited.</p>
+                        <p class="AlphaContinue" MadCap:autonum="&lt;span style=&quot;font-family: 'Arial';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #a84b27;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;b.&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;">Use the navigation to browse to the product under its assigned category.</p>
+                        <p class="IndentAfterAlpha">If necessary, refresh the page to see the results. The change will appear within the minute, or according to your <a href="../system/cron.htm">Cron</a> schedule. </p>
+                        <div class="Image">
+                            <img src="../Resources/Images/storefront-flat-catalog-enabled.png" class="large" />
+                            <br />Storefront with Flat Catalog</div>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="nested">
+                    <MadCap:dropDownHead class="ToDo">
+                        <MadCap:dropDownHotspot class="ToDo">
+                            <b class="Contrast">Method 2: </b>Verify the Results for a Category</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p class="Number1" MadCap:autonum="&lt;span style=&quot;font-family: 'Arial';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #a84b27;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;1.&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;">On the Admin sidebar, tap <b class="Command">Products</b>. Then, choose <b class="Command">Categories</b>.</p>
+                        <p class="NumberContinue" MadCap:autonum="&lt;span style=&quot;font-family: 'Arial';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #a84b27;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;2.&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;">In the upper-left corner, verify that <b class="Command">Store View</b> is set to “All Store Views.” </p>
+                        <p class="IndentAfterNumber">If prompted, tap <b class="Command">OK</b> to confirm.</p>
+                        <p class="NumberContinue" MadCap:autonum="&lt;span style=&quot;font-family: 'Arial';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #a84b27;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;3.&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;">In the category tree, select an existing category. Then, tap  <span class="btn">&#160;Add Subcategory&#160;</span>, and do the following:</p>
+                        <p class="Alpha1" MadCap:autonum="&lt;span style=&quot;font-family: 'Arial';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #a84b27;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;a.&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;">In the <b class="Command">Category Name</b> field, enter “Test Category.”</p>
+                        <p class="AlphaContinue" MadCap:autonum="&lt;span style=&quot;font-family: 'Arial';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #a84b27;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;b.&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;">When complete, tap  <span class="btn">Save&#160;</span>.</p>
+                        <div class="Image">
+                            <img src="../Resources/Images/catalog-flat-test-category.png" class="large" />
+                            <br />Test Subcategory</div>
+                        <p class="AlphaContinue" MadCap:autonum="&lt;span style=&quot;font-family: 'Arial';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #a84b27;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;c.&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;">Expand <img src="../Resources/Images/btn-expand.png" class="Inline" /> the <b class="Command">Products in Category</b> section. Then, click<![CDATA[  ]]><b class="Command">Reset Filter</b> to display all products.</p>
+                        <p class="AlphaContinue" MadCap:autonum="&lt;span style=&quot;font-family: 'Arial';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #a84b27;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;d.&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;">Mark the checkbox of several products to add them to the new category. Then, tap <span class="btn">&#160;Save&#160;</span>.</p>
+                        <div class="Image">
+                            <img src="../Resources/Images/catalog-flat-test-category-products.png" class="large" />
+                            <br />Test Category Products</div>
+                        <p class="NumberContinue" MadCap:autonum="&lt;span style=&quot;font-family: 'Arial';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #a84b27;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;4.&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;">On a new browser tab, navigate to the home page of your store. Then, use the store navigation to browse to the category you created.</p>
+                        <p class="IndentAfterNumber">If necessary, refresh the page to see the results. The change will appear within the minute or according to your cron schedule. </p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="ToDo">
+                <MadCap:dropDownHotspot class="ToDo">
+                    <b class="Contrast">Step 3:</b> Remove the Test Data</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p class="dropdown_flushLeft">Do the following to remove the test data and restore the original product name and catalog configuration.</p>
+                <MadCap:dropDown class="nested">
+                    <MadCap:dropDownHead class="ToDo">
+                        <MadCap:dropDownHotspot class="ToDo">Remove the test category:</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p class="Number1" MadCap:autonum="&lt;span style=&quot;font-family: 'Arial';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #a84b27;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;1.&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;">On the Admin sidebar, tap <b class="Command">Products</b>. Then, choose <b class="Command">Categories</b>.</p>
+                        <p class="NumberContinue" MadCap:autonum="&lt;span style=&quot;font-family: 'Arial';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #a84b27;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;2.&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;">In the category tree, select the test subcategory that you created.</p>
+                        <p class="NumberContinue" MadCap:autonum="&lt;span style=&quot;font-family: 'Arial';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #a84b27;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;3.&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;">In the upper-right corner, tap <span class="btn">Delete</span>. Then when prompted to confirm, tap <span class="btn">OK</span>.</p>
+                        <p class="IndentAfterNumber">This will not remove the products that are assigned to the category.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="nested">
+                    <MadCap:dropDownHead class="ToDo">
+                        <MadCap:dropDownHotspot class="ToDo">Restore the original product name:</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p class="Number1" MadCap:autonum="&lt;span style=&quot;font-family: 'Arial';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #a84b27;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;1.&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;">On the Admin sidebar, tap <b class="Command">Products</b>. Then, choose <b class="Command">Categories</b>.</p>
+                        <p class="NumberContinue" MadCap:autonum="&lt;span style=&quot;font-family: 'Arial';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #a84b27;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;2.&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;">Open the test product in edit mode.</p>
+                        <p class="NumberContinue" MadCap:autonum="&lt;span style=&quot;font-family: 'Arial';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #a84b27;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;3.&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;">Remove the “_TEST” that you added to the <b class="Command">Product Name</b>.</p>
+                        <p class="NumberContinue" MadCap:autonum="&lt;span style=&quot;font-family: 'Arial';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #a84b27;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;4.&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;">In the upper-right corner, tap <span class="btn">Save</span>.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+                <MadCap:dropDown class="nested">
+                    <MadCap:dropDownHead class="ToDo">
+                        <MadCap:dropDownHotspot class="ToDo">Restore the original catalog configuration:</MadCap:dropDownHotspot>
+                    </MadCap:dropDownHead>
+                    <MadCap:dropDownBody>
+                        <p class="Number1" MadCap:autonum="&lt;span style=&quot;font-family: 'Arial';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #a84b27;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;1.&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;">On the Admin sidebar, tap <b class="Command">Stores</b>. Then under <b class="Command">Settings</b>, choose <b class="Command">Configuration</b>.</p>
+                        <p class="NumberContinue" MadCap:autonum="&lt;span style=&quot;font-family: 'Arial';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #a84b27;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;2.&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;">In the panel on the left under <b class="Command">Catalog</b>, choose <b class="Command">Catalog</b>. </p>
+                        <p class="NumberContinue" MadCap:autonum="&lt;span style=&quot;font-family: 'Arial';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #a84b27;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;3.&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;">Expand <img src="../Resources/Images/btn-expand.png" class="Inline"></img>the <b class="Command">Storefront</b> section, and do the following:</p>
+                        <p class="Alpha1" MadCap:autonum="&lt;span style=&quot;font-family: 'Arial';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #a84b27;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;a.&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;">Set <b class="Command">Use Flat Catalog Category</b> to “No.” </p>
+                        <p class="AlphaContinue" MadCap:autonum="&lt;span style=&quot;font-family: 'Arial';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #a84b27;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;b.&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;">Set <b class="Command">Use Flat Catalog Product</b> to “No.”</p>
+                        <p class="NumberContinue" MadCap:autonum="&lt;span style=&quot;font-family: 'Arial';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #a84b27;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;4.&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;">When complete, tap <span class="btn">&#160;Save Config&#160;</span>. Then when prompted, refresh the cache.</p>
+                    </MadCap:dropDownBody>
+                </MadCap:dropDown>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>
