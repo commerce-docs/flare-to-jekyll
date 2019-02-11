@@ -6,11 +6,11 @@ module LinkConverter
                            base_dir:,
                            from_ext: 'htm',
                            to_ext: 'md')
-    
+
     return link if link.include? '{'
     return link unless link.include? from_ext
     return link if link.include? ':'
-                       
+
     md_root_rel_link =
       resolve_relative_url(link: link, abs_path: abs_path, base_dir: base_dir, from_ext: from_ext, to_ext: to_ext)
     jekyllify md_root_rel_link
@@ -22,8 +22,11 @@ module LinkConverter
                            from_ext: 'htm',
                            to_ext: 'md')
     abs_path_dir = File.dirname abs_path
-    abs_path_link = File.absolute_path link, abs_path_dir
-    root_rel_link = Pathname.new(abs_path_link).relative_path_from(base_dir).to_path
+    abs_path_link = Pathname.new(
+      File.absolute_path(link, abs_path_dir)
+    )
+    base_path = Pathname.new(base_dir)
+    root_rel_link = abs_path_link.relative_path_from(base_path).to_path
     root_rel_link.sub(/\.#{from_ext}($|#.*)/, ".#{to_ext}")
   end
 
@@ -48,7 +51,7 @@ module LinkConverter
   end
 
   def normalize(link)
-    link.downcase.gsub ' ', '-'
+    link.downcase.tr ' ', '-'
   end
 
   def load_file(file)
@@ -57,12 +60,12 @@ module LinkConverter
 
   def removed?(link)
     deleted_files = load_file 'removed.yml'
-    deleted_files.any? { |path| link.include?(normalize path) }
+    deleted_files.any? { |path| link.include?(normalize(path)) }
   end
 
   def convert_include_src(link:)
     new_path = link.sub %r{\A[.\/]*Resources/Snippets/}, ''
     normalized_path = normalize new_path
-    normalized_path.sub /\.flsnp$/, '.md'
+    normalized_path.sub(/\.flsnp$/, '.md')
   end
 end
