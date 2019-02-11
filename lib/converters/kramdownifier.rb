@@ -8,8 +8,11 @@ module Kramdownifier
     { html_to_native: true, line_width: 1000, input: 'html' }.freeze
 
   def kramdownify(string, options = {})
+    puts 'Converting HTML to Kramdown'
     document = Kramdown::Document.new(string, DEFAULT_OPTIONS.merge(options))
-    document.to_kramdown
+    converted_content = document.to_kramdown
+    puts 'Finished converting HTML to Kramdown'
+    converted_content
   end
 
   # For parse options, trefer tohttps://nokogiri.org/tutorials/parsing_an_html_xml_document.html
@@ -32,6 +35,24 @@ module Kramdownifier
 
   def images
     search_by 'img'
+  end
+
+  def notes
+    search_by 'p[class^=note]'
+  end
+
+  def convert_notes
+    puts 'Converting notes'
+    notes.each do |note|
+      convert_a_note(note)
+    end
+    puts 'Finished converting notes'
+  end
+
+  def convert_a_note(note)
+    note.node_name = 'div'
+    note.set_attribute 'class', 'bs-callout bs-callout-info'
+    note.set_attribute 'markdown', '1'
   end
 
   def convert_internal_links
@@ -61,19 +82,11 @@ module Kramdownifier
 
   def kramdown_content
     puts "Kramdownifying #{relative_path}"
-    puts 'Kramdownifier: Converting includes'
+    convert_notes
     convert_includes
-    puts 'Finished converting includes'
-    puts 'Kramdownifier: Converting variables'
     convert_variables
-    puts 'Finished converting variables'
-    puts 'Kramdownifier: Escaping {{text}}'
     safe_double_braced_content
-    puts 'Finished escaping {{text}}'
-    puts 'Kramdownifier: converting HTML to Kramdown'
-    content = kramdownify search_by('/html/body').to_xml
-    puts 'Finished converting HTML to Kramdown'
-    content
+    kramdownify search_by('/html/body').to_xml
   end
 
   def includes
@@ -85,6 +98,7 @@ module Kramdownifier
   end
 
   def convert_includes
+    puts 'Converting includes'
     includes.each do |element|
       element.node_name = 'p'
       link = element['src']
@@ -92,12 +106,15 @@ module Kramdownifier
       element.content = "{% include #{converted_link} %}"
       element.remove_attribute 'src'
     end
+    puts 'Finished converting includes'
   end
 
   def convert_variables
+    puts 'Converting variables'
     variables.each do |node|
       node.replace 'Magento'
     end
+    puts 'Finished converting variables'
   end
 
   def text_nodes_with_double_braced_content
@@ -105,10 +122,12 @@ module Kramdownifier
   end
 
   def safe_double_braced_content
+    puts 'Escaping {{text}}'
     text_nodes_with_double_braced_content.each do |node|
       old_content = node.content
       safe_content = '{% raw %}' + old_content + '{% endraw %}'
       node.content = safe_content
     end
+    puts 'Finished escaping {{text}}'
   end
 end

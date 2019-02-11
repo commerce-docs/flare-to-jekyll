@@ -123,9 +123,6 @@ swap:
     li:
       - '[class^=Number]'
       - '[class^=Number]'
-      
-    div:
-      - p.note
     
     ol:
       - '//*[@class="Number1"]/parent::dropDownBody'
@@ -140,8 +137,9 @@ swap:
       - snippetText
   
   # <New value> : <XPath of the attribute value to replace>
-  attribute_values:
-    'bs-callout bs-callout-info': '//div[@class="note"]/@class'
+  # attribute_values:
+  #   'bs-callout bs-callout-info': '//div[@class="note"]/@class'
+
 
 
   
