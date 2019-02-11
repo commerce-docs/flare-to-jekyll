@@ -73,6 +73,7 @@ remove:
       - largeDiagramNoPopup
       - _30pct
       - _30pctNoBorder
+      - Black
 
   #
   # XPath or CSS selectors of elements to remove.
@@ -137,8 +138,12 @@ swap:
     include:
       - snippetBlock
       - snippetText
+  
+  # <New value> : <XPath of the attribute value to replace>
   attribute_values:
     'bs-callout bs-callout-info': '//div[@class="note"]/@class'
+
+
   
 # add:
 #   parent:

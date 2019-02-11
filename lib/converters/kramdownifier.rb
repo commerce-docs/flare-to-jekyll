@@ -60,12 +60,28 @@ module Kramdownifier
   end
 
   def kramdown_content
+    puts "Kramdownifying #{relative_path}"
+    puts 'Kramdownifier: Converting includes'
+    convert_includes
+    puts 'Finished converting includes'
+    puts 'Kramdownifier: Converting variables'
+    convert_variables
+    puts 'Finished converting variables'
+    puts 'Kramdownifier: Escaping {{text}}'
     safe_double_braced_content
-    kramdownify search_by('/html/body').to_xml
+    puts 'Finished escaping {{text}}'
+    puts 'Kramdownifier: converting HTML to Kramdown'
+    content = kramdownify search_by('/html/body').to_xml
+    puts 'Finished converting HTML to Kramdown'
+    content
   end
 
   def includes
     search_by 'include'
+  end
+
+  def variables
+    search_by 'variable[name^="MyVariables.Product"]'
   end
 
   def convert_includes
@@ -78,10 +94,16 @@ module Kramdownifier
     end
   end
 
+  def convert_variables
+    variables.each do |node|
+      node.replace 'Magento'
+    end
+  end
+
   def text_nodes_with_double_braced_content
     search_by '//text()[contains(.,"{{")]'
   end
-  
+
   def safe_double_braced_content
     text_nodes_with_double_braced_content.each do |node|
       old_content = node.content

@@ -88,11 +88,11 @@ module Convertible
     puts 'Done!'
   end
 
-  def convert_includes_in(collection)
-    puts 'Converting include tags'
-    collection.each(&:convert_includes)
-    puts 'Done!'
-  end
+  # def convert_includes_in(collection)
+  #   puts 'Converting include tags'
+  #   collection.each(&:convert_includes)
+  #   puts 'Done!'
+  # end
 
   # def remove_declarations_in collection
   #   collection.each { |doc| cleaner.remove_xml_declaration_in doc }

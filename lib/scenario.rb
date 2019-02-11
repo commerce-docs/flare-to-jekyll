@@ -20,7 +20,7 @@ class Scenario
 
     flare_docs = reader.parsable_content
     assets = reader.nonparsable_content
-    topics = reader.topics
+    # topics = reader.topics
 
     remove_namespaces_in flare_docs
     remove_attributes_by_name_in flare_docs
@@ -34,7 +34,6 @@ class Scenario
     replace_attr_values_in flare_docs
     convert_internal_links_in flare_docs
     convert_links_to_images_in flare_docs
-    convert_includes_in topics
 
     flare_docs.each do |document|
       write_content_to_path content: document.to_xml,

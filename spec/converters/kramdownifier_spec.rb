@@ -13,4 +13,11 @@ RSpec.describe Kramdownifier do
     safe_double_braced_content
     expect(to_xml).to include '{% raw %}'
   end
+  it 'contains variables' do
+    expect(variables).not_to be_empty
+  end
+  it 'replaces variables with Magento' do
+    convert_variables
+    expect(variables).to be_empty
+  end
 end

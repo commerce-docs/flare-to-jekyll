@@ -24,4 +24,3 @@ class Include < FlareDoc
     kramdown_content
   end
 end
-
