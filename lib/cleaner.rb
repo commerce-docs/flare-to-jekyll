@@ -112,6 +112,7 @@ class Cleaner
   end
 
   def replace_attr_values_on_a(page)
+    return unless attr_values_to_swap
     attr_values_to_swap.each do |new_value, xpath|
       swap_attr_values(page, new_value, xpath)
     end

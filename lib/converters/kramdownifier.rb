@@ -1,4 +1,5 @@
 require 'nokogiri'
+require 'logger'
 require_relative 'link.rb'
 # Converts input HTML to kramdown
 module Kramdownifier
@@ -7,18 +8,22 @@ module Kramdownifier
   DEFAULT_OPTIONS =
     { html_to_native: true, line_width: 1000, input: 'html' }.freeze
 
+  def logger
+    @@logger ||= Logger.new('kramdowinifier.log', progname: 'Kramdownifier')
+  end
+
   def kramdownify(string, options = {})
-    puts 'Converting HTML to Kramdown'
+    logger.info 'Converting HTML to Kramdown'
     document = Kramdown::Document.new(string, DEFAULT_OPTIONS.merge(options))
     converted_content = document.to_kramdown
-    puts 'Finished converting HTML to Kramdown'
+    logger.info 'Finished converting HTML to Kramdown'
     converted_content
   end
 
   # For parse options, trefer tohttps://nokogiri.org/tutorials/parsing_an_html_xml_document.html
   def parse_file(absolute_path)
     content = File.open(absolute_path)
-    Nokogiri::XML(content) { |config| config.nocdata }
+    Nokogiri::XML(content, &:nocdata)
   end
 
   def search_by(selector)
@@ -42,11 +47,11 @@ module Kramdownifier
   end
 
   def convert_notes
-    puts 'Converting notes'
+    logger.info 'Converting notes'
     notes.each do |note|
       convert_a_note(note)
     end
-    puts 'Finished converting notes'
+    logger.info 'Finished converting notes'
   end
 
   def convert_a_note(note)
@@ -81,12 +86,14 @@ module Kramdownifier
   end
 
   def kramdown_content
-    puts "Kramdownifying #{relative_path}"
+    logger.info "Kramdownifying #{relative_path}"
     convert_notes
     convert_includes
     convert_variables
     safe_double_braced_content
-    kramdownify search_by('/html/body').to_xml
+    content = kramdownify search_by('/html/body').to_xml
+    content = replace_collapsibles_in content
+    remove_liquid_escaping_in content
   end
 
   def includes
@@ -98,7 +105,7 @@ module Kramdownifier
   end
 
   def convert_includes
-    puts 'Converting includes'
+    logger.info 'Converting includes'
     includes.each do |element|
       element.node_name = 'p'
       link = element['src']
@@ -106,15 +113,15 @@ module Kramdownifier
       element.content = "{% include #{converted_link} %}"
       element.remove_attribute 'src'
     end
-    puts 'Finished converting includes'
+    logger.info 'Finished converting includes'
   end
 
   def convert_variables
-    puts 'Converting variables'
+    logger.info 'Converting variables'
     variables.each do |node|
       node.replace 'Magento'
     end
-    puts 'Finished converting variables'
+    logger.info 'Finished converting variables'
   end
 
   def text_nodes_with_double_braced_content
@@ -122,12 +129,22 @@ module Kramdownifier
   end
 
   def safe_double_braced_content
-    puts 'Escaping {{text}}'
+    logger.info 'Escaping {{text}}'
     text_nodes_with_double_braced_content.each do |node|
       old_content = node.content
       safe_content = '{% raw %}' + old_content + '{% endraw %}'
       node.content = safe_content
     end
-    puts 'Finished escaping {{text}}'
+    logger.info 'Finished escaping {{text}}'
+  end
+
+  def replace_collapsibles_in(content)
+    logger.info 'Converting collapsibles'
+    content.gsub(/<dropDownBody[^>]*>/, "\n{% collapsible %}\n")
+           .gsub('</dropDownBody>', "\n{% endcollapsible %}\n")
+  end
+
+  def remove_liquid_escaping_in(content)
+    content.gsub '\{%', '{%'
   end
 end
