@@ -89,6 +89,7 @@ remove:
     # - '[class^=TableStyle-]'
     - div
     - glossaryTerm
+    - '[class^=IndentAfter]'
 
     # - TableStyle-Guidelines
     # - [TableStyle-Definitions] # attributes that contain TableStyle-Definitions in class name
