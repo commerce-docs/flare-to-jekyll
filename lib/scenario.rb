@@ -31,6 +31,7 @@ class Scenario
     remove_empty_docs_in flare_docs
     remove_elements_in flare_docs
     replace_tags_in flare_docs
+    add_parent_in flare_docs
     replace_attr_values_in flare_docs
     convert_internal_links_in flare_docs
     convert_links_to_images_in flare_docs
@@ -58,9 +59,6 @@ class Scenario
     puts 'Finished conversion to Kramdown!'
   end
 end
-
-# Not implemented
-# add_parent_in flare_docs
 
 # Get class names
 # @doc.search('//*[@class]').each {|node| puts node.attribute 'class'

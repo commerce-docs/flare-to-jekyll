@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html conditions="Default.B2B Only" class="task">
+    
+    <body>
+        
+        
+            <h1>Company Users</h1>
+        
+        <p>The individuals that are associated with a company are represented in the Customers grid by the customer type, “Company User,” and are typically buyers with varying levels of permission to access store services and resources. </p>
+        
+            <img src="{{ site.baseurl }}{% link images/images-b2b/diagram-company-structure-teams.png %}" class="large"/>
+            <br/>Company Structure with Teams of Users
+        <p>Company users are assigned by the company administrator, and are visible from the Admin in the Customers grid. For each user, the company administrator first sets up the <a href="{{ site.baseurl }}{% link customers/account-company-structure.md %}">company structure</a>, and then completes the following tasks, as needed:</p>
+        <ul class="Body">
+            <li>Create company users and assign users to teams</li>
+            <li>Define roles and permissions, and assign users to roles</li>
+        </ul>
+        
+            
+                <h2>To add company users:</h2>
+            
+            <ol>
+                <li class="Number1">From the storefront, sign in to your account as the company administrator.</li>
+                <li class="NumberContinue">In the panel on the left, choose <b>Company Users</b>. </li>
+                
+                    <img src="{{ site.baseurl }}{% link images/images-b2b/customer-account-company-users.png %}" class="large"/>
+                    <br/>Company Users
+                <li class="NumberContinue">Tap <span class="btn">Add New User</span>. Then, do the following:</li>
+                <p class="Alpha1">Enter the <b>Job Title</b> of the new user.</p>
+                <p class="AlphaContinue">If the roles and permissions are defined, choose the appropriate <b>User Role</b>. Otherwise, you can return later to assign the role.</p>
+                
+                    <img src="{{ site.baseurl }}{% link images/images-b2b/customer-company-structure-users-add.png %}" class="large"/>
+                
+                <p class="AlphaContinue">Complete the remaining fields as needed for the user:</p>
+                <ul class="BulletAfterAlpha">
+                    <li>First Name and Last Name</li>
+                    <li>Email</li>
+                    <li>Phone Number</li>
+                </ul>
+                <p class="AlphaContinue">By default, the <b>Status</b> of the account is “Active”.</p>
+                <li class="NumberContinue">When complete, tap <span class="btn">Save</span>.</li>
+                <li class="NumberContinue">Repeat the process to create as many company users as needed.</li>
+                The new users appear in the Company Users list, along with the Company Administrator.
+                <p>To save time during their first order, the company administrator can remind each company user to add the default company billing and shipping address to their <a href="{{ site.baseurl }}{% link customers/account-dashboard-address-book.md %}">address book</a>.</p>
+                
+                    <img src="{{ site.baseurl }}{% link images/images-b2b/customer-account-company-users-list.png %}" class="large"/>
+                    <br/>List of Company Users
+            </ol>
+        
+        
+            
+                <h2>To remove a company user:</h2>
+            
+            <ol>
+                <p>Company users can be removed only by the company admin. Once deleted, the action cannot be reversed. The user is removed from the company structure.</p>
+                <li class="Number1">Select the company user in the company structure.</li>
+                <li class="NumberContinue">Click <b>Delete Selected</b>.</li>
+                
+                    <img src="{{ site.baseurl }}{% link images/images-b2b/company-structure-delete-user.png %}" class="large">
+                    </img>
+                    <br>
+                    </br>Delete User
+                <li class="NumberContinue">When prompted to confirm, tap <span class="btn">Delete</span>.</li>
+                <p>From the Admin, the company user continues to be listed in the <a href="{{ site.baseurl }}{% link customers/customers-all.md %}">Customers</a> grid, but with an “Inactive” status.</p>
+            </ol>
+        
+        <ul class="TableInBody">
+            <li class="NoBullet">
+                <table class="TableStyle-Definitions-30-70_Rule" cellspacing="0">
+                    <h3 class="TableHeading">Field Descriptions</h3>
+                    
+                    
+                    <thead>
+                        <tr class="TableStyle-Definitions-30-70_Rule-Head-Header1">
+                            <th class="TableStyle-Definitions-30-70_Rule-HeadE-Column1-Header1">
+                                <p class="TableColHeadWht">Field</p>
+                            </th>
+                            <th class="TableStyle-Definitions-30-70_Rule-HeadD-Column2-Header1">
+                                <p class="TableColHeadWht">Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-Definitions-30-70_Rule-Body-Body1">
+                            <td class="TableStyle-Definitions-30-70_Rule-BodyE-Column1-Body1">
+                                <p>Job Title</p>
+                            </td>
+                            <td class="TableStyle-Definitions-30-70_Rule-BodyD-Column2-Body1">
+                                <p>The job title of the company user.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definitions-30-70_Rule-Body-Body2">
+                            <td class="TableStyle-Definitions-30-70_Rule-BodyE-Column1-Body2">
+                                <p>User Role</p>
+                            </td>
+                            <td class="TableStyle-Definitions-30-70_Rule-BodyD-Column2-Body2">
+                                <p>The <a href="{{ site.baseurl }}{% link customers/account-company-roles-permissions.md %}">role</a> assigned to the company user. Options: Default User / (other roles)</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definitions-30-70_Rule-Body-Body1">
+                            <td class="TableStyle-Definitions-30-70_Rule-BodyE-Column1-Body1">
+                                <p>First Name</p>
+                            </td>
+                            <td class="TableStyle-Definitions-30-70_Rule-BodyD-Column2-Body1">
+                                <p>The first name of the company user.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definitions-30-70_Rule-Body-Body2">
+                            <td class="TableStyle-Definitions-30-70_Rule-BodyE-Column1-Body2">
+                                <p>Last Name</p>
+                            </td>
+                            <td class="TableStyle-Definitions-30-70_Rule-BodyD-Column2-Body2">
+                                <p>The last name of the company user.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definitions-30-70_Rule-Body-Body1">
+                            <td class="TableStyle-Definitions-30-70_Rule-BodyE-Column1-Body1">
+                                <p>Email</p>
+                            </td>
+                            <td class="TableStyle-Definitions-30-70_Rule-BodyD-Column2-Body1">
+                                <p>The email address of the company user.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definitions-30-70_Rule-Body-Body2">
+                            <td class="TableStyle-Definitions-30-70_Rule-BodyE-Column1-Body2">
+                                <p>Phone Number</p>
+                            </td>
+                            <td class="TableStyle-Definitions-30-70_Rule-BodyD-Column2-Body2">
+                                <p>The phone number of the company user.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-Definitions-30-70_Rule-Body-Body1">
+                            <td class="TableStyle-Definitions-30-70_Rule-BodyB-Column1-Body1">
+                                <p>Status</p>
+                            </td>
+                            <td class="TableStyle-Definitions-30-70_Rule-BodyA-Column2-Body1">
+                                <p>The status of the company user account. Options: Active / Inactive</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ul>
+    </body>
+</html>

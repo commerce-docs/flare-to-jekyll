@@ -33,4 +33,37 @@ RSpec.describe Kramdownifier do
   it 'converts dropdown to Liquid collapsible' do
     expect(replace_collapsibles_in '<dropDownBody markdown="1">Some text here</dropDownBody>').to eq "\n{% collapsible %}\nSome text here\n{% endcollapsible %}\n"
   end
+  it 'converts conditionalText to Liquid conditional' do
+    expect(convert_conditional_text 'The Catalog Menu provides easy access to product creation, category and inventory management tools<conditionalText conditions="Default.EE Only,Default.CE Only">.</conditionalText><conditionalText conditions="Default.B2B Only">, as well as shared catalogs for custom pricing.</conditionalText>').to eq 'The Catalog Menu provides easy access to product creation, category and inventory management tools{% if "Default.EE Only,Default.CE Only" contains site.edition %}.{% endif %}{% if "Default.B2B Only" contains site.edition %}, as well as shared catalogs for custom pricing.{% endif %}'
+  end
+  context 'with a conditional tag' do
+    let(:tag) { Nokogiri::XML '<img src="{{ site.baseurl }}{% link images/images/admin-menu-catalog.png %}" class="large" conditions="Default.CE Only"/>' }
+    it 'converts a tag with conditions to Liquid' do
+      convert_a_tag_with_condition tag.root
+      expect(tag.to_xml).to include "<!--{% if \"Default.CE Only\" contains site.edition %}-->\n<img src=\"{{ site.baseurl }}{% link images/images/admin-menu-catalog.png %}\" class=\"large\"/>\n<!--{% endif %}-->"
+    end
+  end
+  context 'with page with conditional tags' do
+    let(:doc) { parse_file(File.absolute_path('spec/samples/catalog-menu.htm')) }
+    it 'finds conditions' do
+      expect(conditions).not_to be_empty
+    end
+
+    it 'does not find conditions after conversion' do
+      convert_conditions
+      expect(conditions).to be_empty
+    end
+  end
+  context 'with page with conditional in root' do
+    let(:doc) { parse_file(File.absolute_path('spec/samples/account-company-users.htm')) }
+    it 'finds conditions' do
+      expect(conditions).to be_empty
+    end
+
+    it 'does not find conditions after conversion' do
+      origin = doc.dup
+      convert_conditions
+      expect(doc.to_xml).to eq origin.to_xml
+    end
+  end
 end

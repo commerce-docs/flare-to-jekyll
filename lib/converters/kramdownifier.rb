@@ -90,9 +90,11 @@ module Kramdownifier
     convert_notes
     convert_includes
     convert_variables
+    convert_conditions
     safe_double_braced_content
     content = kramdownify search_by('/html/body').to_xml
     content = replace_collapsibles_in content
+    content = convert_conditional_text content
     remove_liquid_escaping_in content
   end
 
@@ -139,12 +141,51 @@ module Kramdownifier
   end
 
   def replace_collapsibles_in(content)
-    logger.info 'Converting collapsibles'
+    logger.info 'Converting collapsibles in kramdown text'
     content.gsub(/<dropDownBody[^>]*>/, "\n{% collapsible %}\n")
            .gsub('</dropDownBody>', "\n{% endcollapsible %}\n")
   end
 
   def remove_liquid_escaping_in(content)
+    logger.info 'Unescaping liquid tags  in kramdown content'
     content.gsub '\{%', '{%'
   end
+
+  def convert_conditional_text(content)
+    logger.info 'Converting conditional text'
+    content.gsub(/<conditionalText conditions="([^"]+)"[^>]*>/) { if_in_liquid_with_condition(Regexp.last_match(1)) }
+           .gsub('</conditionalText>', ENDIF)
+  end
+
+  def conditions
+    search_by '[conditions]:not(html):not(conditionalText)'
+  end
+
+  def convert_conditions
+    logger.info 'Converting conditional text'
+    conditions.each do |tag|
+      convert_a_tag_with_condition(tag)
+    end
+  end
+
+  def convert_a_tag_with_condition(tag)
+    tag.add_previous_sibling(
+      new_comment(tag,
+                  if_in_liquid_with_condition(
+                    tag['conditions']
+                  ))
+    )
+    tag.add_next_sibling(new_comment(tag, ENDIF))
+    tag.remove_attribute 'conditions'
+  end
+
+  def new_comment(relative_node, text)
+    Nokogiri::XML::Comment.new relative_node, text
+  end
+
+  def if_in_liquid_with_condition(condition)
+    "{% if \"#{condition}\" contains site.edition %}"
+  end
+
+  ENDIF = '{% endif %}'.freeze
 end

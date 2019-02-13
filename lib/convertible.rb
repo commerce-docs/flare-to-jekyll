@@ -29,14 +29,6 @@ module Convertible
     puts 'Done!'
   end
 
-  
-
-  # def remove_attributes_in(collection)
-  #   puts 'Removing conditions in attributes...'
-  #   collection.each { |doc| cleaner.remove_conditions_only_on_a doc }
-  #   puts 'Done!'
-  # end
-
   def remove_elements_in(collection)
     puts 'Removing elements, but keeping child elements...'
     collection.each { |doc| cleaner.remove_element_without_children_on_a doc }
@@ -87,12 +79,6 @@ module Convertible
     collection.each(&:convert_links_to_images)
     puts 'Done!'
   end
-
-  # def convert_includes_in(collection)
-  #   puts 'Converting include tags'
-  #   collection.each(&:convert_includes)
-  #   puts 'Done!'
-  # end
 
   # def remove_declarations_in collection
   #   collection.each { |doc| cleaner.remove_xml_declaration_in doc }

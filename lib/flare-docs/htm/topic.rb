@@ -4,12 +4,12 @@ require_relative '../../converters/front-matter.rb'
 class Topic < HTM
 
   def front_matter
-    @front_matter = FrontMatter.new(conditions: conditions, title: title)
+    @front_matter = FrontMatter.new(conditions: root_conditions, title: title)
     search_by('h1').each(&:remove)
     @front_matter.generate
   end
 
-  def conditions
+  def root_conditions
     conditions = doc.at_xpath('//html/@conditions')
     conditions.value if conditions
   end

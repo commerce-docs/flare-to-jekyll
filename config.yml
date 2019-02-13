@@ -20,7 +20,9 @@ remove:
     - '[conditions*=PrintOnly]'
     - '[conditions="Default.AppNum"]'
     - '[conditions="Default.AppNoNum"]'
-    - '[conditions*=Not]'
+    - '[conditions*="Not Needed"]'
+    - '[conditions*="Not Ready"]'
+    - '[conditions*=PDF]'
     - '[conditions="Default.Tooltips"]'
     - '[conditions="Default.Handout Only"]'
     - '[conditions="Default.UserGuide Only"]'
@@ -30,7 +32,6 @@ remove:
     - '[conditions="Default.2-2-5"]'
     - '[conditions="Default.2-3"]'
     - '[conditions="Default.Config Ref Only"]'
-    - '[conditions*=Redirected]'
     - div.Next
     - script
     - col
@@ -90,6 +91,7 @@ remove:
     - div
     - glossaryTerm
     - '[class^=IndentAfter]'
+    - conditionalText:not([conditions])
 
     # - TableStyle-Guidelines
     # - [TableStyle-Definitions] # attributes that contain TableStyle-Definitions in class name
@@ -146,7 +148,7 @@ swap:
   
 # add:
 #   parent:
-#    ol:
-#     - '[class^=Number]'
-#     - '[class^=Alpha]'
+#     p:
+#     - h2
+#     - h3
   

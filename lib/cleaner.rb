@@ -127,17 +127,18 @@ class Cleaner
   end
 
   def swap_attr_values(page, new_name, xpath)
-      page.search_by(xpath).each do |attribute|
-        attribute.value = new_name
-      end
+    page.search_by(xpath).each do |attribute|
+      attribute.value = new_name
+    end
   end
 
-  # def add_parent_on_a(page)
-  #   tags_to_add_parent.each do |parent_tag, elements|
-  #     elements.each do |element|
-  #       page.search_by(element)
-  #           .wrap("<#{parent_tag}/>")
-  #     end
-  #   end
-  # end
+  def add_parent_on_a(page)
+    return unless tags_to_add_parent
+    tags_to_add_parent.each do |parent_tag, elements|
+      elements.each do |element|
+        page.search_by(element)
+            .wrap("<#{parent_tag}/>")
+      end
+    end
+  end
 end

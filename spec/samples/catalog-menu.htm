@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html class="menu">
+    
+    <body>
+        
+        <h1>
+            Catalog Menu</h1>
+        <p>The Catalog Menu provides easy access to product creation, category and inventory management tools<conditionalText conditions="Default.EE Only,Default.CE Only">.</conditionalText><conditionalText conditions="Default.B2B Only">, as well as shared catalogs for custom pricing.</conditionalText> </p>
+        
+            <img src="{{ site.baseurl }}{% link images/images/admin-menu-catalog.png %}" class="large" conditions="Default.CE Only"/>
+            <img src="{{ site.baseurl }}{% link images/images-ee/admin-menu-catalog-ee.png %}" class="large" conditions="Default.EE Only"/>
+            <img src="{{ site.baseurl }}{% link images/images-b2b/admin-menu-catalog.png %}" class="large" conditions="Default.B2B Only"/>
+            <br/>Catalog Menu
+        <p>To display the Catalog menu:</p>
+        <p>On the Admin sidebar, tap <span class="btn"> Catalog </span>. </p>
+        
+        <h4>Menu Options</h4>
+        
+            <a href="{{ site.baseurl }}{% link catalog/products.md %}">
+                <img src="{{ site.baseurl }}{% link images/images/products-grid.png %}"/>
+            </a>
+        
+        
+            <h2 class="ItemHead">
+                <a href="{{ site.baseurl }}{% link catalog/products.md %}">Products</a>
+            </h2>
+            <p>Create new products of every type, and  manage your inventory.</p>
+        
+        
+        
+            <a href="{{ site.baseurl }}{% link catalog/categories.md %}">
+                <img src="{{ site.baseurl }}{% link images/images/category-workspace.png %}"/>
+            </a>
+        
+        
+            <h2 class="ItemHead">
+                <a href="{{ site.baseurl }}{% link catalog/categories.md %}">Categories</a>
+            </h2>
+            <p>Create the category structure that is the foundation of your store’s navigation. </p>
+        
+        
+        
+            <a href="{{ site.baseurl }}{% link catalog/categories.md %}">
+                <img src="{{ site.baseurl }}{% link images/images-b2b/catalog-shared-choose-products-step1.png %}"/>
+            </a>
+        
+        
+            <h2 class="ItemHead">
+                <a href="{{ site.baseurl }}{% link catalog/catalog-shared.md %}">Shared Catalogs</a>
+            </h2>
+            <p>Shared catalogs give you the ability to make custom pricing available to different companies. </p>
+        
+    </body>
+</html>
