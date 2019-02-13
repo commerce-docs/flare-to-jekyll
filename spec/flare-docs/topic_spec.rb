@@ -15,6 +15,12 @@ RSpec.describe Topic do
       expect(topic).not_to be_empty
     end
   end
+  context 'without h1 and with title' do
+    let(:topic) { Topic.new base_dir: @basedir, rel_path: 'advanced.htm'}
+    it 'detects a title in topic' do
+      expect(topic.title).not_to be_empty
+    end
+  end
 
   context 'with redirect' do
     let(:topic) { Topic.new base_dir: @basedir, rel_path: 'catalog-create.htm' }

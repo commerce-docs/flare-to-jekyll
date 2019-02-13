@@ -15,8 +15,9 @@ class Topic < HTM
   end
 
   def title
-    title = search_by('h1')
-    title.inner_text.strip if title
+    h1 = search_by('h1').first
+    title = h1 || search_by('title').first
+    title.content.strip if title
   end
 
   def generate
