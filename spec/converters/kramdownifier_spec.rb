@@ -31,7 +31,10 @@ RSpec.describe Kramdownifier do
     end
   end
   it 'converts dropdown to Liquid collapsible' do
-    expect(replace_collapsibles_in '<dropDownBody markdown="1">Some text here</dropDownBody>').to eq "\n{% collapsible %}\nSome text here\n{% endcollapsible %}\n"
+    expect(replace_collapsibles_in '<dropDownBody markdown="1">Some text here</dropDownBody>').to eq "\n\n{% collapsible %}\n\nSome text here\n\n{% endcollapsible %}\n\n"
+  end
+  it 'returns same content if not dropdown' do
+    expect(replace_collapsibles_in 'Some text here').to eq "Some text here"
   end
   it 'converts conditionalText to Liquid conditional' do
     expect(convert_conditional_text 'The Catalog Menu provides easy access to product creation, category and inventory management tools<conditionalText conditions="Default.EE Only,Default.CE Only">.</conditionalText><conditionalText conditions="Default.B2B Only">, as well as shared catalogs for custom pricing.</conditionalText>').to eq 'The Catalog Menu provides easy access to product creation, category and inventory management tools{% if "Default.EE Only,Default.CE Only" contains site.edition %}.{% endif %}{% if "Default.B2B Only" contains site.edition %}, as well as shared catalogs for custom pricing.{% endif %}'

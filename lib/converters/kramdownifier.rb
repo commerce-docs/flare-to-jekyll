@@ -15,9 +15,9 @@ module Kramdownifier
   def kramdownify(string, options = {})
     logger.info 'Converting HTML to Kramdown'
     document = Kramdown::Document.new(string, DEFAULT_OPTIONS.merge(options))
-    converted_content = document.to_kramdown
+    content = document.to_kramdown
     logger.info 'Finished converting HTML to Kramdown'
-    converted_content
+    content
   end
 
   # For parse options, trefer tohttps://nokogiri.org/tutorials/parsing_an_html_xml_document.html
@@ -92,10 +92,11 @@ module Kramdownifier
     convert_variables
     convert_conditions
     safe_double_braced_content
-    content = kramdownify search_by('/html/body').to_xml
-    content = replace_collapsibles_in content
-    content = convert_conditional_text content
-    remove_liquid_escaping_in content
+    converted_content = kramdownify search_by('/html/body').to_xml
+    converted_content = replace_collapsibles_in converted_content
+    converted_content = convert_conditional_text converted_content
+    converted_content = fix_markdown_headings converted_content
+    remove_liquid_escaping_in converted_content
   end
 
   def includes
@@ -142,13 +143,13 @@ module Kramdownifier
 
   def replace_collapsibles_in(content)
     logger.info 'Converting collapsibles in kramdown text'
-    content.gsub(/<dropDownBody[^>]*>/, "\n{% collapsible %}\n")
-           .gsub('</dropDownBody>', "\n{% endcollapsible %}\n")
+    content.gsub(/<dropDownBody[^>]*>/, "\n\n{% collapsible %}\n\n")
+           .gsub('</dropDownBody>', "\n\n{% endcollapsible %}\n\n")
   end
 
   def remove_liquid_escaping_in(content)
     logger.info 'Unescaping liquid tags  in kramdown content'
-    content.gsub '\{%', '{%'
+    content.gsub('\{%', '{%')
   end
 
   def convert_conditional_text(content)
@@ -188,4 +189,8 @@ module Kramdownifier
   end
 
   ENDIF = '{% endif %}'.freeze
+
+  def fix_markdown_headings(content)
+    content.gsub(/^\s+#/, "\n#")
+  end
 end

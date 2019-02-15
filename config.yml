@@ -1,5 +1,5 @@
 flare_dir: ~/Projects/repos/magento-merchdocs/master-m2.3/Content
-jekyll_dir: ~/Projects/repos/magento-devdocs/doc-starter
+jekyll_dir: ~/Projects/repos/magento/merchdocs
 
 #
 # Learn more about XPath: https://www.w3schools.com/xml/xpath_syntax.asp
@@ -41,6 +41,7 @@ remove:
     - title
     - style
     - head
+    - a[name]
   #
   # Attributes to remove.
   #
@@ -146,9 +147,8 @@ swap:
 
 
   
-# add:
-#   parent:
-#     p:
-#     - h2
-#     - h3
+add:
+  parent:
+    p:
+    - p[class^=note]
   
