@@ -23,7 +23,7 @@ module Kramdownifier
   # For parse options, trefer to https://nokogiri.org/tutorials/parsing_an_html_xml_document.html
   def parse_file(absolute_path)
     content = File.open(absolute_path)
-    Nokogiri::XML(content, &:nocdata)
+    Nokogiri::XML(content) { |config| config.nocdata.noblanks }
   end
 
   def search_by(selector)
@@ -92,7 +92,8 @@ module Kramdownifier
     convert_variables
     convert_conditions
     safe_double_braced_content
-    converted_content = kramdownify search_by('/html/body').to_xml
+    parsed_content = search_by('/html/body').to_xml(indent: 3)
+    converted_content = kramdownify parsed_content
     # converted_content = replace_collapsibles_in converted_content
     converted_content = convert_conditional_text converted_content
     converted_content = fix_markdown_headings converted_content
