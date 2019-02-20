@@ -20,7 +20,7 @@ module Kramdownifier
     content
   end
 
-  # For parse options, trefer tohttps://nokogiri.org/tutorials/parsing_an_html_xml_document.html
+  # For parse options, trefer to https://nokogiri.org/tutorials/parsing_an_html_xml_document.html
   def parse_file(absolute_path)
     content = File.open(absolute_path)
     Nokogiri::XML(content, &:nocdata)
@@ -93,9 +93,12 @@ module Kramdownifier
     convert_conditions
     safe_double_braced_content
     converted_content = kramdownify search_by('/html/body').to_xml
-    converted_content = replace_collapsibles_in converted_content
+    # converted_content = replace_collapsibles_in converted_content
     converted_content = convert_conditional_text converted_content
     converted_content = fix_markdown_headings converted_content
+    converted_content = fix_ul_lists converted_content
+    converted_content = remove_redundant_tags converted_content
+    converted_content = remove_extra_space converted_content
     remove_liquid_escaping_in converted_content
   end
 
@@ -141,11 +144,11 @@ module Kramdownifier
     logger.info 'Finished escaping {{text}}'
   end
 
-  def replace_collapsibles_in(content)
-    logger.info 'Converting collapsibles in kramdown text'
-    content.gsub(/<dropDownBody[^>]*>/, "\n\n{% collapsible %}\n\n")
-           .gsub('</dropDownBody>', "\n\n{% endcollapsible %}\n\n")
-  end
+  # def replace_collapsibles_in(content)
+  #   logger.info 'Converting collapsibles in kramdown text'
+  #   content.gsub(/<dropDownBody[^>]*>/, "\n\n{% collapsible %}\n\n")
+  #          .gsub('</dropDownBody>', "\n\n{% endcollapsible %}\n\n")
+  # end
 
   def remove_liquid_escaping_in(content)
     logger.info 'Unescaping liquid tags  in kramdown content'
@@ -191,6 +194,28 @@ module Kramdownifier
   ENDIF = '{% endif %}'.freeze
 
   def fix_markdown_headings(content)
+    logger.info 'Fixing markdown headings'
     content.gsub(/^\s+#/, "\n#")
+           .gsub(/(?<!\n)\n^#/, "\n\n#")
+  end
+
+  def fix_ul_lists(content)
+    logger.info 'Fixing unordered lists after Alpha conversion'
+    content.gsub(/^\^\n\n/, '')
+  end
+
+  def remove_redundant_tags(content)
+    logger.info 'Removing redundand HTML tags'
+    content.gsub(%r{^<(/)?body[^>]*>$}, '')
+           .gsub(%r{</img>}, '')
+           .gsub(%r{</br>}, '')
+  end
+
+  def remove_extra_space(content)
+    logger.info 'Removing extra blank lines'
+    content.gsub(/^\s+$/, '')
+           .gsub(/(?<=\-{3})\n{3,}/, "\n\n")
+           .gsub(/\n{3,}/, "\n\n\n")
+           .gsub(/\n{2,}\Z/, "\n")
   end
 end
