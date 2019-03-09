@@ -25,7 +25,7 @@ class TOC < FlareDoc
 
   def normalize_links
     search_by('//@Link').each do |link|
-      link.value = link.value.sub(%r{/Content(/[^.]+).htm$}, '\1.html')
+      link.value = link.value.sub(%r{/Content(/[^.]+).htm$}, '\1/')
     end
   end
 
