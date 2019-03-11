@@ -1,5 +1,5 @@
 flare_dir: ~/Projects/repos/magento-merchdocs/master-m2.3/
-jekyll_dir: ~/Projects/repos/magento/merchdocs
+jekyll_dir: ~/Projects/repos/adobe/magento-docs/merchdocs/src
 
 #
 # Learn more about XPath: https://www.w3schools.com/xml/xpath_syntax.asp
