@@ -23,6 +23,6 @@ RSpec.describe GuideTOC do
   end
 
   it 'generates "label: Getting Started"' do
-    expect(toc.generate).to include 'label: Getting Started'
+    expect(toc.generate).to include "label: Getting Started\npages:\n"
   end
 end

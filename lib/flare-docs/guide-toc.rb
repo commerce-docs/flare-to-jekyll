@@ -13,9 +13,8 @@ class GuideTOC < FlareDoc
   end
 
   def generate
-    normalized_content.delete 'url'
-    normalized_content['pages'] = normalized_content.delete('children')
-    normalized_content.to_yaml
+    normalized_content
+    # binding.pry
   end
 
   def content_in_hash
@@ -23,7 +22,10 @@ class GuideTOC < FlareDoc
   end
 
   def normalized_content
-    keep_informative_elements(content_in_hash['TocEntry'])
+    normalized_content = keep_informative_elements(content_in_hash['TocEntry'])
+    normalized_content.delete 'url'
+    normalized_content['pages'] = normalized_content.delete('children')
+    normalized_content.to_yaml
   end
 
   def keep_informative_elements(hash)

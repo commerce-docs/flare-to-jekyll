@@ -11,7 +11,7 @@ RSpec.describe TOC do
     let(:toc) { TOC.new base_dir: @basedir, rel_path: 'M2_CE_ONLY_UserGuide_2.3.fltoc' }
 
     it 'has outputh path at _data/ce/main_nav.yml' do
-      expect(toc.output_path_at(@basedir)).to eq File.join @basedir, '/_data/ce/main_nav.yml'
+      expect(toc.output_path_at(@basedir)).to eq File.join @basedir, '/_data/ce/main-nav.yml'
     end
 
     it 'has in converted content "label: Getting Started"' do
