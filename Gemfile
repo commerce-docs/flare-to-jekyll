@@ -15,3 +15,7 @@ gem "require_all"
 gem "kramdown"
 
 gem "pry"
+
+gem "activesupport", "~> 5.2"
+
+gem "pry-byebug", "~> 3.7"

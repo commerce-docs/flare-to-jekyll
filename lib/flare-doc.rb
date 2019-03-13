@@ -18,4 +18,8 @@ class FlareDoc
   def empty?
     false
   end
+
+  def parsable?
+    true
+  end
 end

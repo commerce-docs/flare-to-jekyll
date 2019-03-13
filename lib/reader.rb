@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'flare-docs/htm/topic.rb'
 require_relative 'flare-docs/htm/redirect.rb'
 require_relative 'flare-docs/image.rb'
@@ -57,6 +59,11 @@ class Reader
 
   def tocs
     TOC.all
+  end
+
+  def guide_tocs
+    TOC.guide_tocs
+    GuideTOC.all
   end
 
   def all_paths_with_extensions(*extensions)

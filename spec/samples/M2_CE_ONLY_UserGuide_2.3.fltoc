@@ -1,0 +1,911 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc Version="1" conditions="Default.CE Only">
+  <TocEntry Title="Getting Started" Link="/Content/getting-started.htm" BreakType="chapter" StartSection="false" PageNumberReset="reset" PageLayout="/Content/Resources/PageLayouts/section.flpgl" PageNumberFormat="decimal" PageNumber="1" PageType="title" SectionNumberReset="continue" VolumeNumberReset="same" ChapterNumberReset="continue" ComputeToc="false" ReplaceMergeNode="false">
+    <TocEntry Title="Contents" Link="/Content/frontmatter/contents.htm" StartSection="false" BreakType="chapter" PageType="first" AutoEndOnLeftPage="enabled" PageNumberReset="reset" PageLayout="/Content/Resources/PageLayouts/user_guide_contents.flpgl" PageNumber="ii" PageNumberFormat="lower-roman"/>
+    <TocEntry Title="About This Guide" StartSection="false" Link="/Content/magento/about-this-guide.htm"/>
+    <TocEntry Title="Introduction" Link="/Content/getting-started/introduction.htm" BreakType="pageLayout" PageType="title" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/subsection.flpgl" SectionNumberReset="continue" VolumeNumberReset="same" ChapterNumberReset="continue">
+      <TocEntry Title="Welcome" Link="/Content/getting-started/welcome.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl" ChapterNumberReset="reset" ChapterNumber="1" SectionNumberReset="continue" VolumeNumberReset="same">
+        <TocEntry Title="Resources" Link="/Content/getting-started/resources.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Join the Conversation!" Link="/Content/getting-started/magento-ecosystem.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      </TocEntry>
+      <TocEntry Title="About This Release" Link="/Content/magento/about-this-release.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="Installation" Link="/Content/magento/installation.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="Prelaunch Checklist" Link="/Content/magento/prelaunch-checklist.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Your Login Credentials" Link="/Content/getting-started/login-credentials.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="For Your Records" Link="/Content/getting-started/for-your-records.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+      </TocEntry>
+      <TocEntry Title="Your Magento Account" Link="/Content/magento/magento-account.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="Creating an Account" Link="/Content/magento/magento-account-create.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Sharing Your Account" Link="/Content/magento/magento-account-share.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      </TocEntry>
+      <TocEntry Title=" Quick Tour" Link="/Content/getting-started/quick-tour.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="Path to Purchase" Link="/Content/quick-tour/path-to-purchase.htm" BreakType="pageLayout" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="Home Page" Link="/Content/quick-tour/home-page.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Catalog Page" Link="/Content/quick-tour/catalog-page.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue"/>
+          <TocEntry Title="Search Results" Link="/Content/quick-tour/search-results.htm" BreakType="pageLayout" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" StartSection="false"/>
+          <TocEntry Title="Product Page" Link="/Content/quick-tour/product-page.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue"/>
+          <TocEntry Title="Shopping Cart" Link="/Content/quick-tour/shopping-cart.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue"/>
+        </TocEntry>
+        <TocEntry Title="Customer Journey" Link="/Content/quick-tour/customer-journey.htm" BreakType="pageLayout" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="Attract New Customers" Link="/Content/quick-tour/attract-customers.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Engage Your Customers" Link="/Content/quick-tour/engage.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Increase Average Order Value" Link="/Content/quick-tour/increase-average-order-value.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Moment of Purchase" Link="/Content/quick-tour/moment-of-purchase.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Retain Customers" Link="/Content/quick-tour/customer-retention.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Build Loyalty &amp; Advocacy" Link="/Content/quick-tour/loyalty-advocacy.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Success!" Link="/Content/quick-tour/success.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+      </TocEntry>
+    </TocEntry>
+    <TocEntry Title="Basic Configuration" Link="/Content/configuration/configuration-basic.htm" BreakType="pageLayout" PageType="title" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/subsection.flpgl" SectionNumberReset="continue" VolumeNumberReset="same" ChapterNumberReset="continue">
+      <TocEntry Title="Store Admin" Link="/Content/stores/admin.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="Admin Sign In" Link="/Content/stores/admin-signin.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Your Admin Account" Link="/Content/stores/admin-account.htm" BreakType="none" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Admin Sidebar" Link="/Content/stores/admin-menu.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Admin Workspace" Link="/Content/stores/admin-workspace.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="Dashboard" Link="/Content/stores/admin-dashboard.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Message Inbox" Link="/Content/stores/admin-message-inbox.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Global Search" Link="/Content/stores/admin-global-search.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Grid Controls" Link="/Content/stores/admin-grid-controls.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+            <TocEntry Title="Grid Layout" Link="/Content/stores/admin-grid-layout.htm"/>
+          </TocEntry>
+          <TocEntry Title="Actions Control" Link="/Content/stores/admin-actions-control.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+        <TocEntry Title="Session Lifetime" Link="/Content/stores/admin-session-lifetime.htm"/>
+      </TocEntry>
+      <TocEntry Title="Store Details" Link="/Content/stores/store-details.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="Store Information" Link="/Content/stores/store-information.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue"/>
+        <TocEntry Title="Locale Options" Link="/Content/stores/locale-options.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue"/>
+        <TocEntry Title="State Options" Link="/Content/stores/state-options.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue"/>
+        <TocEntry Title="Country Options" Link="/Content/stores/country-options.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue"/>
+        <TocEntry Title="Merchant Location" Link="/Content/payment/merchant-location.htm" BreakType="pageLayout" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Currency" Link="/Content/stores/currency-overview.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue"/>
+        <TocEntry Title="Store Email Addresses" Link="/Content/stores/store-email-addresses.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue"/>
+        <TocEntry Title="Contact Us" Link="/Content/stores/contact-us.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue"/>
+      </TocEntry>
+      <TocEntry Title="Storefront Branding" Link="/Content/design/storefront-branding.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="Uploading Your Logo" Link="/Content/design/logo-upload.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Adding a Favicon" Link="/Content/design/favicon.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Welcome Message" Link="/Content/design/welcome-message.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Copyright Notice" Link="/Content/design/copyright-notice.htm" BreakType="none" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Store Demo Notice" Link="/Content/design/demo-notice.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      </TocEntry>
+      <TocEntry Title="Websites, Stores &amp; Views" Link="/Content/stores/websites-stores-views.htm" BreakType="chapter" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl" PageType="first">
+        <TocEntry Title="Scope" Link="/Content/configuration/scope.htm" BreakType="pageLayout" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="Changing Scope" Link="/Content/configuration/scope-change.htm"/>
+          <TocEntry Title="Catalog Scope" Link="/Content/catalog/catalog-scope.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Product Scope" Link="/Content/catalog/product-scope.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Price Scope" Link="/Content/catalog/catalog-price-scope.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Customer Account Scope" Link="/Content/customers/account-scope.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Scope Quick Reference" Link="/Content/stores/store-scope-reference.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+        <TocEntry Title="Single Store Mode" Link="/Content/stores/store-mode-single.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue"/>
+      </TocEntry>
+      <TocEntry Title="Industry Compliance" Link="/Content/stores/compliance-industry.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="PCI Compliance Guidelines" Link="/Content/stores/compliance-pci.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="GDPR Compliance" Link="/Content/stores/compliance-gdpr.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="Google Analytics for GDPR" Link="/Content/stores/compliance-gdpr-google.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+        <TocEntry Title="Privacy Policy" Link="/Content/stores/privacy-policy.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Cookie Law Compliance" Link="/Content/stores/compliance-cookie-law.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="Cookie Restriction Mode" Link="/Content/stores/compliance-cookie-restriction-mode.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Cookie Reference" Link="/Content/stores/cookie-reference.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+      </TocEntry>
+    </TocEntry>
+  </TocEntry>
+  <TocEntry Title="Catalog" Link="/Content/catalog.htm" ReplaceMergeNode="false" BreakType="pageLayout" PageType="title" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/section.flpgl">
+    <TocEntry Title="Catalog Menu" Link="/Content/catalog/catalog-menu.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+      <TocEntry Title="Catalog URLs" Link="/Content/catalog/catalog-urls.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+    </TocEntry>
+    <TocEntry Title="Products Grid" Link="/Content/catalog/products.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl"/>
+    <TocEntry Title="Creating Products" Link="/Content/catalog/product-create.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+      <TocEntry Title="Product Workspace" Link="/Content/catalog/product-workspace.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+        <TocEntry Title="Default Field Values" Link="/Content/catalog/product-fields-autogenerated.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      </TocEntry>
+      <TocEntry Title="Product Types" Link="/Content/catalog/product-types.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      <TocEntry Title="Simple Product" Link="/Content/catalog/product-create-simple.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue"/>
+      <TocEntry Title="Configurable Product" Link="/Content/catalog/product-create-configurable.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue"/>
+      <TocEntry Title="Grouped Product" Link="/Content/catalog/product-create-grouped.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue"/>
+      <TocEntry Title="Virtual Product" Link="/Content/catalog/product-create-virtual.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue"/>
+      <TocEntry Title="Bundle Product" Link="/Content/catalog/product-create-bundle.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue"/>
+      <TocEntry Title="Downloadable Product" Link="/Content/catalog/product-create-downloadable.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue">
+        <TocEntry Title="Configuring Download Options" Link="/Content/catalog/product-download-options.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue"/>
+      </TocEntry>
+    </TocEntry>
+    <TocEntry Title="Product Settings" Link="/Content/catalog/settings.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+      <TocEntry Title="Advanced Settings" Link="/Content/catalog/settings-advanced.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      <TocEntry Title="Other Settings" Link="/Content/catalog/settings-other.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+        <TocEntry Title="Content" Link="/Content/catalog/product-content.htm" BreakType="pageLayout" PageType="continue" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Configurations" Link="/Content/catalog/product-configurations.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Product Reviews" Link="/Content/catalog/settings-advanced-product-reviews.htm" BreakType="pageLayout" PageType="continue" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Images and Videos" Link="/Content/catalog/product-images-and-video.htm" BreakType="pageLayout" PageType="continue" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Search Engine Optimization" Link="/Content/catalog/product-search-engine-optimization.htm" BreakType="pageLayout" PageType="continue" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Related Products, Up-sells, and Cross-sells" Link="/Content/catalog/related-products-up-sells-cross-sells.htm" BreakType="pageLayout" PageType="continue" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="Related Products" Link="/Content/catalog/settings-advanced-related-products.htm"/>
+          <TocEntry Title="Up-sells" Link="/Content/catalog/settings-advanced-up-sells.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Cross-sells" Link="/Content/catalog/settings-advanced-cross-sells.htm" BreakType="none" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+        <TocEntry Title="Product View Optimization" Link="/Content/catalog/product-view-optimization.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Customizable Options" Link="/Content/catalog/settings-advanced-custom-options.htm" BreakType="pageLayout" PageType="continue" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Product in Websites" Link="/Content/catalog/settings-basic-websites.htm" BreakType="pageLayout" PageType="continue" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Design" Link="/Content/catalog/settings-advanced-design.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Schedule Design Update" Link="/Content/catalog/product-scheduled-design-update.htm" conditions="Default.CE Only"/>
+        <TocEntry Title="Gift Options" Link="/Content/catalog/product-gift-options.htm" BreakType="pageLayout" PageType="continue" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Downloadable Information" Link="/Content/catalog/product-downloadable-information.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Grouped Products" Link="/Content/catalog/product-grouped-products.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Bundle Items" Link="/Content/catalog/product-bundle-items.htm" BreakType="none" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      </TocEntry>
+    </TocEntry>
+    <TocEntry Title="Managing Price" Link="/Content/catalog/pricing.htm" BreakType="chapter" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl" PageType="first">
+      <TocEntry Title="Advanced Pricing" Link="/Content/catalog/pricing-advanced.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+        <TocEntry Title="Group Price" Link="/Content/catalog/product-price-group.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Special Price" Link="/Content/catalog/product-price-special.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Tier Price" Link="/Content/catalog/product-price-tier.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Minimum Advertised Price" Link="/Content/catalog/product-price-minimum-advertised.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="MAP Logic" Link="/Content/catalog/product-price-minimum-advertised-logic.htm" BreakType="none" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Configuring MAP" Link="/Content/catalog/product-price-minimum-advertised-configure.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+      </TocEntry>
+    </TocEntry>
+    <TocEntry Title="Managing Inventory" Link="/Content/catalog/inventory-management.htm" BreakType="chapter" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl" PageType="first">
+      <TocEntry Title="Learning about Inventory Management" Link="/Content/catalog/inventory-learn-more.htm">
+        <TocEntry Title="About Sources and Stocks" Link="/Content/catalog/inventory-about-sources-stocks.htm"/>
+        <TocEntry Title="About Source Selection Algorithm and Reservations" Link="/Content/catalog/inventory-about-ssa.htm"/>
+        <TocEntry Title="About Order Status and Reservations" Link="/Content/catalog/inventory-about-order-status-reservation.htm"/>
+        <TocEntry Title="About Product Types" Link="/Content/catalog/inventory-about-product-types.htm"/>
+      </TocEntry>
+      <TocEntry Title="Getting Started with Inventory Management" Link="/Content/catalog/inventory-get-started.htm" StartSection="false">
+        <TocEntry Title="Configuring Single and Multi Source Merchants" Link="/Content/catalog/inventory-merchant-type.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Expanding and Restructuring Inventory" Link="/Content/catalog/inventory-expand-restructure-inventory.htm"/>
+        <TocEntry Title="Migrating and Upgrading" Link="/Content/catalog/inventory-migration.htm"/>
+      </TocEntry>
+      <TocEntry Title="Configuring Inventory Management" Link="/Content/catalog/inventory-configure-inventory-management.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+        <TocEntry Title="Enabling Inventory Managment" Link="/Content/catalog/inventory.htm" BreakType="pageLayout" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Configuring Global Options" Link="/Content/catalog/inventory-options-global.htm"/>
+        <TocEntry Title="Configuring Product Options" Link="/Content/catalog/inventory-product-stock-options.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Configuring Backorders" Link="/Content/catalog/inventory-backorders.htm"/>
+        <TocEntry Title="Configuring Source Priority Algorithm" Link="/Content/catalog/inventory-configure-source-priority.htm"/>
+        <TocEntry Title="Configuring Distance Priority Algorithm" Link="/Content/catalog/inventory-configure-distance-priority.htm"/>
+        <TocEntry Title="Product Alerts" Link="/Content/catalog/inventory-product-alerts.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="Product Alert Run Settings" Link="/Content/catalog/inventory-product-alert-run-settings.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Stock Message Scenarios" Link="/Content/catalog/inventory-stock-message-scenarios.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+      </TocEntry>
+      <TocEntry Title="Managing Sources" Link="/Content/catalog/inventory-sources.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+        <TocEntry Title="Adding a New Source" Link="/Content/catalog/inventory-sources-add.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Disabling Sources" Link="/Content/catalog/inventory-sources-disable.htm"/>
+      </TocEntry>
+      <TocEntry Title="Managing Stocks" Link="/Content/catalog/inventory-stock.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+        <TocEntry Title="Adding a New Stock" Link="/Content/catalog/inventory-stock-add.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Prioritizing Sources for a Stock" Link="/Content/catalog/inventory-stock-priority.htm"/>
+        <TocEntry Title="Deleting Stocks" Link="/Content/catalog/inventory-stock-delete.htm"/>
+      </TocEntry>
+      <TocEntry Title="Managing Inventory Quantities" Link="/Content/catalog/inventory-manage-inventory-quantities.htm" StartSection="false">
+        <TocEntry Title="Assigning Sources per Product" Link="/Content/catalog/inventory-product-sources.htm"/>
+        <TocEntry Title="Assigning Quantities per Product" Link="/Content/catalog/inventory-product-quantity.htm"/>
+        <TocEntry Title="Bulk Assigning Sources" Link="/Content/catalog/inventory-bulk-assign-sources.htm"/>
+        <TocEntry Title="Bulk Unassigning Sources" Link="/Content/catalog/inventory-bulk-unassign-sources.htm"/>
+        <TocEntry Title="Transferring Inventory to Source" Link="/Content/catalog/inventory-bulk-transfer-inventory.htm"/>
+        <TocEntry Title="Importing and Exporting Inventory" Link="/Content/catalog/inventory-import-export.htm"/>
+      </TocEntry>
+      <TocEntry Title="Managing Orders and Shipments" Link="/Content/catalog/inventory-orders-shipment.htm" StartSection="false">
+        <TocEntry Title="Creating Shipments with Inventory Management" Link="/Content/catalog/inventory-shipment-create.htm"/>
+      </TocEntry>
+    </TocEntry>
+    <TocEntry Title="Images and Videos" Link="/Content/catalog/catalog-images-video.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+      <TocEntry Title="Uploading Product Images" Link="/Content/catalog/product-image-upload.htm" BreakType="pageLayout" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1"/>
+      <TocEntry Title="Adding Product Video" Link="/Content/catalog/product-video.htm" BreakType="pageLayout" PageNumber="1" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" StartSection="false"/>
+      <TocEntry Title="Media Gallery" Link="/Content/catalog/media-gallery.htm" BreakType="pageLayout" PageNumber="1" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" StartSection="false"/>
+      <TocEntry Title="Placeholders" Link="/Content/catalog/product-image-placeholders.htm" BreakType="pageLayout" PageNumber="1" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      <TocEntry Title="Watermarks" Link="/Content/catalog/product-image-watermarks.htm" BreakType="pageLayout" PageNumber="1" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      <TocEntry Title="Swatches" Link="/Content/catalog/swatches.htm" BreakType="pageLayout" PageNumber="1" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+        <TocEntry Title="Creating Swatches" Link="/Content/catalog/swatch-create.htm" BreakType="pageLayout" PageNumber="1" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      </TocEntry>
+    </TocEntry>
+    <TocEntry Title="Categories" Link="/Content/catalog/categories.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+      <TocEntry Title="Best Practices" Link="/Content/catalog/category-best-practices.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      <TocEntry Title="Creating Categories" Link="/Content/catalog/category-create.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+        <TocEntry Title="Root Categories" Link="/Content/catalog/category-root.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Hidden Categories" Link="/Content/catalog/category-hidden.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Modifying a Category" Link="/Content/catalog/category-modify.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      </TocEntry>
+      <TocEntry Title="Content Settings" Link="/Content/catalog/categories-content-settings.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      <TocEntry Title="Display Settings" Link="/Content/catalog/categories-display-settings.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      <TocEntry Title="Search Engine Optimization" Link="/Content/catalog/categories-search-engine-optimization.htm"/>
+      <TocEntry Title="Products in Category" Link="/Content/catalog/categories-category-products.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      <TocEntry Title="Design Settings" Link="/Content/catalog/categories-custom-design.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+    </TocEntry>
+    <TocEntry Title="Product Attributes" Link="/Content/catalog/product-attributes.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+      <TocEntry Title="Best Practices" Link="/Content/catalog/attribute-best-practices.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      <TocEntry Title="Creating Product Attributes" Link="/Content/stores/attribute-product-create.htm" BreakType="pageLayout" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+        <TocEntry Title="Adding an Attribute" Link="/Content/catalog/product-attributes-add.htm" BreakType="pageLayout" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      </TocEntry>
+      <TocEntry Title="Attribute Sets" Link="/Content/stores/attribute-sets.htm" BreakType="pageLayout" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      <TocEntry Title="Attribute Input Types" Link="/Content/stores/attributes-input-types.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue">
+        <TocEntry Title="Date &amp; Time Options" Link="/Content/stores/attribute-date-time-options.htm" BreakType="none" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" StartSection="false"/>
+      </TocEntry>
+    </TocEntry>
+    <TocEntry Title="Using a Flat Catalog" Link="/Content/catalog/catalog-flat.htm" BreakType="chapter" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl" PageNumber="1" PageType="first"/>
+  </TocEntry>
+  <TocEntry Title="Marketing" Link="/Content/marketing.htm" StartSection="false" BreakType="pageLayout" PageType="title" PageLayout="/Content/Resources/PageLayouts/section.flpgl" PageNumberReset="continue">
+    <TocEntry Title="Marketing Menu" Link="/Content/marketing/marketing-menu.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl"/>
+    <TocEntry Title="Shopping Tools" Link="/Content/marketing/shopping-tools.htm" BreakType="chapter" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl" PageType="first" PageNumberReset="continue">
+      <TocEntry Title="Opportunities to Engage" Link="/Content/marketing/customer-engagement.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      <TocEntry Title="Email a Friend" Link="/Content/marketing/email-a-friend.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      <TocEntry Title="Wish Lists" Link="/Content/marketing/wishlists.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+        <TocEntry Title="Configuring Wish Lists" Link="/Content/marketing/wishlist-configuration.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Sharing a Wish List" Link="/Content/marketing/wishlist-share.htm" BreakType="none" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      </TocEntry>
+      <TocEntry Title="Product Relationships" Link="/Content/marketing/product-relationships.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      <TocEntry Title="Compare Products" Link="/Content/marketing/product-compare.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      <TocEntry Title="Recently Viewed / Compared" Link="/Content/marketing/products-viewed-compared.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      <TocEntry Title="Product Reviews" Link="/Content/marketing/product-reviews.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+        <TocEntry Title="Ratings" Link="/Content/stores/attributes-rating.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      </TocEntry>
+    </TocEntry>
+    <TocEntry Title="Promotions" Link="/Content/marketing/promotions.htm" BreakType="pageLayout" PageType="title" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/subsection.flpgl">
+      <TocEntry Title="Catalog Price Rules" Link="/Content/marketing/price-rules-catalog.htm" BreakType="chapter" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl" PageType="first">
+        <TocEntry Title="Multiple SKUs" Link="/Content/marketing/price-rule-multiple-sku.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      </TocEntry>
+      <TocEntry Title="Cart Price Rules" Link="/Content/marketing/price-rules-cart.htm" StartSection="false" BreakType="chapter" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl" PageType="first">
+        <TocEntry Title="Coupon Codes" Link="/Content/marketing/price-rules-cart-coupon.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="Configuring Coupon Codes" Link="/Content/marketing/price-rules-cart-coupon-code-configure.htm" BreakType="none" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Coupons Report" Link="/Content/marketing/price-rules-cart-coupon-report.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+        <TocEntry Title="Free Shipping Promotion" Link="/Content/marketing/price-rules-cart-free-shipping.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Buy X Get Y Free" Link="/Content/marketing/price-rules-cart-buy-x-get-y-free.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Discount with Minimum Purchase" Link="/Content/marketing/price-rule-discount-minimum-purchase.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      </TocEntry>
+    </TocEntry>
+    <TocEntry Title="Communications" Link="/Content/marketing/communications.htm" BreakType="pageLayout" PageType="title" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/subsection.flpgl">
+      <TocEntry Title="Email" Link="/Content/marketing/email-templates.htm" BreakType="chapter" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl" PageType="first" PageNumberReset="continue">
+        <TocEntry Title="Supported Email Clients" Link="/Content/marketing/email-clients-supported.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Preparing Your Email Logo" Link="/Content/marketing/email-logo.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Configuring Email Templates" Link="/Content/marketing/email-template-configuration.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="Sales Email" Link="/Content/marketing/sales-email-configure.htm" BreakType="none" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Payment Failed Email" Link="/Content/sales/checkout-payment-failed-emails.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Admin User Email" Link="/Content/stores/admin-email-templates-configure.htm"/>
+        </TocEntry>
+        <TocEntry Title="Customizing Email Templates" Link="/Content/marketing/email-template-custom.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="Header Template" Link="/Content/marketing/email-template-header.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Footer Template" Link="/Content/marketing/email-template-footer.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Message Templates" Link="/Content/marketing/email-template-message.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+        <TocEntry Title="Email Template List" Link="/Content/marketing/email-template-list.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Configuring Email Communications" Link="/Content/system/email-communications.htm" BreakType="none" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      </TocEntry>
+      <TocEntry Title="Marketing Automation" Link="/Content/marketing/email-marketing-automation.htm" BreakType="chapter" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl" PageType="first" PageNumberReset="continue">
+        <TocEntry Title="Setting up dotmailer" Link="/Content/marketing/email-marketing-dotmailer-setup.htm"/>
+        <TocEntry Title="Creating a Campaign" Link="/Content/marketing/email-marketing-campaign-create.htm">
+          <TocEntry Title="Import Your Contacts" Link="/Content/marketing/email-marketing-automation-contacts.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Schedule a Campaign" Link="/Content/marketing/email-marketing-automation-campaign-send.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Automate a Campaign" Link="/Content/marketing/email-marketing-automation-campaign-automate.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+        <TocEntry Title="Exclusion Rules" Link="/Content/marketing/email-marketing-automation-exclusion-rules.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Automation Studio" Link="/Content/marketing/email-marketing-automation-studio.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      </TocEntry>
+      <TocEntry Title="Sales Documents" Link="/Content/marketing/sales-communications.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="Preparing Your Invoice Logo" Link="/Content/marketing/sales-document-pdf-logo.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Adding Reference IDs to Header" Link="/Content/marketing/sales-documents-ref-id.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Customer Address Templates" Link="/Content/customers/address-templates.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      </TocEntry>
+      <TocEntry Title="Newsletters" Link="/Content/marketing/newsletters.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="Configuring Newsletters" Link="/Content/marketing/newsletter-configuration.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Newsletter Templates" Link="/Content/marketing/newsletter-template.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Sending Newsletters" Link="/Content/marketing/newsletter-queue.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Managing Subscribers" Link="/Content/marketing/newsletter-subscribers.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      </TocEntry>
+      <TocEntry Title="RSS Feeds" Link="/Content/marketing/rss-feed.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl"/>
+      <TocEntry Title="Using Variables" Link="/Content/marketing/variables.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="Adding Predefined Variables" Link="/Content/marketing/variables-predefined.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Adding Custom Variables" Link="/Content/marketing/variables-custom.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Markup Tags" Link="/Content/marketing/markup-tags.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="Using Markup Tags in Links" Link="/Content/marketing/markup-tags-links.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Dynamic Media URLs" Link="/Content/catalog/catalog-urls-dynamic-media.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+        <TocEntry Title="Variable Reference" Link="/Content/marketing/variables-reference.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      </TocEntry>
+      <TocEntry Title="Social" Link="/Content/marketing/social.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="Connect to Facebook" Link="/Content/marketing/social-connect-to-facebook.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      </TocEntry>
+    </TocEntry>
+    <TocEntry Title="SEO &amp;  Search" Link="/Content/marketing/seo-search.htm" BreakType="pageLayout" PageType="title" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/subsection.flpgl">
+      <TocEntry Title="Catalog Navigation" Link="/Content/catalog/navigation.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="Top Navigation" Link="/Content/catalog/navigation-top.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue"/>
+        <TocEntry Title="Breadcrumb Trail" Link="/Content/catalog/navigation-breadcrumb-trail.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue"/>
+        <TocEntry Title="Product Listings" Link="/Content/catalog/navigation-product-listings.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue"/>
+        <TocEntry Title="Pagination Controls" Link="/Content/catalog/navigation-pagination.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue"/>
+        <TocEntry Title="Layered Navigation" Link="/Content/catalog/navigation-layered.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue">
+          <TocEntry Title="Filterable Attributes" Link="/Content/catalog/navigation-layered-filterable-attributes.htm" BreakType="pageLayout" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Price Navigation" Link="/Content/catalog/navigation-layered-price.htm" BreakType="pageLayout" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Configuring Layered Navigation" Link="/Content/catalog/navigation-layered-configuration.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue"/>
+        </TocEntry>
+      </TocEntry>
+      <TocEntry Title="Catalog Search" Link="/Content/catalog/search.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="Quick Search" Link="/Content/catalog/search-quick.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1"/>
+        <TocEntry Title="Advanced Search" Link="/Content/catalog/search-advanced.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1"/>
+        <TocEntry Title="Search Results" Link="/Content/catalog/search-results.htm" BreakType="pageLayout" PageNumber="1" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Weighted Search" Link="/Content/catalog/search-weighted.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Configuring Catalog Search" Link="/Content/catalog/search-configuration.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1"/>
+        <TocEntry Title="Configuring Catalog Search" Link="/Content/catalog/search-configuration.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1">
+          <TocEntry Title="MySQL" Link="/Content/catalog/search-mysql.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Elasticsearch" Link="/Content/catalog/search-elasticsearch.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+      </TocEntry>
+      <TocEntry Title="Search Terms" Link="/Content/marketing/search-terms.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="Popular Search Terms" Link="/Content/marketing/search-terms-popular.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Adding Search Terms" Link="/Content/marketing/search-terms-add.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Search Terms Report" Link="/Content/marketing/search-terms-report.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      </TocEntry>
+      <TocEntry Title="SEO Best Practices" Link="/Content/marketing/seo-best-practices.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="Meta Data" Link="/Content/marketing/meta-data.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue">
+          <TocEntry Title="Canonical Meta Tag" Link="/Content/marketing/meta-canonical.htm" BreakType="pageLayout" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+        <TocEntry Title="Using a Sitemap" Link="/Content/marketing/sitemap-xml.htm" BreakType="pageLayout" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="Sitemap Configuration" Link="/Content/marketing/sitemap-xml-configure.htm" BreakType="pageLayout" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Search Engine Robots" Link="/Content/marketing/search-engine-robots.htm" BreakType="pageLayout" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+        <TocEntry Title="URL Rewrites" Link="/Content/marketing/url-rewrite.htm" BreakType="chapter" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl" PageType="first" StartSection="false">
+          <TocEntry Title="Configuring URL Rewrites" Link="/Content/marketing/url-rewrite-configuration.htm" BreakType="pageLayout" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Automatic Product Redirects" Link="/Content/marketing/url-redirect-product-automatic.htm" BreakType="pageLayout" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Creating URL Rewrites" Link="/Content/marketing/url-rewrite-create.htm" BreakType="pageLayout" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+            <TocEntry Title="Product Rewrites" Link="/Content/marketing/url-rewrite-product.htm" BreakType="pageLayout" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+            <TocEntry Title="Category Rewrites" Link="/Content/marketing/url-rewrite-category.htm" BreakType="pageLayout" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+            <TocEntry Title="CMS Page Rewrites" Link="/Content/marketing/url-rewrite-cms-page.htm" BreakType="none" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" StartSection="false"/>
+            <TocEntry Title="Custom Rewrites" Link="/Content/marketing/url-rewrite-custom.htm" BreakType="none" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          </TocEntry>
+        </TocEntry>
+      </TocEntry>
+    </TocEntry>
+    <TocEntry Title="Google Tools" Link="/Content/marketing/google-tools.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+      <TocEntry Title="Google Analytics" Link="/Content/marketing/google-universal-analytics.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      <TocEntry Title="Google Content Experiments" Link="/Content/marketing/google-content-experiments.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      <TocEntry Title="Google Adwords" Link="/Content/marketing/google-adwords.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+    </TocEntry>
+  </TocEntry>
+  <TocEntry Title="Content" Link="/Content/content.htm" BreakType="pageLayout" PageType="title" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/section.flpgl">
+    <TocEntry Title="Content Menu" Link="/Content/cms/content-menu.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl"/>
+    <TocEntry Title="Content Elements" Link="/Content/cms/content-elements.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/section.flpgl" PageNumberReset="continue" AutoEndOnLeftPage="disabled" PageType="title">
+      <TocEntry Title="Pages" Link="/Content/cms/pages.htm" StartSection="false" BreakType="chapter" PageType="first" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="Core Content" Link="/Content/cms/pages-core.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="Default Pages" Link="/Content/cms/pages-default.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+        <TocEntry Title="Workspace Controls" Link="/Content/cms/pages-workspace.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="Page Search" Link="/Content/cms/pages-search.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Page Actions" Link="/Content/cms/page-actions.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Grid Layout" Link="/Content/cms/pages-grid-columns.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+        <TocEntry Title="Adding a New Page" Link="/Content/cms/page-add.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="Switching Home Pages" Link="/Content/cms/page-home-new.htm" StartSection="false" BreakType="pageLayout" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+        <TocEntry Title="Media Storage" Link="/Content/cms/media-storage.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Using the Editor" Link="/Content/cms/editor.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="Inserting a Link" Link="/Content/cms/editor-insert-link.htm" BreakType="none" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Inserting an Image" Link="/Content/cms/editor-insert-image.htm" BreakType="none" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Inserting a Widget" Link="/Content/cms/editor-widget.htm" BreakType="none" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Inserting a Variable" Link="/Content/cms/editor-insert-variable.htm" BreakType="none" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Configuring the Editor" Link="/Content/cms/editor-configure.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+      </TocEntry>
+      <TocEntry Title="Content Blocks" Link="/Content/cms/blocks.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="Adding New Blocks" Link="/Content/cms/block-add.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="Adding Social Plugins" Link="/Content/marketing/social-plugins.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Adding a Lightbox or Slider" Link="/Content/cms/lightboxes-and-sliders.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+        <TocEntry Title="Positioning Blocks" Link="/Content/cms/block-position.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="Using a Widget" Link="/Content/cms/widget-static-block.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Using a Layout Update" Link="/Content/design/layout-update-place-block.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+      </TocEntry>
+      <TocEntry Title="Widgets" Link="/Content/cms/widgets.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="Widget Types" Link="/Content/cms/widget-types.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Creating a Widget" Link="/Content/cms/widget-create.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="New Products List" Link="/Content/cms/widget-new-products-list.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Orders and Returns" Link="/Content/cms/widget-orders-returns.htm"/>
+        </TocEntry>
+      </TocEntry>
+    </TocEntry>
+    <TocEntry Title="Design &amp; Theme" Link="/Content/design/design-theme.htm" BreakType="pageLayout" PageType="title" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/subsection.flpgl">
+      <TocEntry Title="Design Menu" Link="/Content/design/design-menu.htm" BreakType="chapter" PageType="first" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl" PageNumberReset="continue">
+        <TocEntry Title="Design Configuration" Link="/Content/design/configuration.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      </TocEntry>
+      <TocEntry Title="Page Setup" Link="/Content/design/page-setup.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="HTML Head" Link="/Content/design/html-head.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Header" Link="/Content/design/header.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Footer" Link="/Content/design/footer.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      </TocEntry>
+      <TocEntry Title="Page Layout" Link="/Content/design/page-layout.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="Standard Page Layouts" Link="/Content/design/page-layout-standard.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Storefront Examples" Link="/Content/design/page-layout-examples.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Layout Updates" Link="/Content/design/layout-updates.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="Standard Block Layout" Link="/Content/design/block-layout-standard.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Layout Update Examples" Link="/Content/design/layout-update-examples.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Layout Update Syntax" Link="/Content/design/layout-update-syntax.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Controlling Block Order" Link="/Content/design/layout-update-block-order.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="XML Load Sequence" Link="/Content/design/xml-load-sequence.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+      </TocEntry>
+      <TocEntry Title="Themes" Link="/Content/design/themes.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="Using the Default Theme" Link="/Content/design/theme-default.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Installing a New Theme" Link="/Content/design/theme-install.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Theme Assets" Link="/Content/design/theme-assets.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="Merging CSS Files" Link="/Content/design/merge-css.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Merging Javascript Files" Link="/Content/design/merge-javascript.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+        <TocEntry Title="Scheduling Design Changes" Link="/Content/design/schedule.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      </TocEntry>
+    </TocEntry>
+  </TocEntry>
+  <TocEntry Title="Customers" Link="/Content/customers.htm" BreakType="pageLayout" PageType="title" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/section.flpgl" ReplaceMergeNode="false">
+    <TocEntry Title="Customers Menu" Link="/Content/customers/customers-menu.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+      <TocEntry Title="All Customers" Link="/Content/customers/customers-all.htm" BreakType="pageLayout" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      <TocEntry Title="Now Online" Link="/Content/customers/now-online.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+    </TocEntry>
+    <TocEntry Title="Customer Accounts" Link="/Content/customers/customer-account.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+      <TocEntry Title="Configuring Account Options" Link="/Content/customers/customer-account-configuration.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+        <TocEntry Title="Login Landing Page" Link="/Content/customers/login-landing-page.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="New Account Options" Link="/Content/customers/account-options-new.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Name and Address Options" Link="/Content/customers/name-address-options.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Password Options" Link="/Content/customers/password-options.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Customer Session Lifetime" Link="/Content/customers/customer-online-options.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      </TocEntry>
+      <TocEntry Title="Creating an Account" Link="/Content/customers/account-create.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      <TocEntry Title="Managing Customer Accounts" Link="/Content/customers/customer-account-manage.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+        <TocEntry Title="Updating a Customer Profile" Link="/Content/customers/customer-account-update.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      </TocEntry>
+      <TocEntry Title="Customer Sign In" Link="/Content/customers/customer-sign-in.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+        <TocEntry Title="Resetting Passwords" Link="/Content/customers/password-reset.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      </TocEntry>
+      <TocEntry Title="Account Dashboard" Link="/Content/customers/account-dashboard.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+        <TocEntry Title="My Orders" Link="/Content/customers/account-dashboard-my-orders.htm"/>
+        <TocEntry Title="My Downloadable Products" Link="/Content/customers/account-dashboard-my-downloadable-products.htm"/>
+        <TocEntry Title="My Wish List" Link="/Content/customers/account-dashboard-my-wish-list.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Address Book" Link="/Content/customers/account-dashboard-address-book.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Account Information" Link="/Content/customers/account-dashboard-account-information.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Stored Payment Methods" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" Link="/Content/customers/account-dashboard-stored-payment-methods.htm"/>
+        <TocEntry Title="Billing Agreements" Link="/Content/customers/account-dashboard-billing-agreements.htm" BreakType="none" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="My Product Reviews" Link="/Content/customers/account-dashboard-my-product-reviews.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Newsletter Subscription" Link="/Content/customers/account-dashboard-newsletter-subscriptions.htm" BreakType="none" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      </TocEntry>
+    </TocEntry>
+    <TocEntry Title="Customer Groups" Link="/Content/customers/customer-groups.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl"/>
+  </TocEntry>
+  <TocEntry Title="Sales" Link="/Content/sales.htm" BreakType="pageLayout" PageType="title" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/section.flpgl">
+    <TocEntry Title="Sales Menu" Link="/Content/sales/sales-menu.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl"/>
+    <TocEntry Title="Point of Purchase" Link="/Content/sales/point-of-purchase.htm" BreakType="pageLayout" PageType="title" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/subsection.flpgl">
+      <TocEntry Title="Instant Purchase" Link="/Content/sales/checkout-instant-purchase.htm" BreakType="chapter" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl" PageType="first" PageNumberReset="continue"/>
+      <TocEntry Title="Shopping Cart" Link="/Content/sales/cart.htm" BreakType="chapter" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl" PageType="first" PageNumberReset="continue">
+        <TocEntry Title="Cart Configuration" Link="/Content/sales/cart-configuration.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue">
+          <TocEntry Title="My Cart Link" Link="/Content/sales/cart-link.htm" BreakType="pageLayout" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Cart Sidebar" Link="/Content/sales/cart-sidebar.htm" BreakType="pageLayout" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Redirect to Cart" Link="/Content/sales/cart-redirect.htm" BreakType="pageLayout" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Quote Lifetime" Link="/Content/sales/cart-quote-lifetime.htm" BreakType="pageLayout" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Minimum Order Amount" Link="/Content/sales/minimum-order-amount.htm" BreakType="pageLayout" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Allow Reorders" Link="/Content/sales/reorders-allow.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Cart Thumbnails" Link="/Content/sales/cart-thumbnails.htm" BreakType="pageLayout" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+        <TocEntry Title="Gift Options" Link="/Content/sales/gift-options.htm"/>
+        <TocEntry Title="Persistent Cart" Link="/Content/sales/cart-persistent.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue">
+          <TocEntry Title="Persistent Cart Workflow" Link="/Content/sales/cart-persistent-workflow.htm" BreakType="pageLayout" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Configuring a Persistent Cart" Link="/Content/sales/cart-persistent-configuration.htm" BreakType="pageLayout" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+      </TocEntry>
+      <TocEntry Title="Shopping Assistance" Link="/Content/sales/shopping-assistance.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="Creating an Order" Link="/Content/customers/customer-account-create-order.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="Updating an Order" Link="/Content/sales/order-update.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+      </TocEntry>
+      <TocEntry Title="Checkout" Link="/Content/sales/checkout-process.htm" BreakType="chapter" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl" PageType="first" PageNumberReset="continue">
+        <TocEntry Title="Step 1: Shipping" Link="/Content/sales/checkout-step1-shipping.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Step 2: Review &amp; Payments" Link="/Content/sales/checkout-step2-payment-review.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Order Confirmation" Link="/Content/sales/checkout-order-confirmation.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Checkout Configuration" Link="/Content/sales/checkout-configuration.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="Checkout Options" Link="/Content/sales/checkout-options.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+            <TocEntry Title="Guest Checkout" Link="/Content/sales/checkout-guest.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+            <TocEntry Title="Terms and Conditions" Link="/Content/sales/terms-and-conditions.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+            <TocEntry Title="One Page Checkout" Link="/Content/sales/checkout-onepage.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          </TocEntry>
+          <TocEntry Title="Checkout Totals Sort Order" Link="/Content/sales/checkout-totals-sort-order.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+      </TocEntry>
+    </TocEntry>
+    <TocEntry Title="Order Management" Link="/Content/sales/order-management.htm" BreakType="pageLayout" PageType="title" StartSection="false" PageLayout="/Content/Resources/PageLayouts/subsection.flpgl" PageNumberReset="continue">
+      <TocEntry Title="Orders" Link="/Content/sales/orders.htm" StartSection="false" BreakType="chapter" PageType="first" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="Order Workspace" Link="/Content/sales/orders-workspace.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="Order Actions" Link="/Content/sales/order-actions.htm" StartSection="false"/>
+          <TocEntry Title="Order Search" Link="/Content/sales/orders-search.htm" StartSection="false"/>
+          <TocEntry Title="Grid Layout" Link="/Content/sales/order-grid-layout.htm" StartSection="false"/>
+        </TocEntry>
+        <TocEntry Title="Order Workflow" Link="/Content/sales/order-workflow.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Processing an Order" Link="/Content/sales/order-processing.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Order Status" Link="/Content/sales/order-status.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="Order Status Workflow" Link="/Content/sales/order-status-workflow.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide-body.flpgl"/>
+          <TocEntry Title="Custom Order Status" Link="/Content/sales/order-status-custom.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Order Status Notification" Link="/Content/sales/order-status-notification.htm"/>
+        </TocEntry>
+        <TocEntry Title="Scheduled Orders" Link="/Content/sales/order-scheduled-operations.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="Pending Payment Order Lifetime" Link="/Content/sales/order-pending-payment-lifetime.htm"/>
+          <TocEntry Title="Scheduled Grid Updates" Link="/Content/sales/order-grid-updates-schedule.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+      </TocEntry>
+      <TocEntry Title="Invoices" Link="/Content/sales/invoices.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="Creating an Invoice" Link="/Content/sales/invoice-create.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Printing Multiple Invoices" Link="/Content/sales/invoice-print-multiple.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      </TocEntry>
+      <TocEntry Title="Shipments" Link="/Content/sales/shipments.htm" BreakType="chapter" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl" PageType="first" PageNumberReset="continue">
+        <TocEntry Title="Creating a Shipment" Link="/Content/sales/shipments-create.htm"/>
+      </TocEntry>
+      <TocEntry Title="Dispatches" Link="/Content/sales/dispatches.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      <TocEntry Title="Batches" Link="/Content/sales/batches.htm">
+        <TocEntry Title="Creating a Batch" Link="/Content/shipping/magento-shipping-batch-create.htm"/>
+      </TocEntry>
+      <TocEntry Title="Credit Memos" Link="/Content/sales/credit-memos.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="Product Return Workflow" Link="/Content/sales/return-product-workflow.htm"/>
+        <TocEntry Title="Issuing a Credit Memo" Link="/Content/sales/credit-memo-create.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Printing Credit Memos" Link="/Content/sales/credit-memo-print.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      </TocEntry>
+      <TocEntry Title="Billing Agreements" Link="/Content/sales/billing-agreements.htm" BreakType="chapter" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl" PageType="first"/>
+      <TocEntry Title="Transactions" Link="/Content/sales/transactions.htm" BreakType="chapter" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl" PageType="first"/>
+    </TocEntry>
+    <TocEntry Title="Payments" Link="/Content/payment/payments.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/subsection.flpgl" PageType="title" PageNumberReset="continue">
+      <TocEntry Title="Recommended Solutions" Link="/Content/payment/recommended-solutions.htm" StartSection="false" BreakType="chapter" PageType="first" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="PayPal Express Checkout" Link="/Content/payment/paypal-express-checkout.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="In-Context Checkout" Link="/Content/payment/paypal-in-context-checkout.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Billing Agreements" Link="/Content/payment/paypal-billing-agreements.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Settlement Reports" Link="/Content/payment/paypal-settlement-reports.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+        <TocEntry Title="Braintree" Link="/Content/payment/braintree.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Other PayPal Solutions" Link="/Content/payment/paypal.htm" BreakType="pageLayout" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="Payments Advanced" Link="/Content/payment/paypal-payments-advanced.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Payments Pro" Link="/Content/payment/paypal-payments-pro.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Payments Standard" Link="/Content/payment/paypal-payments-standard.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Payflow Pro" Link="/Content/payment/paypal-payflow-pro.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Payflow Link" Link="/Content/payment/paypal-payflow-link.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+        <TocEntry Title="PayPal Reference" Link="/Content/payment/paypal-payment-solutions.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="PayPal Business Account" Link="/Content/payment/paypal-business-account.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="PayPal Credit" Link="/Content/payment/paypal-credit.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="PayPal Fraud Management Filter" Link="/Content/payment/paypal-fraud-management-filter.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="PayPal by Country" Link="/Content/payment/paypal-countries.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+      </TocEntry>
+      <TocEntry Title="Other Payment Methods" Link="/Content/payment/gateways.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="Klarna" Link="/Content/payment/klarna.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="Customer Experience" Link="/Content/payment/klarna-customer-experience.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Setting Up Klarna" Link="/Content/payment/klarna-setup.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Managing Your Account" Link="/Content/payment/klarna-manage.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+        <TocEntry Title="Amazon Pay" Link="/Content/payment/amazon-pay.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="Customer Experience" Link="/Content/payment/amazon-pay-customer-experience.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Setting Up Amazon Pay" Link="/Content/payment/amazon-pay-setup.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Amazon Seller Central" Link="/Content/payment/amazon-pay-seller-central.htm" StartSection="false" BreakType="pageLayout" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Managing Transactions" Link="/Content/payment/amazon-pay-manage.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Amazon Pay Resources" Link="/Content/payment/amazon-pay-resources.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+        <TocEntry Title="Authorize.Net Direct Post" Link="/Content/payment/authorize-net-direct-post.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      </TocEntry>
+      <TocEntry Title="Basic Payment Methods" Link="/Content/payment/payment-methods.htm" BreakType="chapter" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl" PageType="first" PageNumberReset="continue">
+        <TocEntry Title="Check / Money Order" Link="/Content/payment/check-money-order.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Cash On Delivery" Link="/Content/payment/cash-on-delivery.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Bank Transfer" Link="/Content/payment/bank-transfer.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Purchase Order" Link="/Content/payment/purchase-order.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Zero Subtotal Checkout" Link="/Content/payment/zero-subtotal-checkout.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      </TocEntry>
+      <TocEntry Title="Fraud Protection" Link="/Content/sales/fraud-protection.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="Signifyd Fraud Protection" Link="/Content/sales/fraud-protection-signifyd.htm"/>
+      </TocEntry>
+    </TocEntry>
+    <TocEntry Title="Shipping" BreakType="pageLayout" PageType="title" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/subsection.flpgl" Link="/Content/shipping/shipping.htm">
+      <TocEntry Title="Shipping Settings" Link="/Content/shipping/shipping-settings.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="Point of Origin" Link="/Content/shipping/point-of-origin.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Multiple Addresses" Link="/Content/shipping/shipping-multiaddress.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Shipping Policy" Link="/Content/shipping/shipping-policy-parameters.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      </TocEntry>
+      <TocEntry Title="Basic Shipping Methods" Link="/Content/shipping/methods-basic.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="Free Shipping" Link="/Content/shipping/shipping-free.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Flat Rate" Link="/Content/shipping/shipping-flat-rate.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Table Rates" Link="/Content/shipping/shipping-table-rate.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Dimensional Weight" Link="/Content/shipping/weight-dimensional.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      </TocEntry>
+      <TocEntry Title="Magento Shipping" Link="/Content/shipping/magento-shipping.htm" BreakType="chapter" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl" PageType="first">
+        <TocEntry Title="Quick Look" Link="/Content/shipping/magento-shipping-quick-look.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Customer Experience" Link="/Content/shipping/magento-shipping-customer-experience.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Setting Up Magento Shipping" Link="/Content/shipping/magento-shipping-setup.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="Locations" Link="/Content/shipping/magento-shipping-locations.htm"/>
+          <TocEntry Title="Shipping Partners" Link="/Content/shipping/magento-shipping-carriers.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Packaging" Link="/Content/shipping/magento-shipping-packaging.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+        <TocEntry Title="Shipping Experience Rules" Link="/Content/shipping/magento-shipping-experience-rules.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Troubleshooting" Link="/Content/shipping/magento-shipping-troubleshooting.htm"/>
+      </TocEntry>
+      <TocEntry Title="Carriers" Link="/Content/shipping/carriers.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="UPS" Link="/Content/shipping/ups.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="USPS" Link="/Content/shipping/usps.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="FedEx" Link="/Content/shipping/fedex.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="DHL" Link="/Content/shipping/dhl.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      </TocEntry>
+      <TocEntry Title="Shipping Labels" Link="/Content/shipping/shipping-labels.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="Shipping Label Workflow" Link="/Content/shipping/shipping-label-workflow.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Configuring Shipping Labels" Link="/Content/shipping/shipping-label-configure.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Creating Shipping Labels" Link="/Content/shipping/shipping-label-create.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="Label Packages" Link="/Content/shipping/shipping-label-package.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+      </TocEntry>
+    </TocEntry>
+  </TocEntry>
+  <TocEntry Title="Reports" Link="/Content/reports.htm" BreakType="pageLayout" PageType="title" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/section.flpgl">
+    <TocEntry Title="Reports Menu" Link="/Content/reports/reports-menu.htm" StartSection="false" BreakType="chapter" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl" PageType="first" PageNumberReset="continue">
+      <TocEntry Title="Refresh Statistics" Link="/Content/reports/statistics.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+    </TocEntry>
+    <TocEntry Title="Marketing Reports" Link="/Content/reports/marketing-reports.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl"/>
+    <TocEntry Title="Review Reports" Link="/Content/reports/review-reports.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl"/>
+    <TocEntry Title="Sales Reports" Link="/Content/reports/sales-reports.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl"/>
+    <TocEntry Title="Customer Reports" Link="/Content/reports/customer-reports.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl"/>
+    <TocEntry Title="Product Reports" Link="/Content/reports/product-reports.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl"/>
+    <TocEntry Title="Business Intelligence" Link="/Content/reports/business-intelligence.htm" BreakType="pageLayout" PageType="title" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/subsection.flpgl">
+      <TocEntry Title="Advanced Reporting" Link="/Content/reports/advanced-reporting.htm" BreakType="chapter" StartSection="Unchecked" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl" PageType="first"/>
+      <TocEntry Title="Magento BI Essentials" Link="/Content/reports/bi-essentials.htm" BreakType="chapter" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl" PageType="first" PageNumberReset="continue">
+        <TocEntry Title="Dashboards" Link="/Content/reports/bi-essentials-dashboards.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Report Builder" Link="/Content/reports/bi-essentials-report-builder.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="Visual Report Builder" Link="/Content/reports/bi-essentials-report-builder-visual.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+            <TocEntry Title="Filters" Link="/Content/reports/bi-essentials-report-builder-filters.htm"/>
+            <TocEntry Title="Formulas" Link="/Content/reports/bi-essentials-report-builder-formulas.htm"/>
+          </TocEntry>
+        </TocEntry>
+        <TocEntry Title="Manage Data" Link="/Content/reports/bi-essentials-manage-data.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="Metrics" Link="/Content/reports/bi-essentials-manage-data-metrics.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Filter Sets" Link="/Content/reports/bi-essentials-manage-data-filter-sets.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Export Data" Link="/Content/reports/bi-essentials-export-data.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+      </TocEntry>
+      <TocEntry Title="New Relic Reporting" Link="/Content/reports/new-relic-reporting.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="New Relic Queries" Link="/Content/reports/new-relic-queries.htm"/>
+      </TocEntry>
+    </TocEntry>
+    <TocEntry Title="Marketing Automation" Link="/Content/reports/marketing-automation.htm" BreakType="chapter" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl" PageType="first" PageNumberReset="continue"/>
+  </TocEntry>
+  <TocEntry Title="Operations" Link="/Content/operations.htm" BreakType="pageLayout" PageType="title" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/section.flpgl">
+    <TocEntry Title="Stores" Link="/Content/stores/stores.htm" BreakType="pageLayout" PageType="left" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/subsection.flpgl">
+      <TocEntry Title="Stores Menu" Link="/Content/stores/stores-menu.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl"/>
+      <TocEntry Title="All Stores" Link="/Content/stores/stores-all-stores.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="Adding Store Views" Link="/Content/stores/stores-all-create-view.htm" BreakType="pageLayout" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="Editing a Store View" Link="/Content/stores/stores-all-view-edit.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Adding a Language" Link="/Content/stores/store-language-add.htm" BreakType="pageLayout" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+            <TocEntry Title="Translating Products" Link="/Content/catalog/product-translate.htm" BreakType="pageLayout" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+            <TocEntry Title="Translating Content" Link="/Content/cms/page-translate.htm" BreakType="pageLayout" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          </TocEntry>
+        </TocEntry>
+        <TocEntry Title="Adding Stores" Link="/Content/stores/stores-all-create-store.htm" BreakType="pageLayout" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Adding Websites" Link="/Content/stores/stores-all-create-website.htm" BreakType="pageLayout" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Store URLs" Link="/Content/stores/store-urls.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue">
+          <TocEntry Title="Using a Custom Admin URL" Link="/Content/stores/store-urls-custom-admin.htm" BreakType="pageLayout" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+      </TocEntry>
+      <TocEntry Title="Configuration" Link="/Content/stores/configuration-overview.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl"/>
+      <TocEntry Title="Taxes" Link="/Content/tax/taxes.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="Vertex Cloud" Link="/Content/tax/vertex.htm" BreakType="pageLayout" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="Your Account" Link="/Content/tax/vertex-account.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Setting Up Vertex" Link="/Content/tax/vertex-setup.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+            <TocEntry Title="Products" Link="/Content/tax/vertex-setup-products.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+            <TocEntry Title="Customer Exceptions" Link="/Content/tax/vertex-setup-customer-exceptions.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+            <TocEntry Title="Vertex Field Mapping" Link="/Content/tax/vertex-field-mapping.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          </TocEntry>
+          <TocEntry Title="Configuring Magento" Link="/Content/tax/vertex-configure-magento.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+            <TocEntry Title="Test the Configuration" Link="/Content/tax/vertex-test-configuration.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          </TocEntry>
+        </TocEntry>
+        <TocEntry Title="General Tax Settings" Link="/Content/tax/tax-settings-general.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="Cross Border Price Consistency" Link="/Content/tax/tax-cross-border-price.htm"/>
+        </TocEntry>
+        <TocEntry Title="Tax Rules" Link="/Content/tax/tax-rules.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1">
+          <TocEntry Title="Tax Classes" Link="/Content/tax/tax-class.htm" BreakType="pageLayout" PageNumber="1" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+            <TocEntry Title="Configuring Tax Classes" Link="/Content/tax/tax-class-configure.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+            <TocEntry Title="Adding New Tax Classes" Link="/Content/tax/tax-class-new.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+            <TocEntry Title="Default Tax Destination" Link="/Content/tax/tax-destination-default.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+            <TocEntry Title="EU Place of Supply for Digital Goods" Link="/Content/tax/eu-place-of-supply.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1"/>
+          </TocEntry>
+          <TocEntry Title="Fixed Product Tax" Link="/Content/tax/fixed-product-tax.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1">
+            <TocEntry Title="Configuring FPT" Link="/Content/tax/fixed-product-tax-configuration.htm" BreakType="pageLayout" PageNumber="1" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" StartSection="false"/>
+          </TocEntry>
+          <TocEntry Title="Price Display Settings" Link="/Content/tax/display-settings.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+        <TocEntry Title="Tax Zones and Rates" Link="/Content/tax/tax-zones-rates.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1">
+          <TocEntry Title="Import/Export Tax Rates" Link="/Content/system/data-transfer-tax-rates.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1"/>
+        </TocEntry>
+        <TocEntry Title="Value Added Tax (VAT)" Link="/Content/tax/vat.htm" BreakType="pageLayout" PageNumber="1" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="Configuring VAT" Link="/Content/tax/vat-configure.htm" BreakType="none" PageNumber="1" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" StartSection="false"/>
+          <TocEntry Title="VAT ID Validation" Link="/Content/tax/vat-validation.htm" BreakType="pageLayout" PageNumber="1" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+            <TocEntry Title="Configuring VAT ID Validation" Link="/Content/tax/vat-validation-configure.htm" BreakType="pageLayout" PageNumber="1" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          </TocEntry>
+        </TocEntry>
+        <TocEntry Title="Tax Quick Reference" Link="/Content/tax/quick-reference.htm" BreakType="pageLayout" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1"/>
+        <TocEntry Title="International Tax Guidelines" Link="/Content/tax/international-tax-guidelines.htm" BreakType="pageLayout" PageNumber="1" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="U.S. Tax Guidelines" Link="/Content/tax/guidelines-us.htm" BreakType="pageLayout" PageNumber="1" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Canadian Tax Guidelines" Link="/Content/tax/guidelines-canada.htm" BreakType="pageLayout" PageNumber="1" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="EU Tax Guidelines" Link="/Content/tax/guidelines-eu.htm" BreakType="pageLayout" PageNumber="1" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+        <TocEntry Title="Warning Messages" Link="/Content/tax/warning-messages.htm" BreakType="pageLayout" PageNumber="1" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      </TocEntry>
+      <TocEntry Title="Currency" Link="/Content/stores/currency.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="Currency Configuration" Link="/Content/stores/currency-configuration.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Currency Symbols" Link="/Content/stores/currency-symbols.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Updating Currrency Rates" Link="/Content/stores/currency-update.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      </TocEntry>
+      <TocEntry Title="Attributes" Link="/Content/stores/attributes.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="Product Attributes" Link="/Content/stores/attributes-product.htm" BreakType="pageLayout" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      </TocEntry>
+    </TocEntry>
+    <TocEntry Title="System" Link="/Content/system/system.htm" BreakType="pageLayout" PageType="title" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/subsection.flpgl">
+      <TocEntry Title="System Menu" Link="/Content/system/system-menu.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl"/>
+      <TocEntry Title="Data Transfer" Link="/Content/system/data-transfer.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="Working with CSV Files" Link="/Content/system/data-csv.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue">
+          <TocEntry Title="Data Validation" Link="/Content/system/data-validation.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue"/>
+        </TocEntry>
+        <TocEntry Title="Import" Link="/Content/system/data-import.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue">
+          <TocEntry Title="Import History" Link="/Content/system/data-import-history.htm" BreakType="pageLayout" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Product Images" Link="/Content/system/data-import-product-images.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue"/>
+          <TocEntry Title="Import Guidelines" Link="/Content/system/data-import-guidelines.htm" BreakType="pageLayout" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+        <TocEntry Title="Export" Link="/Content/system/data-export.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue">
+          <TocEntry Title="Export Criteria" Link="/Content/system/data-export-criteria.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue"/>
+        </TocEntry>
+        <TocEntry Title="Data Transfer Examples" Link="/Content/system/data-transfer-examples.htm" StartSection="false" BreakType="pageLayout" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="Configurable Products" Link="/Content/system/data-transfer-configurable-products.htm"/>
+          <TocEntry Title="Tier Prices" Link="/Content/system/data-import-price-tier.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+        <TocEntry Title="Product Attribute Reference" Link="/Content/system/data-attributes-product.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue">
+          <TocEntry Title="Complex Data" Link="/Content/system/data-complex.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue"/>
+          <TocEntry Title="Advanced Pricing Data" Link="/Content/system/data-advanced-price.htm" BreakType="pageLayout" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+        <TocEntry Title="Customer Attribute Reference" Link="/Content/system/data-attributes-customer.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue"/>
+      </TocEntry>
+      <TocEntry Title="Integrations" Link="/Content/system/integrations.htm" BreakType="chapter" PageType="first" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl" PageNumberReset="continue">
+        <TocEntry Title="Magento Marketplace" Link="/Content/magento/magento-marketplace.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      </TocEntry>
+      <TocEntry Title="Permissions" Link="/Content/system/permissions.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="Adding Users" Link="/Content/system/permissions-users-all.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue"/>
+        <TocEntry Title="Locked Users" Link="/Content/system/permissions-locked-users.htm" BreakType="pageLayout" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="User Roles" Link="/Content/system/permissions-user-roles.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue">
+          <TocEntry Title="Role Resources" Link="/Content/system/permissions-role-resources.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+      </TocEntry>
+      <TocEntry Title="Alternate Media Storage" Link="/Content/system/media-storage.htm" BreakType="none" PageNumber="1" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" StartSection="false">
+        <TocEntry Title="Using a Database" Link="/Content/system/media-storage-database.htm" BreakType="pageLayout" PageNumber="1" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Using a CDN" Link="/Content/system/media-storage-content-delivery-network.htm" BreakType="pageLayout" PageNumber="1" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+      </TocEntry>
+      <TocEntry Title="Security" Link="/Content/stores/security.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="Security Scan" Link="/Content/magento/security-scan.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Security Best Practices" Link="/Content/magento/magento-security-best-practices.htm" BreakType="pageLayout" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1">
+          <TocEntry Title="Security Action Plan" Link="/Content/magento/security-action-plan.htm"/>
+        </TocEntry>
+        <TocEntry Title="Configuring Admin Security" Link="/Content/stores/security-admin.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1"/>
+        <TocEntry Title="CAPTCHA" Link="/Content/stores/security-captcha.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1"/>
+        <TocEntry Title="Google reCAPTCHA" Link="/Content/stores/security-google-recaptcha.htm"/>
+        <TocEntry Title="Two-Factor Authentication" Link="/Content/stores/security-two-factor-authentication.htm">
+          <TocEntry Title="Using Two-Factor-Authentication" Link="/Content/stores/security-two-factor-authentication-use.htm"/>
+          <TocEntry Title="Managing Two-Factor Authentication" Link="/Content/stores/security-two-factor-authentication-manage.htm"/>
+        </TocEntry>
+        <TocEntry Title="Encryption Key" Link="/Content/system/encryption-key.htm" BreakType="pageLayout" PageNumber="1" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Session Validation" Link="/Content/stores/security-session-validation.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1"/>
+        <TocEntry Title="Browser Capabilities Detection" Link="/Content/stores/security-browser-capabilities-detection.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1"/>
+      </TocEntry>
+      <TocEntry Title="Tools" Link="/Content/system/tools.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl">
+        <TocEntry Title="Cache Management" Link="/Content/system/cache-management.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue" PageNumber="1">
+          <TocEntry Title="Full-Page Cache" Link="/Content/system/cache-full-page.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1"/>
+        </TocEntry>
+        <TocEntry Title="Index Management" Link="/Content/system/index-management.htm" BreakType="pageLayout" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1">
+          <TocEntry Title="Index Trigger Events" Link="/Content/system/index-management-events.htm" BreakType="pageLayout" PageNumber="1" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+        <TocEntry Title="Backups" Link="/Content/system/backups.htm" BreakType="pageLayout" PageNumber="1" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Cron (Scheduled Tasks)" Link="/Content/system/cron.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Developer Tools" Link="/Content/system/developer-tools.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+          <TocEntry Title="Amazon Pay Logs" Link="/Content/system/amazon-logs.htm"/>
+          <TocEntry Title="Frontend Development Workflow" Link="/Content/system/frontend-development-workflow.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Using Static File Signatures" Link="/Content/system/static-file-signature.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Optimizing Resource Files" Link="/Content/system/file-optimization.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Developer Client Restrictions" Link="/Content/system/developer-client-restrictions.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Template Path Hints" Link="/Content/system/template-path-hints.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Translate Inline" Link="/Content/system/translate-inline.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+        <TocEntry Title="Web Setup Wizard" Link="/Content/system/web-setup-wizard.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1">
+          <TocEntry Title="Extension Manager" Link="/Content/system/web-setup-extension-manager.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Module Manager" Link="/Content/system/web-setup-module-manager.htm" BreakType="none" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="System Upgrade" Link="/Content/system/web-setup-system-upgrade.htm" BreakType="none" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+          <TocEntry Title="Web Setup" Link="/Content/system/web-setup.htm" BreakType="none" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        </TocEntry>
+      </TocEntry>
+    </TocEntry>
+  </TocEntry>
+  <TocEntry Title="Reference" Link="/Content/reference.htm" StartSection="false" BreakType="chapter" PageType="title" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/subsection.flpgl">
+    <TocEntry Title="Release Notes" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl" Link="/Content/magento/release-notes.htm"/>
+    <TocEntry Title="Q &amp; A" Link="/Content/magento/questions-and-answers.htm" BreakType="chapter" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl" PageType="first" PageNumberReset="continue"/>
+    <TocEntry Title="Change Log" Link="/Content/magento/change-log.htm" StartSection="false"/>
+    <TocEntry Title="Glossary" Link="/Content/backmatter/glossary.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl"/>
+    <TocEntry Title="Archive" Link="/Content/magento/archive.htm" BreakType="chapter" PageType="first" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl"/>
+    <TocEntry Title="Configuration Reference" Link="/Content/stores/configuration.htm" BreakType="chapter" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_first.flpgl" PageType="first" PageNumberReset="continue">
+      <TocEntry Title="Magento Modes" Link="/Content/magento/installation-modes.htm"/>
+      <TocEntry Title="General" Link="/Content/configuration/general.htm" BreakType="pageLayout" StartSection="false" PageNumberReset="continue" PageNumber="1" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+        <TocEntry Title="General" Link="/Content/configuration/general/general.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1"/>
+        <TocEntry Title="Web" Link="/Content/configuration/general/web.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1"/>
+        <TocEntry Title="Currency Setup" Link="/Content/configuration/general/currency-setup.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1"/>
+        <TocEntry Title="Store Email Addresses" Link="/Content/configuration/general/store-email-addresses.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1"/>
+        <TocEntry Title="Contacts" Link="/Content/configuration/general/contacts.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1"/>
+        <TocEntry Title="Reports" Link="/Content/configuration/general/reports.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1"/>
+        <TocEntry Title="Content Management" Link="/Content/configuration/general/content-management.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1"/>
+        <TocEntry Title="New Relic Reporting" Link="/Content/configuration/general/new-relic-reporting.htm" StartSection="false"/>
+        <TocEntry Title="Advanced Reporting" Link="/Content/configuration/general/advanced-reporting.htm"/>
+      </TocEntry>
+      <TocEntry Title="Catalog" Link="/Content/configuration/catalog.htm" BreakType="pageLayout" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1">
+        <TocEntry Title="Catalog" Link="/Content/configuration/catalog/catalog.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1"/>
+        <TocEntry Title="Inventory" Link="/Content/configuration/catalog/inventory.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1"/>
+        <TocEntry Title="XML Sitemap" Link="/Content/configuration/catalog/xml-sitemap.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1"/>
+        <TocEntry Title="RSS Feeds" Link="/Content/configuration/catalog/rss-feeds.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1"/>
+        <TocEntry Title="Email to a Friend" Link="/Content/configuration/catalog/email-to-a-friend.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1"/>
+      </TocEntry>
+      <TocEntry Title="Customers" Link="/Content/configuration/customers.htm" BreakType="pageLayout" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1">
+        <TocEntry Title="Newsletter" Link="/Content/configuration/customers/newsletter.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1"/>
+        <TocEntry Title="Customer Configuration" Link="/Content/configuration/customers/customer-configuration.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1"/>
+        <TocEntry Title="Wish List" Link="/Content/configuration/customers/wishlist.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1"/>
+        <TocEntry Title="Promotions" Link="/Content/configuration/customers/promotions.htm" BreakType="pageLayout" PageNumber="1" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+        <TocEntry Title="Persistent Shopping Cart" BreakType="pageLayout" PageNumber="1" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" Link="/Content/configuration/customers/persistent-shopping-cart.htm"/>
+      </TocEntry>
+      <TocEntry Title="Sales" Link="/Content/configuration/sales.htm" BreakType="pageLayout" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1">
+        <TocEntry Title="Sales" Link="/Content/configuration/sales/sales.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumberReset="continue" PageNumber="1"/>
+        <TocEntry Title="Sales Emails" Link="/Content/configuration/sales/sales-emails.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1"/>
+        <TocEntry Title="PDF Print-outs" Link="/Content/configuration/sales/pdf-print-outs.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1"/>
+        <TocEntry Title="Tax" Link="/Content/configuration/sales/tax.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1"/>
+        <TocEntry Title="Checkout" Link="/Content/configuration/sales/checkout.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1"/>
+        <TocEntry Title="Shipping Settings" Link="/Content/configuration/sales/shipping-settings.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1"/>
+        <TocEntry Title="Multishipping Settings" Link="/Content/configuration/sales/multishipping-settings.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1"/>
+        <TocEntry Title="Shipping Methods" Link="/Content/configuration/sales/shipping-methods.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1"/>
+        <TocEntry Title="Google API" Link="/Content/configuration/sales/google-api.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1"/>
+        <TocEntry Title="Payment Methods" Link="/Content/configuration/sales/payment-methods.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1">
+          <TocEntry Title="Recommended Solutions" Link="/Content/configuration/sales/recommended-solutions.htm">
+            <TocEntry Title="PayPal Express Checkout" Link="/Content/configuration/sales/paypal-express-checkout.htm"/>
+            <TocEntry Title="Braintree" Link="/Content/configuration/sales/braintree.htm"/>
+          </TocEntry>
+          <TocEntry Title="Other PayPal Methods" Link="/Content/configuration/sales/payment-methods-other.htm">
+            <TocEntry Title="PayPal All-In-One Payment Solutions">
+              <TocEntry Title="PayPal Payments Advanced" Link="/Content/configuration/sales/paypal-payments-advanced.htm"/>
+              <TocEntry Title="PayPal Payments Pro" Link="/Content/configuration/sales/paypal-payments-pro.htm"/>
+              <TocEntry Title="PayPal Payments Standard" Link="/Content/configuration/sales/paypal-payments-standard.htm"/>
+            </TocEntry>
+            <TocEntry Title="PayPal Payment Gateways">
+              <TocEntry Title="PayPal Payflow Pro" Link="/Content/configuration/sales/paypal-payflow-pro.htm"/>
+              <TocEntry Title="PayPal Payflow Link" Link="/Content/configuration/sales/paypal-payflow-link.htm"/>
+            </TocEntry>
+          </TocEntry>
+          <TocEntry Title="Other Payment Methods" Link="/Content/configuration/sales/payment-methods-other.htm">
+            <TocEntry Title="Klarna" Link="/Content/configuration/sales/klarna.htm"/>
+            <TocEntry Title="Amazon Pay" Link="/Content/configuration/sales/amazon-pay.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"/>
+            <TocEntry Title="Authorize.Net Direct Post" Link="/Content/configuration/sales/authorize-net-direct-post.htm"/>
+          </TocEntry>
+        </TocEntry>
+      </TocEntry>
+      <TocEntry Title="Dotmailer" Link="/Content/configuration/dotmailer.htm" StartSection="false">
+        <TocEntry Title="API Credentials" Link="/Content/configuration/dotmailer/api-credentials.htm"/>
+        <TocEntry Title="Data Mapping" Link="/Content/configuration/dotmailer/data-mapping.htm"/>
+        <TocEntry Title="Sync Settings" Link="/Content/configuration/dotmailer/sync-settings.htm"/>
+        <TocEntry Title="Abandoned Carts" Link="/Content/configuration/dotmailer/abandoned-carts.htm"/>
+        <TocEntry Title="Automation" Link="/Content/configuration/dotmailer/automation.htm"/>
+        <TocEntry Title="Dynamic Content" Link="/Content/configuration/dotmailer/dynamic-content.htm"/>
+        <TocEntry Title="Transactional Emails" Link="/Content/configuration/dotmailer/transactional-emails.htm"/>
+        <TocEntry Title="Configuration" Link="/Content/configuration/dotmailer/configuration.htm"/>
+        <TocEntry Title="Developer" Link="/Content/configuration/dotmailer/developer.htm"/>
+      </TocEntry>
+      <TocEntry Title="Services" Link="/Content/configuration/services.htm" BreakType="pageLayout" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1">
+        <TocEntry Title="Magento Web API" Link="/Content/configuration/services/magento-web-api.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1"/>
+        <TocEntry Title="OAuth" Link="/Content/configuration/services/oauth.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1"/>
+      </TocEntry>
+      <TocEntry Title="Advanced" Link="/Content/configuration/advanced.htm" BreakType="pageLayout" StartSection="false" PageNumberReset="continue" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1">
+        <TocEntry Title="Admin" Link="/Content/configuration/advanced/admin.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1"/>
+        <TocEntry Title="System" Link="/Content/configuration/advanced/system.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1"/>
+        <TocEntry Title="Developer" Link="/Content/configuration/advanced/developer.htm" BreakType="pageLayout" StartSection="false" PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" PageNumber="1"/>
+      </TocEntry>
+    </TocEntry>
+    <TocEntry Title="Magento Extensions" Link="/Content/magento/magento-extensions.htm"/>
+    <TocEntry Title="Documentation Resources" Link="https://magento.com/technical-resources" FrameName="_blank" ReplaceMergeNode="false"/>
+  </TocEntry>
+</CatapultToc>

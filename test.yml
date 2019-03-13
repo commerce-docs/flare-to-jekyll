@@ -1,0 +1,170 @@
+---
+label: Getting Started
+pages:
+- label: Contents
+  url: "/Content/frontmatter/contents.htm"
+- label: About This Guide
+  url: "/Content/magento/about-this-guide.htm"
+- label: Introduction
+  url: "/Content/getting-started/introduction.htm"
+  children:
+  - label: Welcome
+    url: "/Content/getting-started/welcome.htm"
+    children:
+    - label: Resources
+      url: "/Content/getting-started/resources.htm"
+    - label: Join the Conversation!
+      url: "/Content/getting-started/magento-ecosystem.htm"
+  - label: About This Release
+    url: "/Content/magento/about-this-release.htm"
+    children:
+      label: Installation
+      url: "/Content/magento/installation.htm"
+      children:
+      - label: Prelaunch Checklist
+        url: "/Content/magento/prelaunch-checklist.htm"
+      - label: Your Login Credentials
+        url: "/Content/getting-started/login-credentials.htm"
+      - label: For Your Records
+        url: "/Content/getting-started/for-your-records.htm"
+  - label: Your Magento Account
+    url: "/Content/magento/magento-account.htm"
+    children:
+    - label: Creating an Account
+      url: "/Content/magento/magento-account-create.htm"
+    - label: Sharing Your Account
+      url: "/Content/magento/magento-account-share.htm"
+  - label: " Quick Tour"
+    url: "/Content/getting-started/quick-tour.htm"
+    children:
+    - label: Path to Purchase
+      url: "/Content/quick-tour/path-to-purchase.htm"
+      children:
+      - label: Home Page
+        url: "/Content/quick-tour/home-page.htm"
+      - label: Catalog Page
+        url: "/Content/quick-tour/catalog-page.htm"
+      - label: Search Results
+        url: "/Content/quick-tour/search-results.htm"
+      - label: Product Page
+        url: "/Content/quick-tour/product-page.htm"
+      - label: Shopping Cart
+        url: "/Content/quick-tour/shopping-cart.htm"
+    - label: Customer Journey
+      url: "/Content/quick-tour/customer-journey.htm"
+      children:
+      - label: Attract New Customers
+        url: "/Content/quick-tour/attract-customers.htm"
+      - label: Engage Your Customers
+        url: "/Content/quick-tour/engage.htm"
+      - label: Increase Average Order Value
+        url: "/Content/quick-tour/increase-average-order-value.htm"
+      - label: Moment of Purchase
+        url: "/Content/quick-tour/moment-of-purchase.htm"
+      - label: Retain Customers
+        url: "/Content/quick-tour/customer-retention.htm"
+      - label: Build Loyalty & Advocacy
+        url: "/Content/quick-tour/loyalty-advocacy.htm"
+      - label: Success!
+        url: "/Content/quick-tour/success.htm"
+- label: Basic Configuration
+  url: "/Content/configuration/configuration-basic.htm"
+  children:
+  - label: Store Admin
+    url: "/Content/stores/admin.htm"
+    children:
+    - label: Admin Sign In
+      url: "/Content/stores/admin-signin.htm"
+    - label: Your Admin Account
+      url: "/Content/stores/admin-account.htm"
+    - label: Admin Sidebar
+      url: "/Content/stores/admin-menu.htm"
+    - label: Admin Workspace
+      url: "/Content/stores/admin-workspace.htm"
+      children:
+      - label: Dashboard
+        url: "/Content/stores/admin-dashboard.htm"
+      - label: Message Inbox
+        url: "/Content/stores/admin-message-inbox.htm"
+      - label: Global Search
+        url: "/Content/stores/admin-global-search.htm"
+      - label: Grid Controls
+        url: "/Content/stores/admin-grid-controls.htm"
+        children:
+          label: Grid Layout
+          url: "/Content/stores/admin-grid-layout.htm"
+      - label: Actions Control
+        url: "/Content/stores/admin-actions-control.htm"
+    - label: Session Lifetime
+      url: "/Content/stores/admin-session-lifetime.htm"
+  - label: Store Details
+    url: "/Content/stores/store-details.htm"
+    children:
+    - label: Store Information
+      url: "/Content/stores/store-information.htm"
+    - label: Locale Options
+      url: "/Content/stores/locale-options.htm"
+    - label: State Options
+      url: "/Content/stores/state-options.htm"
+    - label: Country Options
+      url: "/Content/stores/country-options.htm"
+    - label: Merchant Location
+      url: "/Content/payment/merchant-location.htm"
+    - label: Currency
+      url: "/Content/stores/currency-overview.htm"
+    - label: Store Email Addresses
+      url: "/Content/stores/store-email-addresses.htm"
+    - label: Contact Us
+      url: "/Content/stores/contact-us.htm"
+  - label: Storefront Branding
+    url: "/Content/design/storefront-branding.htm"
+    children:
+    - label: Uploading Your Logo
+      url: "/Content/design/logo-upload.htm"
+    - label: Adding a Favicon
+      url: "/Content/design/favicon.htm"
+    - label: Welcome Message
+      url: "/Content/design/welcome-message.htm"
+    - label: Copyright Notice
+      url: "/Content/design/copyright-notice.htm"
+    - label: Store Demo Notice
+      url: "/Content/design/demo-notice.htm"
+  - label: Websites, Stores & Views
+    url: "/Content/stores/websites-stores-views.htm"
+    children:
+    - label: Scope
+      url: "/Content/configuration/scope.htm"
+      children:
+      - label: Changing Scope
+        url: "/Content/configuration/scope-change.htm"
+      - label: Catalog Scope
+        url: "/Content/catalog/catalog-scope.htm"
+      - label: Product Scope
+        url: "/Content/catalog/product-scope.htm"
+      - label: Price Scope
+        url: "/Content/catalog/catalog-price-scope.htm"
+      - label: Customer Account Scope
+        url: "/Content/customers/account-scope.htm"
+      - label: Scope Quick Reference
+        url: "/Content/stores/store-scope-reference.htm"
+    - label: Single Store Mode
+      url: "/Content/stores/store-mode-single.htm"
+  - label: Industry Compliance
+    url: "/Content/stores/compliance-industry.htm"
+    children:
+    - label: PCI Compliance Guidelines
+      url: "/Content/stores/compliance-pci.htm"
+    - label: GDPR Compliance
+      url: "/Content/stores/compliance-gdpr.htm"
+      children:
+        label: Google Analytics for GDPR
+        url: "/Content/stores/compliance-gdpr-google.htm"
+    - label: Privacy Policy
+      url: "/Content/stores/privacy-policy.htm"
+    - label: Cookie Law Compliance
+      url: "/Content/stores/compliance-cookie-law.htm"
+      children:
+      - label: Cookie Restriction Mode
+        url: "/Content/stores/compliance-cookie-restriction-mode.htm"
+      - label: Cookie Reference
+        url: "/Content/stores/cookie-reference.htm"

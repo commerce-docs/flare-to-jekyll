@@ -1,5 +1,8 @@
+# frozen_string_literal: true
+
 require_relative '../converters/kramdownifier.rb'
 require_relative '../flare-doc.rb'
+require_relative 'guide-toc.rb'
 
 class TOC < FlareDoc
   include Kramdownifier
@@ -12,15 +15,22 @@ class TOC < FlareDoc
     @doc = parse_file absolute_path
   end
 
-  def destination
-    case @relative_path
-    when 'Project/TOCs/M2_CE_ONLY_UserGuide_2.3.fltoc'
-      '_data/ce/main-nav.yml'
-    when 'Project/TOCs/M2_EE_ONLY_UserGuide_2.3.fltoc'
-      '_data/ee/main-nav.yml'
-    when 'Project/TOCs/M2_B2B_ONLY_UserGuide_2.3.fltoc'
-      '_data/b2b/main-nav.yml'
+  def self.guide_tocs
+    all.each(&:create_guide_tocs)
+  end
+
+  def edition
+    if @relative_path.include?('CE')
+      'ce'
+    elsif @relative_path.include?('EE')
+      'ee'
+    elsif @relative_path.include?('B2B')
+      'b2b'
     end
+  end
+
+  def main_nav_destination
+    "_data/#{edition}/main-nav.yml"
   end
 
   def normalize_links
@@ -30,11 +40,10 @@ class TOC < FlareDoc
   end
 
   def output_path_at(base_directory)
-    File.join base_directory, destination
+    File.join base_directory, main_nav_destination
   end
 
   def generate
-    normalize_links
     main_nav.text
   end
 
@@ -42,11 +51,26 @@ class TOC < FlareDoc
     Nokogiri::XSLT(File.read('lib/flare-docs/templates/main-nav.xsl'))
   end
 
-  def main_nav
-    main_nav_template.transform doc
+  def flare_guide_tocs
+    normalize_links
+    search_by '/CatapultToc/TocEntry'
   end
 
-  def generate_main_nav
-    main_nav.to_xml
+  def get_new_toc(content, edition)
+    GuideTOC.new(
+      content: content,
+      edition: edition
+    )
+  end
+
+  def create_guide_tocs
+    flare_guide_tocs.each do |toc|
+      get_new_toc(toc.to_xml, edition)
+    end
+  end
+
+  def main_nav
+    normalize_links
+    main_nav_template.transform doc
   end
 end

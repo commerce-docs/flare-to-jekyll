@@ -1,5 +1,5 @@
 flare_dir: ~/Projects/repos/magento-merchdocs/master-m2.3/
-jekyll_dir: ~/Projects/repos/adobe/magento-docs/merchdocs/src
+jekyll_dir: ~/Projects/repos/adobe/magento-docs/merchdocs/src/
 
 #
 # Learn more about XPath: https://www.w3schools.com/xml/xpath_syntax.asp
@@ -49,6 +49,21 @@ remove:
     - lastHeight
     - autonum
     - style
+    # toc attributes
+    - BreakType
+    - StartSection
+    - PageNumberReset
+    - PageLayout
+    - PageNumberFormat
+    - PageNumber
+    - PageType
+    - SectionNumberReset
+    - VolumeNumberReset
+    - ChapterNumberReset
+    - ComputeToc
+    - ReplaceMergeNode
+    - AutoEndOnLeftPage
+    - ChapterNumber
 
   
   #

@@ -11,4 +11,8 @@ class Image < FlareDoc
   def output_path_at(base_directory)
     File.join base_directory, destination
   end
+
+  def parsable?
+    false
+  end
 end

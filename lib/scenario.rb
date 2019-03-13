@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'writable.rb'
 require_relative 'convertible.rb'
 require_relative 'reader.rb'
@@ -16,7 +18,7 @@ class Scenario
   def execute
     reader = Reader.new source_dir: @base_dir
     reader.read_all_to_class
-    reader.save_redirects_to_yaml #unless File.exist? 'redirects.yml'
+    reader.save_redirects_to_yaml # unless File.exist? 'redirects.yml'
 
     flare_docs = reader.parsable_content
     assets = reader.nonparsable_content
@@ -44,7 +46,8 @@ class Scenario
     puts 'Finished conversion to HTML!'
 
     puts 'Converting text to Kramdown ...'
-    flare_docs.each do |document|
+    guide_tocs = reader.guide_tocs
+    (flare_docs + guide_tocs).each do |document|
       write_content_to_path content: document.generate,
                             path: document.output_path_at(@jekyll_dir)
     end
