@@ -19,10 +19,14 @@ RSpec.describe GuideTOC do
   end
 
   it 'normalizes content' do
-    expect(toc.normalized_content).to be_a Hash
+    expect(toc.normalized_content).to be_a String
   end
 
   it 'generates "label: Getting Started"' do
     expect(toc.generate).to include "label: Getting Started\npages:\n"
+  end
+
+  it 'it does not have a "label" with no prefix (have to be prefixed with "-")' do
+    expect(toc.normalized_content).not_to include '  label'
   end
 end

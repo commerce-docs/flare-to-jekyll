@@ -14,7 +14,6 @@ class GuideTOC < FlareDoc
 
   def generate
     normalized_content
-    # binding.pry
   end
 
   def content_in_hash
@@ -22,7 +21,8 @@ class GuideTOC < FlareDoc
   end
 
   def normalized_content
-    normalized_content = keep_informative_elements(content_in_hash['TocEntry'])
+    original_content = content_in_hash['TocEntry']
+    normalized_content = keep_informative_elements(original_content)
     normalized_content.delete 'url'
     normalized_content['pages'] = normalized_content.delete('children')
     normalized_content.to_yaml
@@ -30,13 +30,20 @@ class GuideTOC < FlareDoc
 
   def keep_informative_elements(hash)
     filter hash
+    convert_hash_values_to_array(hash)
     hash.each_value do |v|
       case v
       when Array
-        v.each { |item| keep_informative_elements(item) if item.is_a? Hash }
+        v.map { |item| keep_informative_elements(item) if item.is_a? Hash }
       when Hash
         keep_informative_elements(v)
       end
+    end
+  end
+
+  def convert_hash_values_to_array(hash)
+    hash.transform_values! do |v|
+      v.is_a?(Hash) ? Array.wrap(v) : v
     end
   end
 
