@@ -170,12 +170,9 @@ swap:
     #   - pre
   
   # <New value> : <XPath of the attribute value to replace>
-  # attribute_values:
-  #   'bs-callout bs-callout-info': '//div[@class="note"]/@class'
+  attribute_values:
+    'zoom': '//img[@class="large"]/@class'
 
-
-
-  
 add:
   parent:
     p:
