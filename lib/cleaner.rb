@@ -71,13 +71,20 @@ class Cleaner
   def remove_attribute_with_value_on_a(page)
     tags_to_remove_attribute_with_value.each do |name, values|
       values.each do |value|
-        selector = "[#{name}=\"#{value}\"]"
-        page.search_by(selector).each do |node|
-          node.attributes.each do |attribute_name, attr|
-            node.remove_attribute(attribute_name) if attr.value == value
-          end
-        end
+        remove_attribute_with_value(page, name, value)
       end
+    end
+  end
+
+  def remove_attribute_with_value(page, name, value)
+    selector =
+      if value.include?('=')
+        "[#{name}#{value}]"
+      else
+        "[#{name}=\"#{value}\"]"
+      end
+    page.search_by(selector).each do |node|
+      node.remove_attribute name
     end
   end
 

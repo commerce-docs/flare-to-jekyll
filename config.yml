@@ -92,6 +92,7 @@ remove:
       - NoBullet
       - TableDDFlushLeft
       - TableCell
+      - ^=TableStyle-
 
   #
   # XPath or CSS selectors of elements to remove.
@@ -169,9 +170,9 @@ swap:
     # code:
     #   - pre
   
-  # <New value> : <XPath of the attribute value to replace>
+  # <New value>: '<XPath of the attribute value to replace>'
   attribute_values:
-    'zoom': '//img[@class="large"]/@class'
+    zoom: '//img[@class="large"]/@class'
 
 add:
   parent:
