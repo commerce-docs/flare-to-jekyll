@@ -16,22 +16,9 @@ remove:
   # XPath or CSS selectors of elements and all nested nodes to remove.
   #
   completely:
-    - '[conditions="Default.NewTag"]'
     - '[conditions*=PrintOnly]'
-    - '[conditions="Default.AppNum"]'
-    - '[conditions="Default.AppNoNum"]'
     - '[conditions*="Not Needed"]'
     - '[conditions*="Not Ready"]'
-    - '[conditions*=PDF]'
-    - '[conditions="Default.Tooltips"]'
-    - '[conditions="Default.Handout Only"]'
-    - '[conditions="Default.UserGuide Only"]'
-    - '[conditions="Default.Developer Mode Only"]'
-    - '[conditions*=Deprecated]'
-    - '[conditions="Default.2-2-4"]'
-    - '[conditions="Default.2-2-5"]'
-    - '[conditions="Default.2-3"]'
-    - '[conditions="Default.Config Ref Only"]'
     - .Next
     - script
     - keyword
@@ -181,5 +168,4 @@ add:
     - //img/following-sibling::text()
     ul:
     - li[class*=Alpha]
-    
   
