@@ -27,6 +27,7 @@ remove:
     - style
     - a[name]
     - glossaryProxy
+    - col
   #
   # Attributes to remove.
   #
@@ -51,6 +52,8 @@ remove:
     - ReplaceMergeNode
     - AutoEndOnLeftPage
     - ChapterNumber
+    - space
+    - cellspacing
 
   
   #
@@ -76,10 +79,25 @@ remove:
       - _30pct
       - _30pctNoBorder
       - Black
-      - NoBullet
       - TableDDFlushLeft
       - TableCell
       - ^=TableStyle-
+      - TableDDFlushLeft
+      - TableCell
+      - TableAfterNumber
+      - TableAfterAlpha
+      - Alpha1
+      - AlphaContinue
+      - BulletAfterNumber
+      - Number1
+      - Number1SubSeries
+      - NumberContinueSubSeries
+      - NumberContinue
+      - TableDDFlushLeft_SpaceBefore
+      - dropdown_flushLeft
+      - ZeroLeft
+      - Reference
+      - Pct100
 
   #
   # XPath or CSS selectors of elements to remove.
@@ -101,6 +119,13 @@ remove:
     - b.Contrast
     - .NoBullet
     - '[class*=TableStyle-Code]'
+    - .tableBody
+    - .TableInDropDownFlushLeft
+    - .NoBullet
+    - .TableInBody
+    - .TableColHeadWht
+    - .tableBodyButton
+    - .OptionsTableAfterNumber
 
     # - TableStyle-Guidelines
     # - [TableStyle-Definitions] # attributes that contain TableStyle-Definitions in class name
@@ -129,8 +154,9 @@ swap:
       - p.ItemHead
       - dropDownHotspot
 
-    # h3:
-    #   - caption
+    h3:
+      - '[class^=tableBodyBold]'
+      - '[class^=TableHeading]'
 
     li:
       - '[class^=Number]'
