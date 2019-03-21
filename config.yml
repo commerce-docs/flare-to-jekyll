@@ -71,10 +71,8 @@ remove:
       - Default.Not in B2B
       - Default.ScreenOnly
     class:
-      - tableBody
       - Contrast
       - Command
-      - ToDo
       - largeDiagramNoPopup
       - _30pct
       - _30pctNoBorder
@@ -82,10 +80,13 @@ remove:
       - TableDDFlushLeft
       - TableCell
       - ^=TableStyle-
+      - ^=TableCell
       - TableDDFlushLeft
       - TableCell
       - TableAfterNumber
       - TableAfterAlpha
+      - TableAfterAlphaNested
+      - TableAfterNumberSubSeriesNested
       - Alpha1
       - AlphaContinue
       - BulletAfterNumber
@@ -122,10 +123,13 @@ remove:
     - .tableBody
     - .TableInDropDownFlushLeft
     - .NoBullet
+    - .TableInBody > li
     - .TableInBody
     - .TableColHeadWht
     - .tableBodyButton
+    - .tableBodySubHead
     - .OptionsTableAfterNumber
+    - .Red
 
     # - TableStyle-Guidelines
     # - [TableStyle-Definitions] # attributes that contain TableStyle-Definitions in class name
