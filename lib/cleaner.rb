@@ -94,6 +94,7 @@ class Cleaner
   def remove_element_without_children_on_a(page)
     tags_to_replace_elements_with_children.each do |selector|
       page.search_by(selector).each do |element|
+        next if element.attributes.keys.any? 'conditions'
         remove_element_only(element)
       end
     end

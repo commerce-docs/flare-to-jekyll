@@ -70,6 +70,7 @@ remove:
       - Default.Verify
       - Default.Not in B2B
       - Default.ScreenOnly
+      - ''
     class:
       - Contrast
       - Command
