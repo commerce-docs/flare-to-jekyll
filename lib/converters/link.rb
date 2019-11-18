@@ -39,7 +39,7 @@ module LinkConverter
   def jekyllify(link)
     checked_link = check_for_redirect(link)
     return checked_link if checked_link.start_with? 'http'
-    "{{ site.baseurl }}{% link #{normalize checked_link} %}"
+    "{% link #{normalize checked_link} %}"
   end
 
   def check_for_redirect(link)
