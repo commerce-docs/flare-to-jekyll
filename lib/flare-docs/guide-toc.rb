@@ -60,7 +60,7 @@ class GuideTOC < FlareDoc
   end
 
   def destination
-    "_data/#{edition}/toc/#{guide_name}.yml"
+    edition ? "_data/#{edition}/toc/#{guide_name}.yml" : "_data/toc/#{guide_name}.yml"
   end
 
   def output_path_at(base_directory)

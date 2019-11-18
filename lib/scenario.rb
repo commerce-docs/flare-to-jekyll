@@ -13,10 +13,11 @@ class Scenario
     @config = Configuration.instance.data
     @base_dir = File.expand_path @config['flare_dir']
     @jekyll_dir = File.expand_path @config['jekyll_dir']
+    @toc_glob_pattern = @config['toc_glob_pattern']
   end
 
   def execute
-    reader = Reader.new source_dir: @base_dir
+    reader = Reader.new source_dir: @base_dir, toc_glob: @toc_glob_pattern
     reader.read_all_to_class
     reader.save_redirects_to_yaml # unless File.exist? 'redirects.yml'
 

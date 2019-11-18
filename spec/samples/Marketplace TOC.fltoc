@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Getting Started"
+    Link="/Content/getting-started.htm"
+    conditions="Default.ScreenOnly"
+    BreakType="chapter"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/section.flpgl"
+    PageNumberReset="continue"
+    PageType="title">
+    <TocEntry
+      Title="Before You Begin"
+      Link="/Content/before-you-begin.htm"
+      BreakType="pageLayout"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"
+      ComputeToc="false"></TocEntry>
+    <TocEntry
+      Title="Extension Quality Program"
+      Link="/Content/sellers/extension-quality-program.htm"
+      BreakType="pageLayout"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"
+      ComputeToc="false"></TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Frontmatter"
+    Link="/Project/TOCs/Frontmatter.fltoc"
+    conditions="Default.PrintOnly"
+    StartSection="false"></TocEntry>
+  <TocEntry
+    Title="Set Up Your Account"
+    Link="/Content/sellers/set-up-your-account.htm"
+    BreakType="chapter"
+    PageType="title"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/section.flpgl">
+    <TocEntry
+      Title="Account Setup Overview"
+      Link="/Content/sellers/account-setup-overview.htm"
+      BreakType="pageLayout"
+      PageNumber="(multiple)"
+      PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"
+      StartSection="false" />
+    <TocEntry
+      Title="Register as a Developer"
+      Link="/Content/sellers/register-as-a-developer.htm"
+      BreakType="pageLayout"
+      PageNumber="(multiple)"
+      PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"
+      StartSection="false"></TocEntry>
+    <TocEntry
+      Title="Marketplace Developer Portal"
+      Link="/Content/sellers/marketplace-developer-dashboard.htm"
+      BreakType="pageLayout"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"
+      PageNumber="(multiple)">
+      <TocEntry
+        Title="Account Information"
+        Link="/Content/sellers/profile-information.htm"
+        BreakType="pageLayout"
+        StartSection="false"
+        PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" />
+      <TocEntry
+        Title="Company Profile"
+        Link="/Content/sellers/company-profile.htm"
+        BreakType="pageLayout"
+        StartSection="false"
+        PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" />
+      <TocEntry
+        Title="Personal Profile"
+        Link="/Content/sellers/personal-profile.htm"
+        BreakType="pageLayout"
+        StartSection="false"
+        PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Build Your Extension"
+    Link="/Content/sellers/build-your-extension.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/section.flpgl"
+    PageType="title">
+    <TocEntry
+      Title="Extensions"
+      Link="/Content/sellers/extensions.htm"
+      BreakType="pageLayout"
+      PageNumber="(multiple)"
+      PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"
+      StartSection="false">
+      <TocEntry
+        Title="Completing Your Extension"
+        Link="/Content/sellers/completing-your-extension.htm"
+        BreakType="pageLayout"
+        StartSection="false"
+        PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+        <TocEntry
+          Title="Packaging v1.x Extensions"
+          Link="/Content/sellers/packaging-v1x-extensions.htm"
+          BreakType="pageLayout"
+          StartSection="false"
+          PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"
+          SectionNumberReset="continue"
+          VolumeNumberReset="same"
+          ChapterNumberReset="continue"
+          ComputeToc="false"
+          ReplaceMergeNode="false"></TocEntry>
+        <TocEntry
+          Title="Extension content"
+          Link="/Content/sellers/content.htm"
+          BreakType="pageLayout"
+          StartSection="false"
+          PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" />
+        <TocEntry
+          Title="Branding"
+          Link="/Content/sellers/branding.htm"
+          BreakType="pageLayout"
+          StartSection="false"
+          PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"
+          SectionNumberReset="continue"
+          VolumeNumberReset="same"
+          ChapterNumberReset="continue"
+          ComputeToc="false"
+          ReplaceMergeNode="false"
+          conditions="Default.Not Ready for Publish"></TocEntry>
+        <TocEntry
+          Title="Business Value"
+          Link="/Content/sellers/business-value.htm"
+          BreakType="pageLayout"
+          StartSection="false"
+          PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" />
+      </TocEntry>
+      <TocEntry
+        Title="Creating a New Extension"
+        Link="/Content/sellers/creating-a-new-extension.htm"
+        BreakType="pageLayout"
+        StartSection="false"
+        PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"></TocEntry>
+      <TocEntry
+        Title="Creating a New Version"
+        Link="/Content/sellers/creating-a-new-version.htm"
+        BreakType="pageLayout"
+        StartSection="false"
+        PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"></TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="Themes"
+      Link="/Content/sellers/themes.htm"
+      BreakType="pageLayout"
+      PageNumber="(multiple)"
+      PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"
+      StartSection="false" />
+    <TocEntry
+      Title="Shared Packages"
+      Link="/Content/sellers/shared-packages.htm"
+      BreakType="pageLayout"
+      PageNumber="(multiple)"
+      PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"
+      StartSection="false"></TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Submit for Review"
+    Link="/Content/sellers/submit-for-review.htm"
+    BreakType="chapter"
+    PageType="title"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/section.flpgl">
+    <TocEntry
+      Title="Submit for Technical Review"
+      Link="/Content/sellers/submit-for-technical-review.htm"
+      BreakType="pageLayout"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+      <TocEntry
+        Title="Technical Review Guidelines"
+        Link="/Content/sellers/technical-review-guidelines.htm"
+        BreakType="pageLayout"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"></TocEntry>
+      <TocEntry
+        Title="Code Validation"
+        Link="/Content/sellers/code-validation.htm"
+        BreakType="pageLayout"
+        StartSection="false"
+        PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"></TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="Submit for Marketing Review"
+      Link="/Content/sellers/submit-for-marketing-review.htm"
+      BreakType="pageLayout"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"
+      PageNumberReset="continue"
+      PageNumber="(multiple)">
+      <TocEntry
+        Title="Marketing Review Guidelines"
+        Link="/Content/sellers/marketing-review-guidelines.htm"
+        BreakType="pageLayout"
+        PageNumber="(multiple)"
+        PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"
+        StartSection="false">
+        <TocEntry
+          Title="Product Descriptions"
+          Link="/Content/sellers/product-descriptions.htm"
+          BreakType="pageLayout"
+          PageNumber="(multiple)"
+          PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"
+          StartSection="false"></TocEntry>
+      </TocEntry>
+      <TocEntry
+        Title="Marketing Submission Preview"
+        Link="/Content/sellers/marketing-submission-preview.htm"
+        BreakType="pageLayout"
+        StartSection="false"
+        PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"
+        PageNumberReset="continue"
+        PageNumber="(multiple)"></TocEntry>
+      <TocEntry
+        Title="Video Tips"
+        Link="/Content/sellers/video-tips.htm"
+        BreakType="pageLayout"
+        StartSection="false"
+        PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" />
+      <TocEntry
+        Title="Image Tips"
+        Link="/Content/sellers/image-tips.htm"
+        BreakType="pageLayout"
+        StartSection="false"
+        PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" />
+    </TocEntry>
+    <TocEntry
+      Title="Test Reports"
+      Link="/Content/sellers/test-reports.htm"
+      BreakType="pageLayout"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"></TocEntry>
+    <TocEntry
+      Title="Resubmitting an Extension"
+      Link="/Content/sellers/resubmitting-an-extension.htm"
+      BreakType="pageLayout"
+      PageNumber="(multiple)"
+      PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"
+      StartSection="false" />
+    <TocEntry
+      Title="Updating Extension Information"
+      Link="/Content/sellers/updating-extension-information.htm"
+      BreakType="pageLayout"
+      PageNumber="(multiple)"
+      PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"
+      StartSection="false" />
+  </TocEntry>
+  <TocEntry
+    Title="Manage Sales"
+    Link="/Content/sellers/manage-sales.htm"
+    BreakType="chapter"
+    PageType="title"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/section.flpgl">
+    <TocEntry
+      Title="Sales"
+      Link="/Content/sellers/sales.htm"
+      BreakType="pageLayout"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+      <TocEntry
+        Title="Revenue Share"
+        Link="/Content/sellers/revenue-share.htm"
+        BreakType="pageLayout"
+        StartSection="false"
+        PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" />
+    </TocEntry>
+    <TocEntry
+      Title="Analytics"
+      Link="/Content/sellers/analytics.htm"
+      BreakType="pageLayout"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"></TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="For Buyers"
+    Link="/Content/buyers/for-buyers.htm"
+    BreakType="chapter"
+    PageType="title"
+    StartSection="false"
+    PageNumberReset="reset"
+    PageLayout="/Content/Resources/PageLayouts/section.flpgl"
+    PageNumberFormat="decimal"
+    PageNumber="1">
+    <TocEntry
+      Title="Find a Product"
+      Link="/Content/buyers/find-a-product.htm"
+      BreakType="pageLayout"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl">
+      <TocEntry
+        Title="Product Details"
+        Link="/Content/buyers/product-detail.htm"
+        BreakType="pageLayout"
+        StartSection="false"
+        PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" />
+    </TocEntry>
+    <TocEntry
+      Title="Make a Purchase"
+      Link="/Content/buyers/make-purchase.htm"
+      BreakType="pageLayout"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" />
+    <TocEntry
+      Title="Download the Software"
+      Link="/Content/buyers/download-the-software.htm"
+      BreakType="pageLayout"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" />
+    <TocEntry
+      Title="Install the Extension"
+      Link="/Content/buyers/install-extension.htm"
+      BreakType="pageLayout"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" />
+  </TocEntry>
+  <TocEntry
+    Title="Resources"
+    Link="/Content/sellers/resources.htm"
+    BreakType="chapter"
+    PageType="title"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/section.flpgl">
+    <TocEntry
+      Title="FAQ - Developers"
+      Link="/Content/sellers/faq-sellers.htm"
+      BreakType="pageLayout"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"></TocEntry>
+    <TocEntry
+      Title="FAQ - Buyers"
+      Link="/Content/buyers/faq-buyers.htm"
+      BreakType="pageLayout"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"></TocEntry>
+    <TocEntry
+      Title="Marketplace Tools"
+      Link="/Content/sellers/marketplace-tools.htm"
+      BreakType="pageLayout"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" />
+    <TocEntry
+      Title="Technical Reference"
+      Link="/Content/sellers/technical-reference.htm"
+      BreakType="pageLayout"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl"
+      PageNumberReset="continue" />
+    <TocEntry
+      Title="Change Log"
+      Link="/Content/buyers/change-log.htm"
+      BreakType="pageLayout"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/user_guide_body.flpgl" />
+  </TocEntry>
+</CatapultToc>

@@ -8,6 +8,10 @@ module Kramdownifier
   DEFAULT_OPTIONS =
     { html_to_native: true, line_width: 1000, input: 'html' }.freeze
 
+
+  def config
+    Configuration.instance.data
+  end
   def logger
     @@logger ||= Logger.new('kramdowinifier.log', progname: 'Kramdownifier')
   end
@@ -126,7 +130,7 @@ module Kramdownifier
   def convert_variables
     logger.info 'Converting variables'
     variables.each do |node|
-      node.replace 'Magento'
+      node.replace config['variable']
     end
     logger.info 'Finished converting variables'
   end

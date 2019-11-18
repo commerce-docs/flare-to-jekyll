@@ -26,11 +26,13 @@ class TOC < FlareDoc
       'ee'
     elsif @relative_path.include?('B2B')
       'b2b'
+    else
+      nil
     end
   end
 
   def main_nav_destination
-    "_data/#{edition}/main-nav.yml"
+    edition ? "_data/#{edition}/main-nav.yml" : "_data/main-nav.yml"
   end
 
   def normalize_links

@@ -9,8 +9,9 @@ require_relative 'flare-docs/toc.rb'
 class Reader
   attr_reader :parsable_content, :nonparsable_content
 
-  def initialize(source_dir:)
+  def initialize(source_dir:, toc_glob:)
     @source_dir = source_dir
+    @toc_glob_pattern = toc_glob
     @parsable_content = []
     @nonparsable_content = []
     @redirects = []
@@ -93,6 +94,6 @@ class Reader
   end
 
   def read_tocs
-    Dir.glob 'Project/TOCs/*UserGuide*', base: @source_dir
+    Dir.glob @toc_glob_pattern, base: @source_dir
   end
 end
